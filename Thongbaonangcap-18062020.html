@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Thông tin cơ bản TK Nhập</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><center><strong>NHỮNG THAY ĐỔI TRÊN BẢN ECUS5VNACCS 2018</strong><br />(Phiên bản update 18/06/2020)</center><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+        <br /><div class="Doanvan"><strong>Phần mềm <span style="color:#ED7D31">ECUS5</span><span style="color:#4472C4">VNACCS2018</span> - Ngày phát hành 06/07/2020</strong></div>
+        <hr align="left" width="50%" size="1px" color="#CFCDCD" />
+        <div class="Doanvan">Phiên bản cập nhật ngày 18/06/2020 được phát hành ngày 06/07/2020 bổ sung, sửa đổi các chức năng sau:</div>
+<ul style="list-style-type:none" class="Doanvan">
+<strong><li class="Doanvan" id="muc-1">1. Hiển thị thông báo gia hạn chữ ký số đối với các chữ ký số của nhà cung cấp Nacencomm - CA2.</li></strong></strong>
+<div class="Doanvan">Đối với chữ ký số doanh nghiệp đang sử dụng của nhà cung cấp Nacencomm - CA2 (mua trực tiếp của nhà cung cấp hoặc thông qua công ty Thái Sơn), nếu thời hạn sử dụng của chữ ký số còn nhỏ hơn ngày <strong>24/09/2020</strong>, phần mềm sẽ hiển thị thông báo như sau:</div>
+<div align="left"><img src="Images/Thongbaonangcap-18062020_001.png" /></div><br />
+<strong><li class="Doanvan">2. Sửa lỗi tìm kiếm theo ngày thông quan của danh sách tờ khai</li></strong>
+<div align="left"><img src="Images/Thongbaonangcap-18062020_002.png" /></div><br />
+<strong><li class="Doanvan">3. Thay đổi giao diện và bổ sung icon cho các báo cáo</li></strong>
+<div class="Doanvan">Bản cập nhật này đã thay đổi tiêu chí tìm kiếm và bổ sung icon sắp xếp cho các báo cáo:</div>
+<ul>
+	<li class="Doanvan">Báo cáo tờ khai xuất nhập khẩu</li>
+    <li class="Doanvan">Báo cáo tổng hàng hóa xuất nhập khẩu</li>
+    <li class="Doanvan">Báo cáo chi tiết hàng hóa xuất nhập khẩu</li>
+    
+</ul>
+<div class="Doanvan">Cụ thể như sau:</div>
+<div align="left"><img src="Images/Thongbaonangcap-18062020_003.png" /></div><br />
+<strong><li class="Doanvan">4. Sửa lỗi khi xem báo cáo tờ khai xuất nhập khẩu</li></strong>
+<div class="Doanvan">Khắc phục lỗi khi xem báo cáo tờ khai xuất nhập khẩu mà trong form có nhiều hơn 2 cột giống nhau cùng hiển thị, khi đó sẽ hiện ra thông báo lỗi như sau</div>
+<div align="left"><img src="Images/Thongbaonangcap-18062020_004.png" /></div><br />
+<strong><li class="Doanvan">5. Sửa lỗi load nhầm định mức sang tỷ lệ hao hụt trên danh mục sản phẩm Kế toán kho khi sửa dụng nhập vào từ excel (F6)</li></strong>
+<div align="left"><img src="Images/Thongbaonangcap-18062020_005.png" /></div>
+
+<strong><div class="Doanvan">6. Và một số mục sửa đổi khác dưới đây:</div></strong>
+<ul>
+	<li class="Doanvan">Sửa lỗi tự động load hết dữ liệu báo cáo khi mở chức năng <strong>Báo cáo chi tiết hàng hóa xuất nhập khẩu</strong>.</li>
+    <li class="Doanvan">Sửa lỗi khai báo định mức gia công:<br />
+    <div class="Doanvan">Cannot insert the value NULL into column 'TL_HH', table 'ECUS5VNACCS.dbo.GC_DDINHMUC'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+===================================================
+   at System.Data.Common.DbDataAdapter.UpdatedRowStatusErrors(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   at System.Data.Common.DbDataAdapter.UpdatedRowStatus(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount</li>
+    
+</ul>
+</ul>
+        
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

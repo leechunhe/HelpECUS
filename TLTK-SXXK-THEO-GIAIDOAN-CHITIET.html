@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Thanh lý theo định mức giai đoạn</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet" />
+<link href="css/help-content.css" rel="stylesheet"> 
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><strong style="font-size:24px">CHỨC NĂNG THANH LÝ THEO ĐỊNH MỨC GIAI ĐOẠN </strong><br />
+		 <em class="Doanvan">(Chức năng chạy thanh lý đối với doanh nghiệp có định mức sản phẩm theo nhiều giai đoạn khác nhau)</em><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+        
+        <div class="Doanvan">Theo Quyết định 2270/QĐ-TCHQ ban hành ngày 09 tháng 08 năm 2018 của Tổng cục Hải quan về định dạng thông điệp dữ liệu trao đổi giữa Hải quan và doanh nghiệp Gia công, Sản xuất xuất khẩu, Chế xuất. Cho phép doanh nghiệp khai báo được nhiều lần định mức cho cùng một mã Sản phẩm dựa vào các Lệnh sản xuất khác nhau.</div>
+        <div class="Doanvan">Vậy, cùng một mã Sản phẩm xuất khẩu nhưng có nhiều bảng định mức khác, đến kỳ báo cáo doanh nghiệp làm thế nào để kiểm soát được số liệu chi tiết khi thực hiện chạy thanh lý, thanh khoản. Chức năng <strong style="font-size:14px">CHẠY THANH LÝ THEO ĐỊNH MỨC GIAI ĐOẠN</strong> sẽ giúp doanh nghiệp thực hiện bằng cách gán các lệnh sản xuất cho các sản phẩm xuất khẩu cụ thể trên từng tờ khai xuất.</div>
+        <div class="Doanvan"><u>Chức năng chạy thanh lý theo định mức giai đoạn sẽ bao gồm các bước thực hiện sau:</u></div>
+        <ol style="list-style:none">
+        
+          <li class="Doanvan"><strong>Bước 1: Thiết lập cấu hình chức năng.</strong></li>
+          <li class="Doanvan">Bước 2: Kiểm hóa tờ khai nhập khẩu/ xuất khẩu.</li>
+          <li class="Doanvan"><strong>Bước 3: Cập nhật lệnh sản xuất cho sản phẩm trên tờ khai xuất.</strong></li>
+          <li class="Doanvan">Bước 4: Tạo lần thanh lý và nhập bảng kê danh sách tờ khai</li>
+          <li class="Doanvan">Bước 5: Chạy thanh lý.</li>
+          <li class="Doanvan"><strong>Bước 6: In báo cáo thanh lý.</strong></li>
+          <li class="Doanvan">Bước 7: Đóng hồ sơ thanh lý.</li>
+        </ol>
+        <div class="Doanvan">Trong các bước ở trên, chỉ có bước 1, 3 và 6 là có sự khác biệt so với việc chạy thanh lý thông thường (thanh lý không có định mức giai đoạn). Các bước còn lại về ý nghĩa và cách thực hiện đều giống hệt với cách chạy thanh lý thông thường mà doanh nghiệp vẫn đang sử dụng.</div>
+          <div class="Doanvan">Để hiểu rõ hơn, chúng ta hãy theo dõi phần hướng dẫn chi tiết phía dưới đây:</div>
+        <div class="Doanvan"><strong><i class="glyphicon glyphicon-tags"></i>  Bước 1: Thiết lập cấu hình chức năng.</strong></div>
+        <ul>
+        <div class="Doanvan">Mặc định, phần mềm sẽ không hiện thị các chức năng cho phép doanh nghiệp chạy thanh lý theo định mức giai đoạn, do đó muốn thực hiện, doanh nghiệp phải thiết lập cấu hình trước, bằng cách vào menu <strong>Hệ thống/ Thiết lập thông số chương trình</strong>, sau đó đánh dấu chọn vào <strong><em>Thực hiện thanh lý theo giai đoạn</em></strong> tại mục <strong>8. Thanh lý, thanh khoản</strong> như hình sau:</div>
+        <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0001.png" /> <br />
+        </ul>
+          <div class="Doanvan"><strong><i class="glyphicon glyphicon-tags"></i>  Bước 2: Nhập kiểm hóa tờ khai nhập khẩu/ xuất khẩu:</strong></div>
+        <ul>
+        <div class="Doanvan">Nhập kiểm hóa tờ khai là bước thao tác bắt  buộc để kiểm soát lại số liệu tờ khai trước khi đưa vào thanh lý. Để kiểm hóa  tờ khai, bạn làm theo 1 trong 2 cách sau:</div>
+          <div class="Doanvan"><strong><u>Cách 1</u></strong>: Kiểm hóa từng tờ khai.</div>
+          <div class="Doanvan">Để kiểm hóa tờ khai, bạn mở tờ khai cần  kiểm hóa vào tab <em>&ldquo;Kết quả xử lý tờ khai&rdquo;</em> chọn nút chức năng <em>&ldquo;Kiểm hóa tờ khai&rdquo;</em>:</div>
+  <img src="Images/TLTK-SXXK-CHITIET_clip_image002.png" /> <br />
+          <div class="Doanvan">Hoặc bạn có thể vào menu <em>&ldquo;Tờ khai hải quan / Kiểm hóa tờ khai&rdquo;</em> chọn kiểm hóa tờ khai nhập hoặc tờ khai xuất tương ứng:<br />
+  <img  src="Images/TLTK-SXXK-CHITIET_clip_image004.png" /> </div>
+          <div class="Doanvan">Tiến hành <em>&ldquo;Chọn tờ khai&rdquo;</em> cần kiểm hóa:</div>
+  <img  src="Images/TLTK-SXXK-CHITIET_clip_image006.png" /> <br />
+          <div class="Doanvan">Trên form giao diện kiểm hóa, bạn nhập  các thông tin <em>&ldquo;Ngày thực N/X&rdquo;,</em> và  kiểm tra các thông tin hàng hóa của tờ khai</div>
+  <img  src="Images/TLTK-SXXK-CHITIET_clip_image008.png" /> <br />
+          <div class="Doanvan">Bấm <em>&ldquo;Ghi&rdquo;</em> để hoàn thành kiểm hóa:</div>
+  <img  src="Images/TLTK-SXXK-CHITIET_clip_image010.png" /> <br />
+          <div class="Doanvan"><strong><u>Cách 2</strong></u>: Nhập kiểm hóa nhiều tờ khai.</div>
+          <div class="Doanvan">Nếu bạn có nhiều tờ khai cần kiểm hóa,  thay vì việc kiểm hóa từng tờ khai sẽ mất thời gian, phần mềm hỗ trợ nhập kiểm  hóa nhiều tờ khai từ file excel. Bạn tạo 1 file excel danh sách các tờ cần kiểm  hóa theo mẫu như sau:</div>
+  <img  src="Images/TLTK-SXXK-CHITIET_clip_image012.png" /> <br />
+          <div class="Doanvan">Lưu ý, bạn có thể tạo chung danh sách tờ  khai nhập và tờ khai xuất và cùng 1 sheet, nhưng để thuận tiện trong quá trình  làm việc cũng như quản lý số liệu, bạn nên làm danh sách tờ khai nhập, tờ khai  xuất ra 2 sheet khác nhau.</div>
+          <div class="Doanvan">Sau khi xây dựng xong file excel có chứa  danh sách tờ khai cần kiểm hóa, bạn vào   menu <em>&ldquo;Tờ khai hải quan / Kiểm hóa  tờ khai&rdquo;</em> chọn chức năng <em>&ldquo;Nhập kiểm  hóa từ file excel&rdquo;</em></div>
+  <img  src="Images/TLTK-SXXK-CHITIET_clip_image014.png" /> <br />
+          <div class="Doanvan">Trên form giao diện chức năng nhập kiểm  hóa từ file excel, bạn chọn file excel chứa danh sách tờ khai cần kiểm hóa, và  thiết lập thông số các dòng, cột dữ liệu như trên file excel:</div>
+  <img  src="Images/TLTK-SXXK-CHITIET_clip_image016.png" /> <br />
+          <div class="Doanvan">Sau khi thiết lập các thông số thành  công, bạn bấm <em>&ldquo;Ghi&rdquo;</em> để phần mềm tiến  hành kiểm hóa:</div>
+  
+          <div class="Doanvan">Phần mềm sẽ tiến hành kiểm hóa các tờ  khai có trong file excel dựa trên thông số bạn đã thiết lập, sau khi kiểm hóa  xong phần mềm sẽ có thông báo đến người dùng và số lượng tờ khai đã kiểm hóa  thành công:</div>
+  <img  src="Images/TLTK-SXXK-CHITIET_clip_image018.png" /> <br /><br />
+        </ul>
+        <div class="Doanvan"><strong><i class="glyphicon glyphicon-tags"></i>  Bước  3: Cập nhật lệnh sản xuất cho sản phẩm trên tờ khai xuất.</strong></div>
+        <ul>
+        <div class="Doanvan">Việc cập nhật lệnh sản xuất cho sản phẩm tờ khai xuất khẩu sẽ được thực hiện sau khi tờ khai xuất đã được kiểm hóa. Hiện tại doanh nghiệp có thể cập nhật lệnh sản xuất theo 2 cách:</div>
+        <ul>
+        	<li class="Doanvan" style="font-style:italic">Cập nhật trực tiếp trên giao diện kiểm hóa tờ khai</li>
+            <li class="Doanvan" style="font-style:italic">Cập nhật trên chức năng Chọn lệnh sản xuất cho sản phẩm</li>
+        </ul>
+        <div class="Doanvan">Sau đây là hướng dẫn chi tiết.</div>
+        <div class="Doanvan"><strong><u>Cách 1:</u></strong> Cập nhật trực tiếp trên giao diện kiểm hóa tờ khai.</div>
+        <div class="Doanvan">Trên giao diện chức năng kiểm hóa tờ khai xuất (<strong>Tờ khai hải quan/ Kiểm hóa tờ khai/ Kiểm hóa tờ khai xuất khẩu</strong>), sau khi đã thực hiện xong bước kiểm hóa, chức năng chọn lệnh sản xuất sẽ hiện lên:</div>
+        <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0002.png" /><br />
+        <div class="Doanvan">Bạn nhấn vào nút <strong>Chọn lệnh sản xuất</strong> giao diện chức năng hiện ra như sau:</div>
+        <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0003.png" /><br />
+        <div class="Doanvan"><strong><u>Lưu ý</u></strong>:</div>
+        <ul>
+        <li class="Doanvan">Nếu sản phẩm của tờ khai chỉ có 1 định mức giai đoạn, phần mềm sẽ tự động chọn vào cho bạn</li>
+        <li class="Doanvan">Trên giao diện thể hiện 2 cột mã sản phẩm (Mã sản phẩm và Mã cũ). Sau khi chọn lệnh sản xuất cho sản phẩm, Mã sản phẩm lúc này sẽ bằng <strong>Mã cũ</strong> + <strong>Mã lệnh sản xuất</strong>, Mã sản phẩm này sẽ được đưa vào để chạy thanh lý. Đồng thời cột Mã cũ tương ứng để giúp doanh nghiệp đối chiếu với mã sản phẩm khai báo danh mục ban đầu (xem thể hiện chi tiết tại mục báo cáo).</li>
+        <li class="Doanvan">Nếu tất cả sản phẩm của tờ khai đều xuất chung 1 mã lệnh sản xuất, bạn nhấn vào nút chức năng <strong>Chọn lệnh sản xuất cho cả tờ khai</strong></li>
+        <div class="Doanvan">Nếu muốn chọn các lệnh sản xuất khác nhau cho từ mã sản phẩm cụ thể, bạn nhấn vào <strong>Chọn lệnh sản xuất</strong> tại dòng sản phẩm muốn chọn:</div>
+        <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0004.png" /><br />
+        <div class="Doanvan">Sau đó chọn mã lệnh sản xuất cho mã sản phẩm:</div>
+        <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0005.png" /><br />
+        <div class="Doanvan">Khi chọn xong, trên giao diện kiểm hóa cột Mã hàng thanh lý sẽ là Mã sản phẩm mới, cột Mã hàng khai báo sẽ là Mã cũ:</div>
+        <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0005_2.png" /><br />
+        </ul>
+        <br />
+        <div class="Doanvan"><strong><u>Cách 2:</u></strong> Cập nhật trên chức năng Chọn lệnh sản xuất cho sản phẩm.</div>
+        <div class="Doanvan">Đây là chức năng cho phép doanh nghiệp thực hiện chọn lệnh sản xuất cho tất cả các sản phẩm của tờ khai xuất (đã được kiểm hóa). Để thực hiện, bạn vào menu <strong>Tờ khai hải quan/ Kiểm hóa tờ khai</strong> sau đó chọn mục <strong><em>Chọn lệnh sản xuất cho sản phẩm</em></strong>:</div>
+        <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0006.png" /><br />
+        <div class="Doanvan">Giao diện chức năng hiện ra như sau:</div>
+        <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0007.png" /><br />
+        <div class="Doanvan">Tại đây, bạn có thể nhấn vào nút <strong>Tự động chọn lệnh sản xuất...</strong>để phần mềm chọn tự động dựa vào các tiêu chí sau:</div>
+        <ul>
+        	<li class="Doanvan">Tự động lấy đối với mã sản phẩm chỉ có 1 định mức giai đoạn</li>
+            <li class="Doanvan">Tự động lấy lệnh sản xuất có khoảng thời gian gần với ngày thực xuất của tờ khai nhất</li>
+        </ul>
+        <div class="Doanvan">Các mã đã được chọn lệnh sản xuất sẽ hiển thị tại mục <strong>Sản phẩm đã có lệnh sản xuất</strong>:</div>
+        <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0008.png" /><br />
+        <div class="Doanvan">Còn lại các sản phẩm không thể xác định tự động thì bạn chọn thủ công bằng cách nhấn nút <strong>Chọn lệnh sản xuất:</strong></div>
+        <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0009.png" /><br />
+        </ul>
+          <div class="Doanvan"><strong><i class="glyphicon glyphicon-tags"></i>  Bước  4: Tạo lần thanh lý và nhập các bảng kê.</strong></div>
+        <ul>
+       <div class="Doanvan">Sau khi đã kiểm hóa xong danh sách tờ  khai nhập, tờ khai xuất cần thanh lý, cập nhật mã lệnh sản xuất cho các sản phẩm trên các tờ khai xuất khẩu. Bạn tạo lần thanh lý mới trên phần mềm  bằng cách vào menu <em>&ldquo;Loại hình / Thanh lý  sản xuất xuất khẩu&rdquo;</em> chọn chức năng <em>&ldquo;Tạo  hồ sơ thanh lý V5&rdquo;:</em></div>
+          <img  src="Images/TLTK-SXXK-CHITIET_clip_image022.png" /> <br />
+          <div class="Doanvan">Trên form giao diện hồ sơ thanh lý, bạn  nhập <em>&ldquo;Ngày bắt đầu TL&rdquo;</em> và bấm <em>&ldquo;Ghi thông tin hồ sơ thanh lý&rdquo;</em> để tạo hồ  sơ thanh lý:</div>
+  <img  src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0010.png" /> <br />
+          <div class="Doanvan">Sau khi tạo hồ sơ thanh lý thành công,  các bảng kê tờ khai sẽ hiện ra để bạn nhập liệu. Bạn tiến hành nhập các bảng kê  tờ  khai. <br />
+  <em>Chú  ý: Trong 1 hồ sơ thanh lý, hiện nay có 9 bảng kê tờ khai, trong đó BK01 và BK02  là 2 bảng kê cơ sở và bắt buộc phải có, các bảng kê còn lại từ BK03 đến BK09 là  để kê khai chi tiết các tính huống nghiệp vụ phát sinh như: NPL huỷ, biếu tặng,  NPL tái xuất, NPL chưa thanh lý, NPL đã nộp thuế … Trường hợp không phát sinh  thì các bảng kê này không cần nhập liệu.</em></div>
+          <div class="Doanvan">Nhập  BK01: Bảng kê tờ khai nhập thanh lý</div>
+          <div class="Doanvan">Bạn kích chuột vào nút  <img width="25" height="21" src="Images/TLTK-SXXK-CHITIET_clip_image025.png" /> để cửa sổ BK01 hiện ra như sau:</div>
+        <img src="Images/TLTK-SXXK-CHITIET_clip_image027.png" /><br />
+       <div class="Doanvan">Để thêm tờ khai vào bảng kê bạn chọn nút <img width="77" height="23" src="Images/TLTK-SXXK-CHITIET_clip_image028.png" />:</div>
+        <img  src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0011.png" /> <br />
+          <div class="Doanvan">Để chọn tờ khai nhập đưa vào thanh lý bạn kích  chọn tờ khai đó bên danh sách Tờ khai chưa chọn và kích nút  <img width="37" height="26" src="Images/TLTK-SXXK-CHITIET_clip_image031.png" /> (hoặc ấn phím C), ngược lại nếu muốn xoá một  tờ khai ra khỏi danh sách tờ khai đã chọn bạn kích chuột vào tờ khai đó trên  danh sách Tờ khai đã chọn và ấn nút <img width="41" height="28" src="Images/TLTK-SXXK-CHITIET_clip_image032.png" /> ( hoặc ấn phím X) (nút <img width="40" height="28" src="Images/TLTK-SXXK-CHITIET_clip_image033.png" /> và <img width="37" height="25" src="Images/TLTK-SXXK-CHITIET_clip_image034.png" /> là cho tất cả các tờ khai trên danh sách)</div>
+          <div class="Doanvan">Sau khi chọn xong danh sách tờ khai nhập bạn  chọn nút <img src="Images/TLTK-SXXK-CHITIET_clip_image035.png" /> để quay lại cửa sổ BK01 với danh sách tờ khai  đã chọn và kích nút <img src="Images/TLTK-SXXK-CHITIET_clip_image035.png" />:<br />
+  <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0012.png" /> </div>
+          <div class="Doanvan">Lưu ý: nếu khi bạn bấm <em>&ldquo;Chọn tờ khai&rdquo;</em> mà danh sách tờ khai không hiện ra, thì bạn chú ý  nhập lại điều kiện lọc:</div>
+          <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0013.png" /><br clear="all" />
+        <div class="Doanvan">Nhập BK02: Bảng kê tờ khai  xuất thanh lý </div>
+          <div class="Doanvan">Bạn kích chuột vào  nút  <img width="25" height="21" src="Images/TLTK-SXXK-CHITIET_clip_image040.png" /> để cửa sổ BK02 hiện ra như sau:</div>
+  <img src="Images/TLTK-SXXK-CHITIET_clip_image042.png" /><br />
+        <div class="Doanvan">Để tờ khai vào bảng kê bạn chọn nút <img width="77" height="23" src="Images/TLTK-SXXK-CHITIET_clip_image028_0000.png" />:</div>
+        <div class="Doanvan"><img  src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0014.png" /> </div>
+          <div class="Doanvan">Để chọn tờ khai xuất đưa vào thanh lý bạn kích  chọn tờ khai đó bên danh sách Tờ khai chưa chọn và kích nút  <img width="37" height="26" src="Images/TLTK-SXXK-CHITIET_clip_image031_0000.png" /> (hoặc  ấn phím C), ngược lại nếu muốn xoá một tờ khai ra khỏi danh sách tờ khai đã  chọn bạn kích chuột vào tờ khai đó trên danh sách Tờ khai đã chọn và ấn nút <img width="41" height="28" src="Images/TLTK-SXXK-CHITIET_clip_image032_0000.png" /> ( hoặc  ấn phím X) (nút <img width="40" height="28" src="Images/TLTK-SXXK-CHITIET_clip_image033_0000.png" /> và <img width="37" height="25" src="Images/TLTK-SXXK-CHITIET_clip_image034_0000.png" /> là cho  tất cả các tờ khai trên danh sách)</div>
+          <div class="Doanvan">Sau khi chọn xong danh sách tờ khai xuất bạn  chọn nút <img src="Images/TLTK-SXXK-CHITIET_clip_image035.png" /> để quay  lại cửa sổ BK02 với danh sách tờ khai đã chọn và kích nút <img src="Images/TLTK-SXXK-CHITIET_clip_image035.png" />:<br />
+  <img  src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0015.png" /> </div>
+                    <div class="Doanvan"><br />
+            <div class="Doanvan">Ngoài ra còn một số các bảng kê khác, cách thức nhập liệu cũng tương tự  như các bảng kê đã được hướng dẫn như trên.</div>
+            <br />
+          </div>
+          </ul>
+       <div class="Doanvan"><strong><i class="glyphicon glyphicon-tags"></i>  Bước  5: Chạy thanh lý</strong></div>
+       <ul>
+        <div class="Doanvan">Sau khi nhập liệu đầy đủ các bảng kê, bạn sang tab &ldquo;2.Chạy thanh lý&rdquo; để tiến hành chạy hồ sơ thanh lý:</div>
+          <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0016.png" /><strong> </strong><br />
+          <div class="Doanvan">Phần mềm sẽ check một số thông tin và đưa ra cảnh báo cho bạn, bạn có  thể kiểm tra lại hoặc bỏ qua để tiếp tục chạy thanh lý</div>
+  
+          <div class="Doanvan">Thời gian để chạy xong một lần thanh lý nhanh hay chậm phụ  thuộc vào độ lớn của dữ liệu. Màn hình khi chạy thanh lý thành công:</div>
+  <img  src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0017.png" /><br /><br />
+  </ul>
+        
+          <div class="Doanvan"><strong><i class="glyphicon glyphicon-tags"></i>  Bước 6: In báo cáo thanh lý.</strong></div>
+        <ul>
+        <div class="Doanvan">Sau khi chạy thanh lý xong, bạn in báo  cáo thanh lý để kiểm tra số liệu. Hiện nay, phần mềm đã nâng cấp và cung cấp  cho Doanh nghiệp các mẫu báo cáo mới nhất theo quy định. Ngoài ra còn một số  các mẫu báo cáo nội bộ, hoặc báo cáo theo các quy định cũ vẫn được giữ lại để  phục vụ cho công tác quản lý nội bộ của Doanh nghiệp.<br />
+          Một số mẫu báo cáo thường dùng: BC57,  BC58 theo TT128-TT22, Hồ sơ hoàn thuế không thu TT38, Hồ sơ thuế theo NĐ 134.  Để in báo cáo , bạn chọn các mẫu tương ứng:</div>
+        <img  src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0018.png" /><br />
+        <div class="Doanvan">Khi in các báo cáo, mã sản phẩm sẽ được thể hiện là Mã sản phẩm đăng ký danh mục kèm với mã định danh lệnh sản xuất. Dựa vào đó là số lượng được tính theo bảng định mức theo lệnh sản xuất đã chọn, ví dụ như báo cáo xuất - nhập - tồn sau:</div>
+        <img  src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0019.png" /><br />
+        </ul>
+          <div class="Doanvan"><strong><i class="glyphicon glyphicon-tags"></i>  Bước 7: Đóng hồ sơ thanh lý.</strong></div>
+        <ul>
+        <div class="Doanvan">Sau khi hoàn thành lần thanh lý đầu  tiên, bạn cần thực hiện đóng lần thanh lý để tránh việc người khác vào thao tác  ảnh hưởng đến số liệu đã thanh lý, hoặc để chốt số liệu tồn tại 1 giai đoạn và  chuyển sang lần thanh lý thuộc giai đoạn tiếp theo. Để đóng hồ sơ thanh lý bạn  vào menu <em>&ldquo;Đóng hồ sơ thanh lý&rdquo;:</em></div>
+          <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0020.png" /><br />
+          <div class="Doanvan">Tại đây, bạn nhập số hồ sơ TL, Số quyết  định TL và ngày tháng kết thúc thanh lý, Ngày quyết định thanh lý. Hiện nay,  việc chạy thanh lý chỉ để áp dụng quản lý nội bộ tại doanh nghiệp không thực hiện  việc khai báo lên cơ quan Hải quan, nên việc nhập liệu các chỉ tiêu này, bạn  nhập theo số quản lý nội bộ tại Doanh nghiệp của bạn. Sau khi nhập liệu xong,  bạn bấm vào <em>&ldquo;Đóng hồ sơ thanh lý&rdquo;</em> để  hoàn tất:</div>
+  <img src="Images/TLTK-SXXK-THEO-GIAIDOAN-CHITIET_0021.png" /><br />
+          <div class="Doanvan">Sau khi đóng hồ sơ thanh lý trước, bạn  có thể tạo những hồ sơ thanh lý tiếp theo, quy trình thực hiện tương tự như  hướng dẫn trên. </div>
+          </ul>
+        <div class="Doanvan"><em>Chú ý: Hiện nay việc chạy thanh lý không   khai báo lên cơ quan Hải quan qua hệ thống điện tử. Trường hợp có hồ sơ  hoàn thuế hoặc không thu thuế, bạn làm công văn và nộp trực tiếp tại chi cục.</em></div>
+        
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

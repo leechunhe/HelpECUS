@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Thông tin cơ bản TK Nhập</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><strong>HƯỚNG DẪN THANH KHOẢN HỢP ĐỒNG GIA CÔNG</strong><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+<div class="Doanvan">Nguyên  tắc tính toán thanh khoản hợp đồng.</div>
+        <ul>
+          <li>Thanh  khoản theo hợp đồng gia công.</li>
+          <li>Tính  toán lượng tồn của từng nguyên phụ liệu dựa vào tổng lượng nhập trừ đi tổng  lượng xuất, không theo nguyên tắc FIFO.</li>
+        </ul>
+<div class="Doanvan">Quy  trình thực hiện thanh khoản hợp đồng trên phần mềm ECUS5_VNACCS bao gồm 3 bước:</div>
+        <ul>
+          <li class="Doanvan">Bước 1: Kiểm tra số liệu trước khi thực  hiện thanh khoản.</li>
+          <li class="Doanvan">Bước 2: Chạy thanh khoản.</li>
+          <li class="Doanvan">Bước 3: In báo cáo thống kê.</li>
+        </ul>
+         <div class="Doanvan">Sau đây là hướng dẫn chi tiết:</div><br />
+        <ul>
+          <li class="Doanvan"><strong><i class="glyphicon glyphicon-tags"></i> Bước  1: Kiểm tra số liệu trước khi thực hiện thanh khoản</strong></li>
+        
+        <div class="Doanvan">Để chạy thanh khoản 1 hợp đồng gia công  trên phần mềm, bạn vào menu <em>&ldquo;Loại hình&quot;</em> chọn chức năng <em>&ldquo;Thanh khoản Hợp đồng gia công theo TT13 (V5)&rdquo;:</em></div>
+          <img src="Images/TLTK-GC_CHITIET_clip_image002.png" /> <br />
+          <div class="Doanvan">Phần mềm sẽ hiện ra danh sách tất cả  những hợp đồng gia công, bạn kich chuột chọn đến hợp đồng cần thanh khoản và  bấm <em>&ldquo;Chọn&rdquo;:</em></div>
+  <img  src="Images/TLTK-GC_CHITIET_clip_image004.jpg" /> <br />
+          <div class="Doanvan">Sau khi chọn hợp đồng cần thanh khoản,  phần mềm sẽ hiện ra màn hình lần thanh khoản của hợp đồng như sau:</div>
+  <img src="Images/TLTK-GC_CHITIET_clip_image006.png" /> <br />
+          <div class="Doanvan">Tại đây, phần mềm sắp xếp các bước để  hoàn thành 1 lần thanh khoản hợp đồng theo tuần tự, và từng bước được đưa vào  các tab thông tin giúp cho người dùng có thể thực hiện được dễ dàng:</div>
+  <img src="Images/TLTK-GC_CHITIET_clip_image008.png" /> <br />
+          <div class="Doanvan">Đầu tiên, bạn kiểm tra lại số liệu của  hợp đồng trước khi chạy thanh khoản, bao gồm:</div>
+  <div class="Doanvan"><strong><em>Số liệu tờ khai nhập:</em></strong> Là thống kê danh sách tờ khai nhập của hợp đồng gia công, trong  đó:</div>
+  <div class="Doanvan"><em>Tổng  số tờ khai nhập được tính thanh khoản:</em> Là danh sách các tờ khai nhập khẩu thuộc hợp đồng gia công bạn  đang cần thanh khoản.</div>
+  <div class="Doanvan"><em>Tổng  số tờ khai chuyển tiếp nhập được tính thanh khoản:</em> Là danh sách các tờ khai nhập chuyển  tiếp nguyên vật liệu từ hợp đồng khác sang hợp đồng bạn đang cần thanh khoản.</div>
+  <div class="Doanvan"><em>Tổng  số tờ khai nhập, tổng số tờ khai chuyển tiếp nhập không được tính thanh khoản:</em> Là danh sách các tờ khai nhập, tờ khai  nhập chuyển tiếp thuộc hợp đồng nhưng không được tính vào thanh khoản, do trạng  thái của tờ khai chưa được khai báo chính thức, hoặc tờ khai đang ở trạng thái  hủy.</div>
+  <div class="Doanvan"><strong><em>Số liệu tờ khai xuất:</em></strong> Thống  kê các thông tin liên quan đến danh sách tờ khai xuất của hợp đồng gia công,  trong đó:</div>
+  <div class="Doanvan"><strong></strong><em>Tổng số tờ khai xuất được tính thanh  khoản:</em> Danh sách tờ khai xuất khẩu sản phẩm của  hợp đồng.</div>
+  <div class="Doanvan"><strong></strong><em>Tổng số tờ khai xuất chuyển tiếp được  tính thanh khoản: </em>Tờ khai xuất chuyển giao nguyên vật liệu  từ hợp đồng này sang hợp đồng khác.</div>
+  <div class="Doanvan"><strong></strong><em>Tổng số bảng kê định mức C/Ư được tính  thanh khoản:</em> Bảng kê nguyên phụ liệu cung ứng khi bạn  mở tờ khai xuất khẩu:</div>
+  <img  src="Images/TLTK-GC_CHITIET_clip_image010.png" /><br />
+          <div class="Doanvan"><em>Tổng số tờ khai xuất, tổng  số tờ khai chuyển tiếp xuất không được tính thanh khoản:</em> Là danh sách các tờ khai xuất, tờ khai  xuất chuyển tiếp thuộc hợp đồng nhưng không được tính vào thanh khoản, do trạng  thái của tờ khai chưa được khai báo chính thức, hoặc tờ khai đang ở trạng thái  hủy.</div>
+  <div class="Doanvan"><em>Tổng số bảng kê định mức  C/Ư không được tính thanh khoản</em>: Danh sách tờ khai xuất không nhập bảng kê nguyên phụ liệu cung  ứng khi mở tờ khai.</div>
+  <div class="Doanvan"><strong><em>Kiểm tra tình trạng định mức cho mã hàng xuất: </em></strong>Cung cấp các thông tin về định mức của  sản phẩm tham gia trong danh sách tờ khai xuất, trong đó:</div>
+  <div class="Doanvan"><strong></strong><em>Tổng số mã hàng đã xuất:</em><strong> </strong>Tổng số sản phẩm xuất  khẩu tham gia trong danh sách tờ khai xuất được tính vào thanh khoản.</div>
+ <div class="Doanvan"> <em>Tổng số mã hàng chưa có  định mức:</em> Danh sách các  sản phẩm tham gia vào tờ khai xuất được tính vào thanh khoản, nhưng chưa được xây  dựng định mức.</div>
+          <div class="Doanvan">Ngoài ra phần mềm còn cung cấp 1 số các  chức năng tiện ích theo dõi trước khi chạy thanh khoản như &ldquo;Xem cân đối trước  khi chạy thanh khoản&rdquo;, &ldquo;Theo dõi nguyên phụ liệu cung ứng&rdquo;… Tùy thuộc vào nhu  cầu quản lý, bạn sử dụng các chức năng cho phù hợp.</div><br />
+        
+          <li class="Doanvan"><strong><i class="glyphicon glyphicon-tags"></i> Bước 2: Chạy thanh khoản</strong></li>
+        
+        <div class="Doanvan">Sau khi kiểm tra số liệu trước khi chạy  thanh khoản, bạn vào tab <em>&ldquo;2.Thực hiện  thanh khoản&rdquo; </em> và bấm<em> &ldquo;Thực hiện thanh khoản&rdquo;</em> để phần mềm  tiến hành chạy thanh khoản hợp đồng gia công:</div>
+          <img src="Images/TLTK-GC_CHITIET_clip_image012.png" /><strong></strong><br />
+          <div class="Doanvan">Phần mềm sẽ tiến hành chạy thanh khoản  hợp đồng gia công, thời gian chạy thanh khoản sẽ phụ thuộc vào lượng dữ liệu  của Doanh nghiệp. Sau khi chạy xong phần mềm sẽ có thông báo:</div>
+          <img src="Images/TLTK-GC_CHITIET_clip_image014.png" /><strong></strong><br /><br />
+       
+          <li class="Doanvan"><strong><i class="glyphicon glyphicon-tags"></i> Bước 3: In báo cáo thống kê</strong></li>
+        
+        <div class="Doanvan">Sau khi chạy thanh khoản xong, bạn vào  mục 3.Báo cáo thanh khoản để in các báo cáo xuất nhập tồn nguyên phụ liệu:</div>
+          <img  src="Images/TLTK-GC_CHITIET_clip_image016.png" /><strong> </strong><br />
+          <div class="Doanvan">Mẫu <em>&ldquo;BC06  – Bảng thanh khoản hợp đồng gia công&rdquo; </em>là mẫu tổng hợp nhập xuất tồn nguyên  vật liệu được dùng nhiều nhất. Ngoài ra, tùy thuộc vào yêu cầu quản lý của  Doanh nghiệp bạn mà xuất các báo cáo khác cho phù hợp.</div>
+  <img  src="Images/TLTK-GC_CHITIET_clip_image018.png" /> <br />
+  <div class="Doanvan"><em>Mẫu  BC06</em></div>
+          <div class="Doanvan">Bên cạnh các mẫu báo cáo tổng hợp, phần  mềm cũng cung cấp các mẫu báo cáo chi tiết của từng nguyên phụ liệu, giúp bạn  kiểm tra được tình hình nhập xuất chi tiết của từng nguyên phụ liệu thuộc hợp  đồng:</div>
+          <img src="Images/TLTK-GC_CHITIET_clip_image020.png" /><br />
+  <img src="Images/TLTK-GC_CHITIET_clip_image022.png" /> <br />
+          <div class="Doanvan">Theo quy định hiện tại  đối với nguyên phụ liệu, máy móc thiết bị dư  thừa sau khi kết thúc hợp đồng gia công thì <em>&ldquo;Chậm  nhất 30 ngày kể từ ngày hợp đồng gia công kết thúc hoặc hết hiệu lực thực hiện,  tổ chức, cá nhân phải hoàn thành việc thực hiện các thủ tục giải quyết nguyên  liệu, vật tư dư thừa, phế liệu, phế phẩm, máy móc, thiết bị thuê, mượn và sản  phẩm gia công&rdquo;. </em>Phần mềm cung cấp các mẫu báo cáo thích hợp với từng phương  án mà Doanh nghiệp lựa chọn để giải quyết:</div>
+          <img src="Images/TLTK-GC_CHITIET_clip_image024.png" /><br />
+  </ul>
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

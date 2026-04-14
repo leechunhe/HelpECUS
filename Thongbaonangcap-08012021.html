@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Thông tin cơ bản TK Nhập</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><center><strong>NHỮNG THAY ĐỔI TRÊN BẢN ECUS5VNACCS 2018</strong><br />(Phiên bản update 03/01/2021)</center><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+        <br /><div class="Doanvan"><strong>Phần mềm <span style="color:#ED7D31">ECUS5</span><span style="color:#4472C4">VNACCS2018</span> - Ngày phát hành 08/01/2021</strong></div>
+        <hr align="left" width="50%" size="1px" color="#CFCDCD" />
+        <div class="Doanvan">Phiên bản cập nhật ngày 03/01/2021 được phát hành ngày 08/01/2021 bổ sung, sửa đổi các chức năng sau:</div>
+<ul style="list-style-type:none" class="Doanvan">
+<strong><li class="Doanvan" id="muc-1">1. Bổ sung chức năng cấu hình bảng quy đổi đơn vị tính số lượng 2.</li></strong></strong>
+<div class="Doanvan">Để thuận tiện cho các doanh nghiệp khi thực hiện nhập vào chỉ tiêu Số lượng (2), ĐVT số lượng (2) theo đúng hướng dẫn tại mục 1.83 và 1.84 phụ lục I TT 39/2018/TT-BTC đối với hàng hóa nhập khẩu và mục 2.72 và 2.73 phụ lục I thông tư 39/2018/TT-BTC đối với hàng hóa xuất khẩu. Phần mềm ECUS5VNACCS bổ sung chức năng cho phép doanh nghiệp:</div>
+<ul style="font-style:italic">
+	<li class="Doanvan">Thiết lập bảng quy đổi ĐVT khai báo và ĐVT theo biểu thuế (hay còn gọi là ĐVT số lượng 2) cho các mã hàng hóa thường dùng.</li>
+    <li class="Doanvan">Phần mềm sẽ tự động tính và điền vào chỉ tiều Số lượng (2) và ĐVT số lượng (2) cho doanh nghiệp (nếu được thiết lập tự động)</li>
+    <li class="Doanvan">Cập nhật thủ công Số lượng (2) và ĐVT số lượng (2) cho toàn bộ hàng hóa theo bảng quy đổi (nếu quên hoặc chưa thiết lập tự động).</li> 
+</ul>
+<div class="Doanvan"><strong><u>Sau đây là phần hướng dẫn chi tiết</u></strong>:</div>
+
+	<li class="Doanvan"><em><strong>a) Thiết lập bảng quy đổi đơn vị tính.</strong></em></li>
+    <ul>
+    	<div class="Doanvan">Để thiết lập bảng quy đổi đơn vị tính cho các mã hàng hóa thường dùng để mở tờ khai, doanh nghiệp vào menu <em>Hệ thống/Thiết lập tham số chương trình</em> màn hình chức năng hiện ra bạn chọn vào mục 1.Mã biểu thuế:</div>
+        <img src="Images/Thongbaonangcap-08012021_001.png" /><br />
+        <div class="Doanvan">Tại đây bạn chọn vào tab <a href="">Đơn vị tính biểu thuế</a> sau đó tiến hành nhập vào cụ thể như sau:</div>
+        <div class="Doanvan"> - <u>Mã HS</u>: Nhập vào mã số hàng hóa.</div>
+        <div class="Doanvan"> - <u>ĐVT khai báo</u>: Nhập vào ĐVT khai báo Hải quan thể hiện trên hóa đơn, hợp đồng....</div>
+        <div class="Doanvan"> - <u>ĐVT biểu thuế</u>: Nhập vào ĐVT chính xác của mã số hàng hóa này theo biểu thuế XNK.</div>
+        <div class="Doanvan"> - <u>Tỷ lệ QĐ</u>: Nhập vào tỷ lệ quy đổi giữa ĐVT khai báo và ĐVT biểu thuế, mục đích để phần mềm tự động tính Số lượng (2) tương ứng khi doanh nghiệp mở tờ khai. Ví dụ, ĐVT khai báo là TNE (Tấn), ĐVT biểu thuế là KGM (Kilogam) thì tỷ lệ quy đổi bạn nhập vào là 1000 (tức là 1 TNE = 1000 KGM).</div>
+    
+    <div class="Doanvan">Sau khi thiết lập xong danh sách bảng quy đổi nếu muốn phần mềm tự động quy đổi và điền vào Số lượng 2, ĐVT số lượng 2 sau khi đã nhập vào Số lượng và ĐVT số lượng. Bạn đánh dấu tích chọn vào mục như hình sau:</div>
+    <img src="Images/Thongbaonangcap-08012021_002.png" /><br />
+    
+    </ul>
+    <li class="Doanvan"><em><strong>b) Phần mềm sẽ tự động tính và điền vào Số lượng 2, ĐVT số lượng 2 sau khi người dùng nhập vào chỉ tiêu Số lượng, ĐVT số lượng 1.</strong></em></li>
+    <ul>
+    	<div class="Doanvan">Sau khi đã thiết lập bảng quy đổi và đánh dấu vào lựa chọn tự động quy đổi, lúc bạn nhập dữ liệu cho danh sách hàng hóa tờ khai, phần mềm sẽ tự động tính và điền vào chỉ tiêu Số lượng 2, ĐVT số lượng 2. (Lưu ý: Bạn phải nhập chính xác mã HS và ĐVT khai báo như trong bảng quy đổi thì phần mềm mới tự động tính).</div>
+        <div class="Doanvan">Ví dụ, với mã số hàng hóa là 63061200, ĐVT khai báo là HKGM (Tạ), Số lượng 1 là 150 thì phần mềm sẽ tự tính Số lượng 2 = 150 * 100 (100 là tỷ lệ quy đổi bạn đã thiết lập):</div>
+    	<img src="Images/Thongbaonangcap-08012021_003.png" /><br />
+    </ul>
+    <li class="Doanvan"><em><strong>c) Cập nhật Số lượng 2, ĐVT số lượng 2 thủ công theo bảng quy đổi.</strong></em></li>
+    <ul>
+    	<div class="Doanvan">Trong trường hợp bạn đã thiết lập bảng quy đổi nhưng chưa đánh dấu tích chọn vào mục <strong>Tự động quy đỏi số lượng 2 và đơn vị tính 2 khi lập tờ khai</strong>. Sau khi nhập xong danh sách hàng hóa cho tờ khai, bạn nhấn vào mục <em>Tiện tích</em> sau đó chọn mục <em>4.Cập nhật [Số lượng 2, ĐVT số lượng 2] theo bảng quy đổi</em>:</div>
+        <img src="Images/Thongbaonangcap-08012021_004.png" /><br />
+        <div class="Doanvan">Phần mềm sẽ hiện thông báo để bạn xác nhận:</div>
+        <img src="Images/Thongbaonangcap-08012021_004_2.png" /><br />
+        <div class="Doanvan">Kết quả là các dòng hàng có Mã HS và Số lượng 1, ĐVT số lượng 1 đã được thiết lập trong bảng quy đổi sẽ được phần mềm tự động tính và điền vào chỉ tiêu Số lượng 2, ĐVT số lượng 2:</div>
+         <img src="Images/Thongbaonangcap-08012021_005.png" /><br />
+    </ul>
+     <li class="Doanvan"><em><strong>d) Các tiện ích nhập Số lượng 2 (trong trường hợp chưa thiết lập bảng quy đổi)</strong></em></li>
+     <ul>
+     	<div class="Doanvan">Trong trường hợp chưa thiết lập bảng quy đổi, phần mềm cũng hỗ trợ doanh nghiệp một số cách để lấy nhanh Số lượng 2 (Doanh nghiệp phải tự nhập ĐVT số lượng 2).</div>
+        <div class="Doanvan">Trong trường hợp Số lượng (1) và Số lượng (2) khác nhau, và chưa được thiết lập trong bảng quy đổi doanh nghiệp bắt buộc phải tự nhập Số lượng (2) bằng cách nhập thủ công hoặc nhập từ file excel.</div>
+        <div class="Doanvan">Trường hợp Số lượng (1) và (2) là giống nhau thì khi nhập liệu doanh nghiệp nhập vào Số lượng (1) sau đó nhấn vào link "Lấy từ số lượng 1" để đưa vào Số lượng (2)</div>
+        <img src="Images/Thongbaonangcap-16112020_002.png" /><br />
+        <div class="Doanvan">Hoặc khi nhập dữ liệu trên danh sách, bạn chỉ cần nhập vào Số lượng (1) sau đó cập nhật đồng loạt cho Số lượng (2) bằng cách nhấn vào nút <strong>Tiện ích</strong> và chọn 1 trong 2 lựa chọn sau:</div>
+        <img src="Images/Thongbaonangcap-16112020_003.png" /><br />
+        
+        	<li class="Doanvan"><strong>Cập nhật [Số lượng 2] bằng [Số lượng 1] (Tất cả)</strong>: Bạn chọn lựa chọn này trong trường hợp muốn cập nhật Số lượng (2) của tất cả các dòng hàng trên tờ khai về giống với Số lượng (1).</li>
+            <li class="Doanvan"><strong>Cập nhật [Số lượng 2] (Chưa có) bằng [Số lượng 1]</strong>: Bạn chọn lựa chọn này trong trường hợp muốn cập nhật Số lượng (2) bằng Số lượng (1) cho các dòng hàng trên tờ khai có Số lượng (2) chưa được nhập. Các dòng hàng đã có dữ liệu Số lượng (2) sẽ không bị thay đổi.</li>
+     </ul> 
+     <strong><li class="Doanvan" id="muc-1">2. Sửa lại cách tính cảnh báo thời hạn thanh khoản hợp đồng</li></strong></strong>   
+     <div class="Doanvan">Hiện nay phần mềm đang đưa ra cảnh báo thời hạn thanh khoản HĐGC là 45 ngày, kể từ ngày kết thúc hợp đồng. Điều này không đúng với quy định tại điều 64, Thông tư 39 <em>"Chậm nhất 30 ngày kể từ ngày hợp đồng gia công kết thúc hoặc hết hiệu lực thực hiện, tổ chức, cá nhân phải hoàn thành việc thực hiện các thủ tục giải quyết nguyên liệu, vật tư dư thừa, phế liệu, phế phẩm, máy móc, thiết bị thuê, mượn và sản phẩm gia công theo quy định tại khoản 2 Điều này."</em></div>
+     <div class="Doanvan">Như vậy theo cách tính mới thì <strong>Thời hạn thanh khoản = Ngày kết thúc HĐ + 30 ngày</strong></div>
+     <img src="Images/Thongbaonangcap-08012021_006.png" /><br />
+     <strong><li class="Doanvan" id="muc-1">3. Tự động lấy mã Hải quan khai báo chứng từ đính kèm theo mã Hải quan trên tờ khai</li></strong></strong>  
+     <div class="Doanvan">Nâng cấp phần khai báo chứng từ đính kèm điện tử để phần mềm tự động lấy mã Hải quan khai báo chứng từ theo mã Hải quan trên tờ khai mà doanh nghiệp đang cần khai chứng từ đính kèm. Việc này giúp cho việc khai báo của các doanh nghiệp làm đại lý khai báo cho nhiều doanh nghiệp, tới nhiều chi cục Hải quan khác nhau (sẽ không phải thay đổi lại mã Hải quan trong phần thiết lập thông số khai báo).</div>
+     <img src="Images/Thongbaonangcap-08012021_007.png" /><br />
+     <strong><li class="Doanvan" id="muc-1">4. Sửa lỗi ghép mã hàng vào tên hàng trên tờ khai kinh doanh khi thực hiện IDB/EDB</li></strong></strong>  
+     <div class="Doanvan">Liên quan đến nhóm loại hình KD trên tờ khai, doanh nghiệp có nhập Mã Hàng trên tờ khai để quản lý. Khi khai báo bước IDA/EDA thì Tên hàng vẫn đúng (nhập sao thì vẫn đúng như vậy). Nhưng nếu  gọi IDB/EDB về và khai báo lại bước IDA/EDA thì phần mềm tự động ghép mã hàng vào tên hàng (MAHANG#&TENHANG). Lỗi đã được khắc phục trong phiên bản update này.</div>
+<img src="Images/Thongbaonangcap-08012021_008.png" /><br />
+
+     <strong><li class="Doanvan" id="muc-1">5. Bổ sung danh sách cấu hình cột cho form nhập dữ liệu khai báo chốt tồn GC/SXXK</li></strong></strong> 
+     <div class="Doanvan">Sửa lỗi nhập danh sách hàng cho khai báo chốt tồn GC/SXXK từ file excel không có các cột cấu hình.</div>
+     <img src="Images/Thongbaonangcap-08012021_009.png" /><br />
+     <strong><li class="Doanvan" id="muc-1">6. Và sửa lỗi, nâng cấp một số tính năng khác</li></strong></strong> 
+     <ul>
+     	<li class="Doanvan">Bổ sung số lượng 2, đơn vị tính 2 vào báo cáo: Báo cáo tổng hàng hóa xuất nhập khẩu; Báo cáo chi tiết hàng hóa xuất nhập khẩu.
+</li>
+        <li class="Doanvan">Sửa lỗi đối với trường hợp doanh nghiệp mở tờ khai chuyển tiêu thụ nội địa từ nguồn tạm nhập (A21), đã thông quan nhưng trong báo cáo XNT Hàng hóa tờ khai tạm nhập/tái xuất lại không tính thêm số lượng loại hình tờ khai này, để trừ lùi đúng số lượng của doanh nghiệp.</li>
+        <li class="Doanvan">Sửa lỗi khi tìm tiêu chí số hợp đồng hoặc các tiêu chí khác trong danh sách lần khai báo sửa, hủy định mức GC/SXXK/CX không có nút tích Lọc hoặc tìm kiểm, để tìm kiếm ra điều kiện cần tìm.
+</li>
+        <li class="Doanvan">Sửa lỗi in phiếu XNK trong module Sổ quyết toán và Kế toán kho, bỏ số 0 vô nghĩa ở phần lẻ thập phân (lúc trước phần mềm hiển thị cố định 6 số lẻ thập phân)</li>
+        <li class="Doanvan">Sửa lỗi thiết lập cột hiển thị trên tờ khai xuất khẩu. Khi thiết lập cột hiển thị trên tờ khai xuất khẩu, người dùng đánh dấu chọn vào mục <em>Áp dụng cho tất cả các tờ khai</em> nhưng khi copy tờ khai thì phần mềm tự động bỏ phần tích chọn này đi trên tờ khai mới.</li>
+        <li class="Doanvan">Sửa lỗi khi thực hiện import từ excel chỉ tiêu trị giá và trị giá dự kiến trên tờ khai danh mục hàng miễn thuế TEA, mà trên file excel ô trị giá để USD 1234.45 thì import vào phần mềm sẽ nhảy = 0</li>
+		<li class="Doanvan">Ngày khai báo của TIA đang nhảy là ngày đăng ký tờ khai. Ví dụ: tờ khai tạm nhập đăng ký ngày 01/10/2020. Đến ngày 30/10/2020 DN có khai bổ sung TIA. Thì trên form danh sách tờ khai TIA, chỉ tiêu ngày khai báo phải thể hiện là 30/10/2020 nhưng phần mềm đang để là 01/10/2020</li>
+        <li class="Doanvan">Sửa lỗi phần khai báo sửa danh mục NPL, SP, định mức. Doanh nghiệp tự chuyển trạng thái thành chưa khai báo, thì trạng thái của NPL, sp, định mức trở về nhập mới. Sau đó Doanh nghiệp chuyển lại đã duyệt của lần khai báo sửa đó thì trạng thái NPL, SP, định mức phần mềm không chuyển đã duyệt lại. (Sxxk, chế xuất đều bị lỗi như trên)</li>
+        <li class="Doanvan">Sửa lỗi khi xem cân đối trước khi chạy thanh khoản, ra file excel thì cột đơn vị tính không có</li>
+
+     </ul>
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Thông tin cơ bản TK Nhập</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><strong>HƯỚNG DẪN CHỨC NĂNG TÔI ƯU CSDL</strong><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+        
+        <div class="Doanvan">Khi thời gian sử dụng phần  mềm tăng lên cùng với tần suất khai báo nhiều tờ khai, dung lượng cơ sở dữ liệu  phần mềm sẽ tăng lên đáng kể do:</div>
+        <ul>
+          <li class="Doanvan"><em>Dữ liệu về khai báo chứng từ điện tử của tờ  khai.</em></li>
+          <li class="Doanvan"><em>Dữ liệu về các thông điệp thông báo của tờ  khai do cơ quan Hải quan trả về.</em></li>
+          <li class="Doanvan"><em>Dữ liệu về các lịch sử khai báo, thao tác dữ  liệu được phần mềm lưu lại.</em></li>
+        </ul>
+        <div class="Doanvan">Để tối ưu lại cơ sở dữ liệu,  làm giảm dung lượng lưu trữ, bạn cần thực hiện chạy chức năng tối ưu cơ sở dữ  liệu do phần mềm cung cấp. Khi thực hiện, phần mềm sẽ:</div>
+        <ul>
+          <li class="Doanvan"><em>Nén dữ liệu dạng tệp tin đính kèm của những tờ  khai đã hoàn thành (đã thông quan), giúp thu nhỏ kích thước của dữ liệu.</em></li>
+          <li class="Doanvan"><em>Thực hiện xóa các thông điệp gửi đi của tờ  khai VNACCS, việc xóa này không làm mất các dữ liệu về tờ khai, dữ liệu về các  thông điệp phông luồng, thông quan, chứng từ lệ phí và thuế của tờ khai.</em></li>
+          <li class="Doanvan"><em>Thực hiện xóa tất cả các lịch sử, nhật ký đăng  nhập và sử dụng chương trình của người sử dụng, bạn sẽ không thể xem lại lịch sử  của người sử dụng tính đến thời điểm thực hiền xóa trở về trước.</em></li>
+          <li class="Doanvan"><em>Thực hiện đặt lại chỉ mục cho các bảng dữ liệu,  giúp chương trình chạy nhanh hơn mà không làm ảnh hưởng đến dữ liệu khai báo của  doanh nghiệp.</em></li>
+          <li class="Doanvan"><em>Thực hiện xóa các dữ liệu rác dư thừa trong cơ  sở dữ liệu để tối ưu và thu nhỏ kích thước, đây là chức năng từ động của hệ quản  trị cơ sở dữ liệu SQL, khi thực hiện sẽ không làm mấy dữ liệu khai báo của  doanh nghiệp.</em></li>
+        </ul>
+        <div class="Doanvan">Để thực hiện, bạn vào menu <strong>Hệ thống</strong> chọn mục <em> Database Managerment  (Tối ưu CSDL)</em>:</div>
+          <img  src="Images/ToiUU_CSDL_clip_image002.png" /><br />
+          <div class="Doanvan">Chức năng thiết lập hiện  ra như sau:</div>
+  <img  src="Images/ToiUU_CSDL_clip_image004.png" /><br />
+          <div class="Doanvan">Tại đây phần mềm sẽ hiển  thị thông tin về hệ quản trị CSDL bạn đang dùng, thông tin về dung lượng 2 file  cơ sở dữ liệu</div>          
+          <div class="Doanvan">Bạn chuyển sang tab <strong><em>Tối  ưu cơ sở dữ liệu</em></strong> để xem và thực hiện:</div>
+  <img  src="Images/ToiUU_CSDL_clip_image006.png" /><br />
+          <div class="Doanvan">Tại đây có 5 lựa chọn để bạn  chọn, thông thường phần mềm đã đánh dấu tất cả các mục, nếu bạn không muốn thực  hiện mục nào thì bỏ chọn ở mục đó. Cuối cùng nhấn vào nút <strong><em>Thực hiện tối ưu</em></strong> và chờ đến khi có thông báo thành công (thời gian thực hiện nhanh hay chậm tùy  thuộc vào kích thước cơ sở dữ liệu).</div>
+  <img  src="Images/ToiUU_CSDL_clip_image008.png" /><br />
+  
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

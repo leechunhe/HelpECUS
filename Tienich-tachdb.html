@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Chức năng tách CSDL</title><!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><strong>HƯỚNG DẪN CHỨC NĂNG LƯU CHỨNG TỪ ĐÍNH KÈM <br /> (Tách rời với CSDL chương trình)</strong><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+								  <p class="Doanvan">Chức năng tách CSDL được sử dụng cho các doanh nghiệp có lượng chứng từ đính kèm khai báo tương đối nhiều, dẫn đến cơ sở dữ liệu phần mềm nhanh chóng bị đầy. Để giải quyết vấn đề này, phần mềm ECUS5VNACCS đã bổ sung chức năng cho phép người dùng thiết lập cách thức lưu các file chứng từ đính kèm này tách rời ra khỏi CSDL đang sử dụng.</p>
+                                  <div class="Doanvan">Có 2 cách để doanh nghiệp lựa chọn:</div>
+                                  <ul>
+                                    <div class="Doanvan"><li><em>Thiết lập để lưu file chứng từ đính kèm ra thư mục trên máy chủ CSDL.</em></li></div>
+                                    <div class="Doanvan"><li><em>Thiết lập để lưu chứng từ đính kèm sang một CSDL mới hoàn toàn (tách rời với CSDL phần mềm đang sử dụng).</em></li></div>
+                                    <img src="Images/Tienich-tachdb-001.png" /><br />
+                                   
+                                  </ul>
+                                  <div class="Doanvan">Để sử dụng, doanh nghiệp truy cập vào menu <strong>Hệ thống</strong> / <strong>Thiết lập thông số chương trình</strong>:</div>
+                                  <img src="Images/Tienich-tachdb-002.png" /><br />
+                                  <div class="Doanvan" style="background-color:#7FBBF3"><strong>Lưu ý</strong>: Bạn chỉ nên sử dụng chức năng này nếu lượng khai báo chứng từ đính kèm lớn, gây ra tình trạng phần mềm bị chậm hoặc báo đầy dữ liệu (đối với phiên bản SQL express giới hạn dung lượng dữ liệu được sử dụng tối đa 10GB).</div>
+                                    
+                                    
+                                    <p class="Doanvan">Tại màn hình thiết lập, bạn nhấn chọn mục <strong>Thiết lập chứng từ đính kèm</strong>:</p>
+                                    <img src="Images/Tienich-tachdb-001.png" /><br /><br />
+                                    <div class="Doanvan" style="background-color:#F5B14F"><strong>Cách 1</strong>: Thiết lập để lưu file chứng từ đính kèm vào thư mục</div>
+                                    <div class="Doanvan">Với cách này, dữ liệu chứng từ đính kèm sẽ được lưu dưới dạng tệp dữ liệu (được mã hóa) trong thư mục cùng với thư mục chứa CSDL phần mềm ECUS đang sử dụng + DBFile (thường sẽ là <strong>D:\SQLDatas\DBFile</strong>).</div>
+                                    <div class="Doanvan">Để sử dụng cách lưu này, bạn chỉ cần đánh dấu tích chọn vào <em>Thực hiện lưu dữ liệu đính kèm trong thư mục trên máy chủ chứa dữ liệu ECUS (Thư mục lưu trữ sẽ được phần mềm tự động thiết lập)</em>.</div>
+                                    <div class="Doanvan" style="background-color:#7FBBF3"><strong>Lưu ý</strong>: Lựa chọn này chỉ được sử dụng nếu phiên bản SQL của bạn đang sử dụng từ SQL 2005 trở lên và không phải bản Cloud (SQL Azure).</div>
+                                    <img src="Images/Tienich-tachdb-003-0.png" /><br />
+                                    <div class="Doanvan">Sau khi thiết lập, mỗi khi khai báo chứng từ đính kèm phần mềm sẽ lưu thành file dưới dạng mã hóa. </div>
+                                    <img src="Images/Tienich-tachdb-003.png" /><br />
+                                    <div class="Doanvan">Bạn vẫn có thể xem file thông qua phần mềm như bình thường:</div>
+                                    <img src="Images/Tienich-tachdb-004.png" /><br />
+                                    <div class="Doanvan" style="color:red"><strong>Doanh nghiệp không được xóa thư mục hoặc đổi tên thư mục lưu file, nếu bạn đổi tên hoặc xóa thì đồng nghĩa với việc bạn không thể xem lại file chứng từ đính kèm của tờ khai trên phần mềm</strong>.</div>
+                                    <div class="Doanvan" style="background-color:#F5B14F"><strong>Cách 2</strong>: Thiết lập để lưu dữ liệu chứng từ đính kèm vào CSDL riêng (Tách ra khỏi dữ liệu tờ khai)</div>
+                                    <div class="Doanvan"> Với lựa chọn này, phần mềm sẽ tự động sẽ tự động tạo mới một CSDL dành riêng cho việc lưu các chứng từ đính kèm. Tên CSDL mới này được phần mềm đặt theo cú pháp: <strong>DBFile_YYYYMMdd</strong> (trong đó YYYYMMdd là ngày bạn thực hiện thiết lập lựa chọn này).</div>
+                                    <div class="Doanvan">Để sử dụng cách lưu này, bạn đánh dấu tích chọn vào mục <strong>Thực hiện lưu dữ liệu chứng từ đính kèm vào cơ sở dữ liệu riêng (Tách ra khỏi dữ liệu tờ khai)</strong>. </div>
+                                    <img src="Images/Tienich-tachdb-005.png" /><br />
+                                    <div class="Doanvan">Bạn có thể thiết lập giới hạn dung lượng tối đa cho cơ sở dữ liệu đính kèm, phần mềm để mặc định là 50GB (khi đạt đến dung lượng tối đa, phần mềm sẽ tạo ra một CSDL mới để tiếp tục lưu trữ).</div>
+                                    <div class="Doanvan">Nhấn nút <strong>Ghi</strong> để hoàn tất.</div>
+                                    <img src="Images/Tienich-tachdb-006.png" /><br />
+                                    <div class="Doanvan">Lúc này, nếu bạn mở SQL Server Management sẽ thấy CSDL mà phần mềm vừa tạo.</div>
+                                    <img src="Images/Tienich-tachdb-007.png" /><br /><br />
+                                    <hr width="60%" align="left" color="#92CFF5"/><br />
+                                    <div class="Doanvan"><strong>Một số lưu ý khi sử dụng chức năng lưu chứng từ đính kèm</strong>:</div>
+                                    <ul style="list-style:circle">
+                                    	<li class="Doanvan">Chức năng này phù hợp với các doanh nghiệp có lượng chứng từ đính kèm tương đối nhiều hoặc doanh nghiệp đang sử dụng phiên bản SQL express miễn phí có dung lượng bị giới hạn tối đa 10GB.</li>
+                                        <li class="Doanvan">KHÔNG được đổi tên thư mục, xóa hoặc thay đổi vị trí thư mục DBFile trong suốt quá trình sử dụng (đối với lựa chọn lưu chứng từ trong thư mục).</li>
+                                        <li class="Doanvan">KHÔNG được đổi tên hoặc xóa CSDL DBFile do phần mềm tạo ra.</li>
+                                    </ul>
+                                    <div class="Doanvan">Nếu có vướng mắc cần hỗ trợ trong quá trình sử dụng phần mềm, doanh nghiệp vui lòng liên hệ trung tâm hỗ trợ khách hàng trên toàn quốc.</div>
+                                    <div class="Doanvan"><strong>Hotline</strong>:</div>
+                                    <ul style="list-style:circle">
+                                    	<li class="Doanvan" style="font-size:24px">Miền Bắc: 1 9 0 0 4 7 6 7</li>
+                                        <li class="Doanvan" style="font-size:24px">Miền Trung - Nam: 1 9 0 0 4 7 6 8</li>
+                                    </ul>
+							  <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

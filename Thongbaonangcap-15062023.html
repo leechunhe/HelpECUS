@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Thông tin cơ bản TK Nhập</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><center><strong>NHỮNG THAY ĐỔI TRÊN BẢN ECUS5VNACCS 2018</strong><br />(Phiên bản update 03/06/2023)</center><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+        <br /><div class="Doanvan"><strong>Phần mềm <span style="color:#ED7D31">ECUS5</span><span style="color:#4472C4">VNACCS2018</span> - Ngày phát hành 20/06/2023</strong></div>
+        <hr align="left" width="50%" size="1px" color="#CFCDCD" />
+        <div class="Doanvan">Phiên bản cập nhật ngày 03/06/2023 được phát hành ngày 20/06/2023 bổ sung, sửa đổi các chức năng sau:</div>
+<ul style="list-style-type:none" class="Doanvan">
+<li class="Doanvan" style="background-color:#72C4FF"><strong>1. Giữ nguyên Trị giá tính thuế (tự nhập) khi gọi IDB.</strong></li>
+<div class="Doanvan">Đối với các dòng hàng F.O.C có Trị giá tính thuế do người dùng tự nhập, khi thực hiện gọi tờ khai bằng nghiệp vụ IDB, giá trị chỉ tiêu Trị giá tính thuế (tự nhập) sẽ vẫn được giữ nguyên, tránh trường hợp doanh nghiệp phải nhập lại. (Đối với hàng hóa F.O.C được xác định bởi bộ 3 chỉ tiêu: Đơn giá, mã nguyên tệ đơn giá và mã đơn vị tính đơn giá được để trống):</div>
+<img src="Images/Thongbaonangcap-15062023_001.png" /><br /><br />
+
+<li class="Doanvan" id="muc-1" style="background-color:#72C4FF"><strong>2. Sửa lại chuẩn làm tròn số liệu của danh mục Nguyên phụ liệu hợp đồng gia công</strong></li>
+<div class="Doanvan">Hiện nay, tại ô số lượng đăng ký của danh mục Nguyên phụ liệu hợp đồng gia công, phần mềm đang tự làm tròn số lẻ thập phân, ví dụ: 10.63 được làm tròn thành 11.00. Bản update mới đã sửa lại để giữ đúng những số lẻ (10.63):</div>
+<img src="Images/Thongbaonangcap-15062023_002.png" /><br /><br />
+
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>3. Hiển thị ghi chú khi in nhiều định mức:</strong></li>
+<div class="Doanvan">Khi nhập định mức đối với các NPL chính, doanh nghiệp có nhập vào chỉ tiêu ghi chú và khi in từng định mức trên file excel vẫn hiển thị nội dung của ghi chú đã nhập. Nhưng khi dùng chức năng <strong>in nhiều định mức</strong> thì chỉ tiêu ghi chú lại không có. Bản update mới này đã sửa và cho hiển thị nội dung ghi chú khi in nhiều định mức:</div>
+<img src="Images/Thongbaonangcap-15062023_003.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>4. Chuẩn hóa đồng bộ độ dài của Tên hàng trên tờ khai AMA.</strong></li>
+<div class="Doanvan">Chuẩn hóa đồng bộ lại độ dài tối đa cho phép của chỉ tiêu Tên hàng trên tờ khai AMA, đối với trường hợp nhập trên danh sách lưới và nhập chi tiết.</div>
+<img src="Images/Thongbaonangcap-15062023_004.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>5. Bỏ thiết lập chỉ tiêu Tỷ lệ hao hụt khi nhập định mức từ file Excel.</strong></li>
+<div class="Doanvan">Khi doanh nghiệp nhập định mức từ file excel (F6), phần mềm đã bỏ thiết lập chỉ tiêu tỉ lệ hao hụt:</div>
+<img src="Images/Thongbaonangcap-15062023_005.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>6. Băt buộc thiết lập chỉ tiêu Định danh LSX khi nhập định mức từ file Excel.</strong></li>
+<div class="Doanvan">Khi doanh nghiệp nhập định mức từ file excel (F6), phần mềm đã bắt buộc thiết lập chỉ tiêu Định danh LSX, tránh trường hợp nhập được vào nhưng khai lên bị Hải quan từ chối, gây mất thời gian cho doanh nghiệp:</div>
+<img src="Images/Thongbaonangcap-15062023_006.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>7. Cho phép cập nhật thông tin danh mục đã có từ file excel.</strong></li>
+<div class="Doanvan">Khi đã có danh mục nguyên phụ liệu, sản phẩm...doanh nghiệp muốn cập nhật lại thông tin cho một số mã hàng (tên, đvt hoặc hs). Bản nâng cấp này, phần mềm cho phép người dùng thực hiện cập nhật thông tin bằng file excel.<br /> Để thực hiện, doanh nghiệp truy nhập vào menu Tiện ích / Cập nhật thông tin danh mục:</div>
+<img src="Images/Thongbaonangcap-15062023_006.1.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>8. Bổ sung chức năng F11 - xóa tất cả dòng hàng cho danh mục NPL HĐGC.</strong></li>
+<div class="Doanvan"> Phần mềm bổ sung chức năng phím tắt F11 - Xóa tất cả trong danh sách Nguyên phụ liệu của HĐGC, cho phép người dùng xóa toàn bộ danh sách đang nhập mới để có thể import lại, tránh mất thời gian khi phát hiện sai sót và phải xóa thủ công từng mã như hiện nay:</div>
+<img src="Images/Thongbaonangcap-15062023_006.2.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>9. Bổ sung điều kiện tìm kiếm tờ khai theo Luồng.</strong></li>
+<div class="Doanvan"> Trong danh sách tờ khai hải quan, doanh nghiệp đã có thể tìm kiếm tờ khai theo luồng:</div>
+<img src="Images/Thongbaonangcap-15062023_006.3.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>10. Sửa lỗi xảy ra khi lấy mã biểu thuế cho HS.</strong></li>
+<div class="Doanvan"> Nếu trong thông tin đăng ký sử dụng của doanh nghiệp có dấu &amp; trong phần địa chỉ thì khi nhập HS cho dòng hàng và lấy biểu thuế sẽ hiện ra thông báo lỗi, bản update mới này đã được khắc phục:</div>
+<img src="Images/Thongbaonangcap-15062023_006.4.png" /><br /><br />
+
+<div class="Doanvan"><strong>Sửa bổ sung các lỗi về khai báo thu phí</strong>.</div>
+<li class="Doanvan" style="background-color:#72C4FF"><strong>1. Khắc phục tình trạng sử dụng CKS có MST khác để khai báo.</strong></li>
+<div class="Doanvan">Trên hệ thống thu phí TP. HCM, khi doanh nghiệp sử dụng thiết bị CKS có MST khác với MST doanh nghiệp đang khai báo tờ khai nộp phí (đồng thời MST trên thiết bị CKS cũng không thuộc loại tài khoản đại lý) phần mềm sẽ chặn không cho khai báo :</div>
+<img src="Images/Thongbaonangcap-15062023_007.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>2. Thay đổi cơ chế khi đối với doanh nghiệp bị cưỡng chế.</strong></li>
+<div class="Doanvan">Trên hệ thống thu phí TP. HCM, khi doanh nghiệp bị cưỡng chế và nhận được thông báo cưỡng chế từ phần mềm, đối với các doanh nghiệp có hình thức cưỡng chế là 5 - Cưỡng chế tất cả các trường hợp, sẽ không thể tiếp tục khai báo tờ khai nộp phí. Các hình thức cưỡng chế còn lại, doanh nghiệp vẫn tiếp tục khai báo được tờ khai nộp phí bình thường:</div>
+<img src="Images/Thongbaonangcap-15062023_008.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>Ngoài ra, còn có nhiều mục sửa đổi bổ sung khác nhằm nâng cao hiệu suất và tạo sự thuận lợi cho người dùng...</strong></li>
+<div class="Doanvan">...</div>
+</ul>
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Thông tin cơ bản TK Nhập</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><center><strong>HƯỚNG DẪN CHI TIẾT</strong></center><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+        <br /><div class="Doanvan"><strong>Chức năng hóa đơn điện tử tích hợp trên phần mềm ECUS5VNACCS</strong></div>
+        <hr align="left" width="50%" size="1px" color="#CFCDCD" />
+        <div class="Doanvan"><a href="Thongbaonangcap-01082022.html">
+                                   <button type="button" class="btn btn-default btn-sm">
+          							<span class="glyphicon glyphicon-menu-left"></span>Quay trở lại thông báo
+       							   </button></a>
+                                   </div>
+<ul style="list-style-type:none" class="Doanvan">
+<li style="background-color:#72C4FF; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-size:16px; margin-top:10pt; margin-bottom:10pt; line-height:24pt; text-align:justify"><strong>&nbsp;1. Giới thiệu chức năng</strong></li>
+<div class="Doanvan">Chức năng hóa đơn tích hợp trên phần mềm ECUS5VNACCS hỗ trợ doanh nghiệp tạo dữ liệu Hóa đơn GTGT, Phiếu xuất kho nội bộ hoặc Hóa đơn bán hàng vào khu Phi thuế quan từ thông tin tờ khai xuất khẩu và gửi trực tiếp tới hệ thống hóa đơn e-invoice để ký số, xuất hóa đơn thông qua một Service. Đồng thời, chức năng giúp doanh nghiệp:</div>
+<ul style="list-style:square" class="Doanvan">
+	<li class="Doanvan">Giảm tải cho người kê khai Hải quan và bộ phận kế toán do không phải thực hiện bước nhập dữ liệu hóa đơn thủ công.</li>
+    <li class="Doanvan">Đảm bảo tính chính xác về mặt số liệu, các thông tin được lấy từ tờ khai xuất khẩu.</li>
+    <li class="Doanvan">Kết nối linh hoạt đến hệ thống hóa đơn thông qua địa chỉ service.</li>
+</ul>
+<div class="Doanvan"><u><strong>Các bước thực hiện đơn giản, bao gồm các bước sau đây</strong></u>:</div>
+<ul style="list-style:square" class="Doanvan">
+	<li class="Doanvan"><strong>Bước 1</strong>: Thiết lập thông số kết nối, tích hợp hóa đơn điện tử.</li>
+    <li class="Doanvan"><strong>Bước 2</strong>: Tạo và khai báo tờ khai xuất khẩu.</li>
+    <li class="Doanvan"><strong>Bước 3</strong>: Tạo hóa đơn, phiếu xuất nội bộ và gửi sang hệ thống hóa đơn e-invoice.</li>
+    <li class="Doanvan"><strong>Bước 4</strong>: Người dùng trên hệ thống hóa đơn e-invoice kiểm tra thông tin hóa đơn đã được đồng bộ để thực hiện việc xuất hóa đơn, ký số và gửi đến cơ quan thuế.</li>
+</ul>
+<div class="Doanvan"><u>Sơ đồ hoạt động hệ thống</u>:</div>
+<img src="Images/Thongbaonangcap-01082022_001.png" /><br /><br />
+
+
+
+<li style="background-color:#72C4FF; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-size:16px; margin-top:10pt; margin-bottom:10pt; line-height:24pt; text-align:justify"><strong>&nbsp;2. Hướng dẫn chi tiết các bước thực hiện</strong></li>
+<div class="Doanvan"><strong>Bước 1</strong>: Thiết lập thông số kết nối, tích hợp hóa đơn điện tử</div>
+<div class="Doanvan">Bước này nhằm thiết lập service kết nối đến hệ thống hóa đơn e-invoice của doanh nghiệp. Để thực hiện bạn truy cập menu <strong>Hệ thống /Thiết lập thông số chương trình</strong> sau đó chọn mục <strong>Tích hợp hóa đơn điện tử</strong>:</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_002.png" /><br /><br />
+<div class="Doanvan">Tiến hành thiết lập từng mục cụ thể dưới đây.</div>
+<div class="Doanvan"><strong>a) <u>Thông số Service tích hợp</u></strong>: Các thông số này do hệ thống hóa đơn e-invoice của đơn vị cung cấp bao gồm các thông tin: <em>Địa chỉ webservice, Mã đơn vị, Mã bảo mật</em>.</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_003.png" /><br /><br />
+<div class="Doanvan"><strong>b) <u>Cấu hình XML</u></strong></div>
+<div class="Doanvan">Chức năng này dùng để cấu hình trường dữ liệu tương ứng từ tờ khai ECUS với bảng DHOADON cho  3 loại hóa đơn GTGT, hóa đơn phi thuế quan và phiếu xuất kho nội bộ. </div>
+<img width="996" src="Images/Thongbaonangcap-01082022_004.png" /><br /><br />
+<div class="Doanvan">Các thông số đã được thiết lập sẵn, doanh nghiệp chỉ cần cấu hình lại thông tin mẫu số hóa đơn cho phù hợp với mẫu của doanh nghiệp đang sử dụng.</div>
+<div class="Doanvan">Để thiết lập cho loại hóa đơn nào thì bạn chọn trong danh sách loại hóa đơn, sau đó tìm kiếm các cột cần thiết lập (ví dụ tìm kiếm cột Ký hiệu hóa đơn GTGT):</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_005.png" /><br /><br />
+<div class="Doanvan">Sau khi thiết lập xong cho mỗi loại hóa đơn bạn nhấn nút Ghi để lưu lại.</div>
+<div class="Doanvan"><strong>c) <u>Thông số tự động lấy thông tin hóa đơn</u></strong></div>  
+<div class="Doanvan">Mục này dùng để thiết lập thời gian phần mềm tự động lấy thông tin hóa đơn đã xuất từ hệ thống hóa đơn và cập nhật về phần mềm ECUS. Để thiết lập bạn đánh dấu tích chọn vào mục <strong>Tự động cập nhật dữ liệu hóa đơn</strong>, sau đó nhập vào số phút và khung thời gian thực hiện.</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_006.png" /><br /><br />
+<div class="Doanvan"><strong>d) <u>Thiết lập thông số tích hợp hóa đơn cho khách hàng (Đối với đại lý).</u></strong></div>  
+<div class="Doanvan">Đối với trường hợp đại lý khai báo cho nhiều doanh nghiệp khác nhau, muốn cấu hình thông số tích hợp hóa đơn điện tử cho các doanh nghiệp bạn nhấn vào nút <strong>Danh sách tài khoản đơn vị</strong> để thực hiện.</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_007.png" /><br /><br />
+<div class="Doanvan">Tại màn hình danh sách tài khoản, bạn nhấn vào nút <strong>Thêm mới</strong>:</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_008.png" /><br /><br />
+<div class="Doanvan">Màn hình thiết lập sẽ hiện ra như sau:</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_009.png" /><br />
+<div class="Doanvan">Tại đây bạn chọn khách hàng cần thiết lập sau đó nhập thông tin địa chỉ service, mã bảo mật do khách hàng cung cấp. Đồng thời đánh dấu tích chọn vào loại hóa đơn khách hàng sử dụng.</div><br />
+<div class="Doanvan"><strong>Bước 2</strong>: Tạo và khai báo tờ khai xuất khẩu.</div>
+<div class="Doanvan">Ở bước này, người dùng thực hiện việc tạo và khai báo tờ khai xuất khẩu trên phần mềm ECUS5VNACCS theo quy trình đến khi tờ khai được chấp nhận thông quan. </div>
+<br />
+<div class="Doanvan"><strong>Bước 3</strong>: Tạo hóa đơn, phiếu xuất nội bộ.</div>
+<div class="Doanvan">Để tạo hóa đơn, phiếu xuất nội bộ để gửi sang hệ thống hóa đơn, doanh nghiệp truy cập menu <strong>Hóa đơn/Hóa đơn điện tử (TT78)</strong>. Sau đó chọn Danh sách hóa đơn GTGT VAT hoặc danh sách phiếu xuất kho nội bộ, hóa đơn bán hàng khu phi thuế quan để thực hiện. Ở đây tôi chọn hóa đơn giá trị gia tăng VAT (các loại khác bạn thực hiện tương tự):</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_010.png" /><br />
+<div class="Doanvan">Trong danh sách hiện ra, doanh nghiệp nhấn nút <strong>Tạo hóa đơn từ tờ khai</strong> để tạo hóa đơn:</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_011.png" /><br />
+<div class="Doanvan">Tiến hành chọn tờ khai xuất muốn tạo hóa đơn, bạn có thể chọn nhiều tờ khai xuất để tạo nhiều hóa đơn cùng 1 lần:</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_012.png" /><br />
+<div class="Doanvan">Nhấn nút <strong>Chọn</strong>, phần mềm sẽ tự tạo dữ liệu hóa đơn, các thông tin bên mua và danh sách hàng hóa được lấy từ tờ khai xuất khẩu đã chọn:</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_013.png" /><br />
+<div class="Doanvan">Trạng thái hóa đơn lúc này đang là <em>Hóa đơn mới</em>, ngày hóa đơn được phần mềm lấy là ngày thông quan tờ khai. </div>
+<img width="996" src="Images/Thongbaonangcap-01082022_014.png" /><br />
+<div class="Doanvan">Để đồng bộ danh sách hóa đơn sang hệ thống hóa đơn của doanh nghiệp để xuất và ký số, bạn đánh dấu tích chọn các hóa đơn cần đồng bộ trong danh sách sau đó nhấn nút <strong>Đồng bộ lên hóa đơn điện tử</strong>:</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_014_2.png" /><br />
+<div class="Doanvan">Bạn cũng có thể chi tiết từng hóa đơn để kiểm tra và bổ sung thông tin nếu cần thiết. Sau đó nhấn nút <strong>Tạo hóa đơn đơn VAT</strong> để xác nhận tạo hóa đơn, hệ thống cũng sẽ thực hiện đồng bộ hóa đớn này sang hệ thống hóa đơn e-invoice:</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_015.png" /><br />
+<div class="Doanvan">Sau khi đồng bộ thành công, trạng thái hóa đơn sẽ là <em>Hóa đơn chờ xuất</em>:</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_015_1.png" /><br />
+<div class="Doanvan">Đối với hóa đơn bán hàng vào khu phi thuế quan và phiếu xuất nội bộ bạn cũng thực hiện tương tự.</div>
+<br />
+<div class="Doanvan"><strong>Bước 4</strong>: Kiểm tra thông tin và xuất hóa đơn.</div>
+<div class="Doanvan">Người dùng trên hệ thống hóa đơn e-invoice của doanh nghiệp đăng nhập vào hệ thống, để kiểm tra danh sách hóa đơn đã được tạo và đồng bộ sang từ phần mềm ECUS với trạng thái “<em>Hóa đơn chờ xuất</em>”. Sau đó tiến hành xuất hóa đơn, ký số hóa đơn theo nghiệp vụ hóa đơn thông thường.</div>
+<div class="Doanvan">Thông tin hóa đơn sau khi xuất cũng sẽ được cập nhật tự động về phần mềm ECUS để người dùng theo dõi.</div>
+<img width="996" src="Images/Thongbaonangcap-01082022_015_2.png" /><br />
+<li style="background-color:#72C4FF; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-size:16px; margin-top:10pt; margin-bottom:10pt; line-height:24pt; text-align:justify"><strong>&nbsp;4. Các thông tin lưu ý</strong></li>
+<ul style="list-style:decimal">
+	<li class="Doanvan">Chức năng hóa đơn điện tử tích hợp có cả bản thủ công và bản tự động hoàn toàn</li>
+    <li class="Doanvan">Sau khi tạo dữ liệu hóa đơn trên phần mềm ECUS5VNACCS, dữ liệu sẽ được đẩy về hệ thống hóa đơn điện tử e-invoice (phiên bản Web) của doanh nghiệp - sản phẩm hóa đơn điện tử của công ty Thái Sơn phát hành.</li>
+    <li class="Doanvan">Nếu doanh nghiệp đang sử dụng hệ thống hóa đơn điện tử khác với e-invoice và vẫn muốn dữ liệu hóa đơn trên phần mềm ECUS đồng bộ về hệ thống hóa đơn hiện tại của doanh nghiệp, doanh nghiệp vui lòng liên hệ để Công ty Thái Sơn tiến hành trao đổi, khảo sát thực tế hệ thống.</li>
+</ul>
+<br />
+<div style="background-color:#BBF8F5"><br />
+<div class="Doanvan">Để biết thêm thông tin chi tiết và đăng ký sử dụng chức năng <strong>HÓA ĐƠN ĐIỆN TỬ TÍCH HỢP</strong></div>
+<div class="Doanvan">Doanh nghiệp vui lòng liên hệ Bộ phận kinh doanh hoặc Trung tâm hỗ trợ khách hàng <strong>CÔNG TY PHÁT TRIỂN CÔNG NGHỆ THÁI SƠN</strong> trên toàn quốc</div>
+<div class="Doanvan"><strong>HOTLINE</strong>:</div>
+<ul style="list-style:square">
+	<li class="Doanvan">Miền Bắc: <strong>19004767</strong></li>
+    <li class="Doanvan">Miền Trung - Nam: <strong>19004768</strong></li>
+</ul>
+<br />
+</div>
+</ul>
+<br />
+
+<hr color="#cfcfcf" style="height:1px solid">
+                            <div class="Doanvan"><a href="Thongbaonangcap-01082022.html">
+                                   <button type="button" class="btn btn-default btn-sm">
+          							<span class="glyphicon glyphicon-menu-left"></span><strong>Quay trở lại thông báo</strong>
+       							   </button></a>
+                                   </div>
+
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

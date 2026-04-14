@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Thông tin cơ bản TK Nhập</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><center><strong>NHỮNG THAY ĐỔI TRÊN BẢN ECUS5VNACCS 2018</strong><br />(Phiên bản update 28/03/2024)</center><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+        <br /><div class="Doanvan"><strong>Phần mềm <span style="color:#ED7D31">ECUS5</span><span style="color:#4472C4">VNACCS2018</span> - Ngày phát hành 03/04/2024</strong></div>
+        <hr align="left" width="50%" size="1px" color="#CFCDCD" />
+        <div class="Doanvan">Phiên bản cập nhật ngày 28/03/2024 được phát hành ngày 03/04/2024 sửa đổi bổ sung một số chức năng, nhằm tăng hiệu suất phần mềm. Các chức năng được sửa đổi, bổ sung cụ thể như phần chi tiết dưới đây:</div>
+<ul style="list-style-type:none" class="Doanvan">
+<li class="Doanvan" style="background-color:#72C4FF"><strong>1. Ẩn nút Chọn hợp đồng gia công khi tờ khai đã khai báo.</strong></li>
+<div class="Doanvan">Ở bản nâng cấp này, phần mềm sẽ ẩn nút <strong>Chọn HĐ</strong> (nút chọn hợp đồng gia công của tờ khai loại hình Gia công) khi trạng thái tờ khai khác Nhập mới:</div>
+<img src="Images/Thongbaonangcap-03042024-001.png" /><br /><br />
+
+<li class="Doanvan" id="muc-1" style="background-color:#72C4FF"><strong>2. Sửa lỗi chức năng Import định mức gia công</strong></li>
+<div class="Doanvan">Doanh nghiệp sử dụng mô hình máy chủ - máy trạm, khi 2 máy cùng thực hiện chức năng Import định mức gia công (F12) cho các sản phẩm khác nhau, phần mềm sẽ đưa ra thông báo lỗi (Lỗi đã được khắc phục ở bản cập nhật này):</div>
+<img src="Images/Thongbaonangcap-03042024-002.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>3. Sửa lỗi đối với trường hợp mã biểu thuế B30</strong></li>
+<div class="Doanvan"><strong>Tình trạng lỗi ở bản cũ</strong>:<br />  
+<ul style="list-style:decimal">
+<li class="Doanvan">Tờ khai có nhiều dòng hàng, khi người dùng chọn mã biểu thuế NK là B30 ở dòng phía trên, phần mềm sẽ hỏi bạn có muốn sửa biểu thuế các dòng còn lại hay không? Nếu chọn No, thì phần mềm đang không tự động điền TS NK(%) = 0 cho dòng hàng đang chọn mã biểu thuế NK B30.</li>
+<li class="Doanvan">Trước đó doanh nghiệp chọn biểu thuế là B30, sau đó sửa lại sang mã biểu thuế khác. Khi chọn No để không sửa các dòng còn lại, thì phần mềm chưa xóa giá trị  TS NK (%) =0 cho dòng hàng vừa thay đổi mã biểu thuế.</li></ul></div>
+<div class="Doanvan"><strong>Tình trạng thay đổi ở bản nâng cấp mới</strong>:<br />  
+<ul style="list-style:decimal">
+<li class="Doanvan">Trường hợp 1, phần mềm sẽ tự động thêm Thuế suất NK (%) = 0 cho dòng hàng đang chọn mã biểu thuế B30.</li>
+<li class="Doanvan">Trường hợp 2, phần mềm sẽ tự động xóa Thuế suất NK (%) về NULL đối với dòng hàng chuyển mã biểu thuế NK từ B30 sang mã biểu thuế khác.</li></ul></div><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>4. Bổ sung điều kiện tìm kiếm cho danh sách khai báo sửa, hủy danh mục, định mức.</strong></li>
+<div class="Doanvan">Phần mềm bổ sung thêm điều kiện tìm kiếm theo mã Nguyên phụ liệu hoặc sản phẩm, doanh nghiệp sẽ dễ dàng tìm kiếm ra lần khai báo sửa / hủy liên quan.</div>
+
+<img src="Images/Thongbaonangcap-03042024-003.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>5. Bổ sung kiểm tra, cảnh báo khi xóa Nguyên phụ liệu, sản phẩm SXXK.</strong></li>
+<div class="Doanvan">Khắc phục tình trạng người dùng nhấn phím F8 để xóa nguyên phụ liệu hoặc sản phẩm trong danh mục, trong khi các nguyên liệu, sản phẩm này đã tham gia tờ khai. Ở bản nâng cấp này, phần mềm sẽ kiểm tra nếu nguyên liệu, sản phẩm đã tham gia tờ khai, định mức, khi người dùng xóa sẽ đưa ra thông báo cảnh báo và không cho phép xóa:</div>
+<img src="Images/Thongbaonangcap-03042024-004.png"/><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>6. Sửa đổi chức năng báo cáo tạm nhập tái xuất.</strong></li>
+
+<div class="Doanvan">Bản nâng cấp này khắc phục tình huống doanh nghiệp mở tờ khai G61 (tạm xuất hàng đi), sau đó mở tờ khai B12 (chuyển đổi mục đích sử dụng cho tờ G61). Nhưng trong phần Báo cáo xuất nhập tồn hàng TN-TX thì lượng của tờ khai G61 không tự động trừ đi.</div>
+
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>7. Bổ sung nút "Xóa nhiều định mức".</strong></li>
+<div class="Doanvan">Bổ sung nút "Xóa định mức" và lựa chọn chọn nhiều định mức để xóa ở form In nhiều định mức của chức năng Kế toán kho, cho cả 3 loại hình Gia công, SXXK và Chế xuất.</div>
+<img src="Images/Thongbaonangcap-03042024-005.png"/>
+<li class="Doanvan" style="background-color:#72C4FF"><strong>8. Cùng nhiều chức năng, tiện ích khác nhằm nâng cao hiệu suất chương trình...</strong></li>
+</ul>
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

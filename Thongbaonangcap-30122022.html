@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Thông tin cơ bản TK Nhập</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><center><strong>NHỮNG THAY ĐỔI TRÊN BẢN ECUS5VNACCS 2018</strong><br />(Phiên bản update 18/12/2022)</center><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+        <br /><div class="Doanvan"><strong>Phần mềm <span style="color:#ED7D31">ECUS5</span><span style="color:#4472C4">VNACCS2018</span> - Ngày phát hành 30/12/2022</strong></div>
+        <hr align="left" width="50%" size="1px" color="#CFCDCD" />
+        <div class="Doanvan">Phiên bản cập nhật ngày 18/12/2022 được phát hành ngày 30/12/2022 bổ sung, sửa đổi các chức năng sau:</div>
+<ul style="list-style-type:none" class="Doanvan">
+<li class="Doanvan" style="background-color:#72C4FF"><strong>1. Sửa lại cơ chế của nghiệp vụ gọi lại tờ khai IDB/EDB.</strong></li>
+<div class="Doanvan">Sửa lại nghiệp vụ IDB/EDB như sau:<br />
+<ul style="list-style:circle" class="Doanvan">
+<li class="Doanvan">Đối với trường hợp doanh nghiệp gọi tờ khai bằng nghiệp vụ IDB/EDB trên form tờ khai mới hoàn toàn hoặc tờ khai chưa có số, phần mềm sẽ hiển thị form chức năng IDB/EDB để doanh nghiệp nhập vào số tờ khai để gọi về.</li>
+<li class="Doanvan">Nếu doanh nghiệp gọi tờ khai bằng nghiệp vụ IDB/EDB trên tờ khai đã có số thì không hiện form chức năng IDB/EDB, mà gọi theo số tờ khai đang có trên form tờ khai.</li>
+</ul>
+</div>
+<img src="Images/Thongbaonangcap-30122022_005.png" /><br /><br />
+
+<li class="Doanvan" id="muc-1" style="background-color:#72C4FF"><strong>2. Bổ sung tích chọn "Không sử dụng mã bảo mật khi truyền nhận dữ liệu trình ký"</strong></li>
+<div class="Doanvan">Phần mềm bổ sung tích chọn "Không sử dụng mã bảo mật khi truyền nhận dữ liệu trình ký" trên form thiết lập trình ký, để sửa lỗi Parametter bên đầu duyệt ký.</div>
+<img src="Images/Thongbaonangcap-30122022_001.png" /><br /><br />
+
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>3. Bổ sung cho phép sử dụng trình ký ECUSSign Pro khi khai báo dịch vụ công:</strong></li>
+<div class="Doanvan">Phần mềm bổ sung để cho phép người dùng có thể trình ký thông qua ECUSSign Pro khi khai báo các thủ tục của dịch vụ công trực tuyến.</div>
+<img src="Images/Thongbaonangcap-30122022_001.2.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>4. Khắc phục lỗi tự động ghép mã hàng vào tên hàng với tờ khai Kinh doanh.</strong></li>
+<div class="Doanvan">Bản cập nhật 06/12/2022 khắc phục tính trạng tự động ghép Mã hàng vào trong Tên hàng và gửi lên Hải quan đối với tờ khai xuất Kinh doanh.</div>
+<img src="Images/Thongbaonangcap-30122022_002.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>5. Khắc phục lỗi import danh sách hàng hóa (F6) cho tờ khai nhập Gia công.</strong></li>
+<div class="Doanvan">Khắc phục tình huống khi Import hàng hóa (chức năng F6) cho tờ khai nhập khẩu Gia công, Mã biểu thuế nhập khẩu đang tự động đặt bằng B30, mà không đọc từ file excel hoặc cấu hình ở mục hệ thống. Ở bản cập nhật này, phần mềm sửa lại như sau:</div>
+<ul style="list-style:none" class="Doanvan">
+	<li class="Doanvan">1. Ưu tiên lấy mã biểu thuế theo file excel.</li>
+    <li class="Doanvan">2. Nếu file excel không có dữ liệu về mã biểu thuế, thì sẽ lấy từ cấu hình hệ thống, mục 5 (đối với loại hình Gia công)</li>
+    <img width="95%" src="Images/Thongbaonangcap-30122022_003.2.png" /><br /><br />
+    <li class="Doanvan">3. Nếu không có dữ liệu từ file excel, hệ thống cũng không cấu hình thì tự động điền mã biểu thuế là: B30</li>
+</ul>
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>6. Sửa lại cơ chế đóng gói phần Ghi chú trong BCQT Gia công.</strong></li>
+<div class="Doanvan">Khi báo cáo quyết toán loại hình Gia công, phần mềm thực hiện đóng gói nội dung Ghi chú để gửi lên Hải quan sẽ lấy từ danh sách hợp đồng. Đồng thời sửa lại tiêu đề để doanh nghiệp lưu ý.</div>
+<img src="Images/Thongbaonangcap-30122022_004.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>7. Sửa lại chỉ tiêu Tên người nộp phí trên tờ khai nộp phí TP Hồ Chí Minh.</strong></li>
+<div class="Doanvan">Sửa lại chỉ tiêu Tên người nộp phí trên tờ khai nộp phí TP Hồ Chí Minh, để tránh trường hợp không nhận được biên lai thu phí với các nội dung sửa đổi như sau:<br />
+ - Giới hạn độ dài < 50 ký tự. <br />
+ - Không cho phép nhập ký tự đặc biệt.</div>
+<img src="Images/Thongbaonangcap-30122022_006.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>8. Chỉnh sửa tăng độ dài trường dữ liệu Nội dung thanh toán.</strong></li>
+<div class="Doanvan">Chỉnh sửa tăng độ dài trường dữ liệu Nội dung thanh toán trên tờ khai nộp phí TP Hồ Chí Minh lên 2500 ký tự để tránh trường hợp lỗi Truntcated khi lấy phản hồi.</div>
+<img src="Images/Thongbaonangcap-30122022_007.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>9. Bổ sung tìm kiếm theo Số tờ khai Hải quan</strong></li>
+<div class="Doanvan">Bổ sung điều kiện tìm kiếm theo Số tờ khai hải quan trên danh sách tờ khai nộp phí TP Hồ Chí Minh.</div>
+<img width="90%" src="Images/Thongbaonangcap-30122022_008.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>10. Bổ sung thêm tích chọn mã miễn giảm theo Thông báo số 503/TB-CVĐTNĐ.</strong></li>
+<div class="Doanvan">Bổ sung thêm tích chọn mã miễn giảm theo Thông báo số 503/TB-CVĐTNĐ ban hành ngày 26/12/2022 về việc giảm mức thu phí sử dụng công trình, kết cấu hạ tầng, công trình dịch vụ, tiện ích công cộng trong khu vực cửa khẩu cảng biển Hải Phòng theo Nghị quyết số 21/NQ-HĐND.</div>
+<img width="90%" src="Images/Thongbaonangcap-30122022_009.png" /><br /><br />
+
+<!--<li class="Doanvan" style="background-color:#72C4FF"><strong>11. Bổ sung thêm hình thức thanh toán: Thanh toán bằng ký quỹ và Thanh toán theo tháng.</strong></li>
+<div class="Doanvan">Bổ sung thêm 02 lựa chọn cho hình thức thanh toán là: Thanh toán bằng ký quỹ và Thanh toán theo tháng để doanh nghiệp lựa chọn.</div>
+<img width="90%" src="Images/Thongbaonangcap-30122022_010.png" /><br /><br />-->
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>11. Bổ sung thêm chỉ tiêu Số tiền được giảm vào trong thông báo nộp phí.</strong></li>
+<div class="Doanvan">Bổ sung thêm chỉ tiêu <em><strong>Tổng số tiền được giảm</strong></em> vào trong thông báo nộp phí.</div>
+<img width="90%" src="Images/Thongbaonangcap-30122022_011.png" /><br /><br />
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>12. Cảnh báo lần thanh toán có nhiều hơn 50 lần thông báo phí.</strong></li>
+<div class="Doanvan">Đưa ra cảnh báo nếu doanh nghiệp chọn nhiều hơn 50 lần thông báo phí vào 1 lần thanh toán đối với chức năng thu phia TP Hồ Chí Minh, để tránh tình trạng lỗi.</div>
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>13. Xử lý lỗi thừa nhiều dấu phẩy trong chỉ tiêu địa chỉ người mua hàng.</strong></li>
+<div class="Doanvan">Trong chức năng hóa đơn tích hợp, xử lý trường hợp địa chỉ người mua hàng trên hóa đơn thừa nhiều dấu phẩy do không có địa chỉ 2, địa chỉ 3 hoặc địa chỉ 4.</div>
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>14. Bổ sung chức năng cấu hình XML tờ khai cho DN là khách hàng.</strong></li>
+<div class="Doanvan">Trong chức năng hóa đơn tích hợp, bổ sung chức năng cấu hình XML tờ khai cho doanh nghiệp là khách hàng, do mỗi khách hàng có các ký hiệu hóa đơn là khác nhau. Cụ thể như sau: <br />
+<ul style="list-style:circle">
+<li class="Doanvan">Bổ sung MA_DV trong bảng cấu hình XML.</li>
+<li class="Doanvan">Lưu cấu hình theo MA_DV.</li>
+<li class="Doanvan">Mặc định khi vào chương trình MA_DV=null. </li>
+<li class="Doanvan">Thực hiện ghi lại cấu hình với mã đơn vị được cấu hình tương ứng ở form danh sách hóa đơn đối với trường hợp mã DV là khách hàng.</li> 
+<li class="Doanvan">Ghi lại ở form cấu hình hóa đơn(bên ngoài) với mã đơn vị là đại lý .</li></ul></div>
+
+<li class="Doanvan" style="background-color:#72C4FF"><strong>15. Ngoài ra, còn có nhiều mục sửa đổi bổ sung khác nhằm nâng cao hiệu suất và tạo sự thuận lợi cho người dùng...</strong></li>
+<div class="Doanvan">...</div>
+</ul>
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

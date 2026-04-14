@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<body>
+
+<h3>A demonstration of how to access a DATALIST element</h3>
+
+<form>
+  <input list="myDatalist"> 
+  <datalist id="myDatalist"> 
+    <option value="Internet Explorer"></option>
+    <option value="Firefox"></option>
+    <option value="Chrome"></option>
+    <option value="Opera"></option>
+    <option value="Safari"></option>
+  </datalist>
+</form>
+
+<p>Click the button to get the number of option elements in the datalist.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p><strong>Note:</strong> The input element's list attribute is used to bind it together with the datalist element.</p>
+
+<p><strong>Note:</strong> The datalist element is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDatalist").rows.index();
+  document.getElementById("demo").innerHTML = "Found " + x + " options in the list.";
+}
+</script>
+
+
+<h1>The legend element</h1>
+
+<form action="/action_page.php">
+ <fieldset>
+  <legend>Personalia:</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <input type="submit" value="Submit">
+ </fieldset>
+</form>
+<br>
+<fieldset>
+<legend> Thông tin chung tờ khai</legend>
+<div> Xin trân trọng thông báo với các bạn một tin vui The datalist element is not supported in Internet Explorer 9 and earlier versions, or in Safari.The datalist element is not supported in Internet Explorer 9 and earlier versions, or in Safari.The datalist element is not supported in Internet Explorer 9 and earlier versions, or in Safari.The datalist element is not supported in Internet Explorer 9 and earlier versions, or in Safari.</div><br>
+<div> Xin trân trọng thông báo với các bạn một tin vui The datalist element is not supported in Internet Explorer 9 and earlier versions, or in Safari.The datalist element is not supported in Internet Explorer 9 and earlier versions, or in Safari.The datalist element is not supported in Internet Explorer 9 and earlier versions, or in Safari.The datalist element is not supported in Internet Explorer 9 and earlier versions, or in Safari.</div>
+</fieldset>
+</body>
+</html>

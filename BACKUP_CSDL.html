@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Thông tin cơ bản TK Nhập</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><strong>HƯỚNG DẪN SAO LƯU CƠ SỞ DỮ LIỆU</strong><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+        
+        <div class="Doanvan">Tất cả  dữ liệu khai báo đều được lưu vào trong Cơ sở dữ liệu trên máy chủ SQL của  doanh nghiệp (chính xác hơn là lưu trên máy tính cài đặt hệ quản trị cơ sở dữ  liệu SQL Server phục vụ chạy phần mềm ECUS5VNACCS, do doanh tự quản lý). Nhằm đảm  bảo tránh bị mất dữ liệu khi gặp sự cố đột ngột, doanh nghiệp nên thực hiện sao  lưu dữ liệu thường xuyên và lưu trữ ở những nơi an toàn khác. Các file sao lưu  này sẽ được dùng để khôi phục lại dữ liệu phần mềm trong trường hợp có sự cố làm  mất hoặc hỏng file dữ liệu đang chạy.</div>
+          <div class="Doanvan">Để thực hiện sao lưu trên  phần mềm, bạn vào menu <strong>Hệ thống</strong> chọn mục <em> Sao lưu dữ liệu</em>:</div>
+  <img  src="Images/BACKUP_CSDL_clip_image002.png" /><br />
+          <div class="Doanvan">Chức năng thiết lập hiện  ra như sau:</div>
+  <img src="Images/BACKUP_CSDL_clip_image004.png" /><br />
+          <div class="Doanvan">Tại đây bạn chọn đường dẫn  nơi lưu trữ file sao lưu bằng cách nhấn nút có dấu (…)</div>
+  <img  src="Images/BACKUP_CSDL_clip_image006.png" /><br />
+  <div class="Doanvan"><strong><u>Lưu ý:</u></strong></div>
+        <ul>
+          <li class="Doanvan"><em>Bạn cần phải đăng nhập vào phần mềm bằng user  có quyền cao nhất (thường là root hoặc user khác có quyền tương tự)</em></li>
+          <li class="Doanvan"><em>Nếu bạn đang thực hiện tại máy trạm thì việc  chọn đường dẫn nơi lưu file vẫn là đường dẫn trên máy chủ cài đặt hệ quản trị cơ  sở dữ liệu, do đó khi thực hiện sao lưu xong bạn chỉ có thể thấy file đó trên máy  chủ chứ không có trên máy tính trạm mà bạn đang thực hiện.</em></li>
+          <li class="Doanvan"><em>File sao lưu sẽ được đặt mặc định có ngày/tháng/năm  thực hiện sao lưu, nếu thường xuyên sao lưu, bạn chỉ cần giữ lại 2 file mới nhất,  các file trước đó có thể xóa đi để giảm bớt dung lượng lưu trữ.</em></li>
+        </ul>
+        <div class="Doanvan">Cũng tại cửa sổ này, bạn có  thể đặt lịch nhắc nhở sao lưu bằng cách đánh dấu tích chuột vào mục &quot;<em>Hiển thị  nhắc nhở sao lưu sau</em>&quot; và chọn số ngày tương ứng.</div>
+          <img  src="Images/BACKUP_CSDL_clip_image008.png" /><br />
+          <div class="Doanvan">Cuối cùng, bạn nhấn nút  Sao lưu và chờ đến khi có thông báo thành công:</div>
+          <img  src="Images/BACKUP_CSDL_clip_image010.png" /><br />
+          <div class="Doanvan">Nhấn <strong>Yes</strong> để mở thư  mục nơi chứa file sao lưu vừa được tạo ra.</div>
+  <img  src="Images/BACKUP_CSDL_clip_image012.png" /><br />
+  <div class="Doanvan"><strong><u>Chú ý:</u></strong></div>
+        <ul>
+          <li class="Doanvan">File  sao lưu này bạn có thể copy và lưu trữ ở nơi an toàn khác.</li>
+          <li class="Doanvan">File  sao lưu này sẽ chưa tất cả dữ liệu mà bạn khai báo cho đến thời điểm thực hiện  sao lưu.</li>
+        </ul>
+        
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

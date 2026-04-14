@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Quy trình khai báo tờ khai</title><!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><strong>QUY TRÌNH KHAI BÁO TỜ KHAI NHẬP</strong><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+								  Sau khi nhập dữ liệu cho tờ khai, bạn tiến hành khai báo tờ khai lên hệ thống các bước nghiệp vụ sẽ ẩn / hiện theo từng giai đoạn của tờ khai giúp bạn hình dung được bước tiếp theo cần thực hiện. Để khai báo bạn sử dụng các mã nghiệp vụ như hình sau : <br /><br />
+						<center><img src="Images/6.4.TKN_QuytrinhKhaiBao.png" border="0" /></center>
+						<br />
+						<ol>
+							<li><div class="Doanvan">Khai trước thông tin tờ khai IDA và Chứng từ đính kèm</div></li>
+							<li><div class="Doanvan">Khai chính thức tờ khai IDC</div></li>
+							<li><div class="Doanvan">Lấy kết quả phân luồng, thông quan</div></li>
+							<li><div class="Doanvan">In tờ khai và các chứng từ khác</div></li>
+							<li><div class="Doanvan">Sửa tờ khai sau khi đã khai chính thức</div></li>
+							
+						</ol>
+                        <ol>
+                        <li><div class="Doanvan"><strong><a name="TKN_KBIDA">Khai trước thông tin tờ khai IDA và Chứng từ đính kèm</a></strong></div></li>
+                        <div class="Doanvan">Sau  khi đã nhập xong thông tin cho tờ khai, bạn ghi lại và chọn mã nghiệp vụ "<strong>2. Khai trước thông tin tờ khai (IDA)</strong>"  để gửi thông tin.</div>
+			  			  <div class="Doanvan">Trong  trường hợp tờ khai của bạn có số dòng hàng lớn hơn 50 chương trình sẽ hiện ra  thông báo xác nhận tách tờ khai tự động , ví dụ danh sách hàng bạn nhập vào là  120 dòng hàng:</div>
+			  			<p><img src="Images/6.4.1.TKN_Khaibao_IDA_clip_image002.png" /></p>
+			  			<p class="Doanvan">Bạn  nhấn chọn "Yes" để chương trình tách tờ khai thành các tờ khai nhánh cho đúng  chuẩn của VNACCS (một tờ khai chỉ được tối đa 50 dòng hàng, trường hợp nhiều  hơn 50 dòng hàng thì tách thành nhiều tờ khai nhánh khác nhau), khi tách thành  công thành bao nhiêu nhánh chương trình sẽ thông báo như sau:</p>
+			  			<p><img src="Images/6.4.1.TKN_Khaibao_IDA_clip_image004.png" /></p>
+			  			<p>Khi đó bạn vào menu "Tờ khai  xuất nhập khẩu" chọn "Danh sách tờ khai nhập khẩu" các tờ khai nhánh có liên  quan sẽ được thể hiện như sau:</p>
+			  			<p><img src="Images/6.4.1.TKN_Khaibao_IDA_clip_image006.gif" /></p>
+			  			<div class="Doanvan">Các  tờ khai nhánh này có mối liên hệ với nhau qua số tờ khai đầu tiên, số thứ tự  nhánh và các thông tin chung của tờ khai như là số vận đơn, số hóa đơn, các  thông tin này giúp người khai hải quan và Cơ quan hải quan xác định được các  nhánh khác nhau này là thuộc cùng một lô hàng.</div>
+			  			  <div class="Doanvan">Việc  thông quan hàng hóa của các tờ khai nhánh này hoàn toàn độc lập về Luồng tờ  khai, số tiền thuế, vì vậy khi tiến hành In tờ khai để lấy hàng, người khai  phải in và đóng dấu tất cả các tờ khai nhánh khác nhau này, trên bản in sẽ thể  hiện số tờ khai nhánh, số tờ khai đầu tiên số thứ nhánh và tổng số nhánh của lô  hàng đang tiến hành thông quan.</div>
+			  			<p><img width="696" height="173" src="Images/6.4.1.TKN_Khaibao_IDA_clip_image008.gif" /></p>
+			  			<p class="Doanvan">Người  khai tiến hành khai lần lượt các tờ khai với chú ý phải khai tờ khai có nhánh  đầu tiên trước(số nhánh là 1) .</p>
+                            <img src="Images/6.4.1.TKN_Khaibao_IDA_clip_image010.gif" />
+                            
+			  			<p class="Doanvan">Chương  trình sẽ yêu cầu bạn xác nhận chữ ký số khi khai báo, bạn chọn chữ ký số từ  danh sách:</p>
+			  			<p><img src="Images/6.4.1.TKN_Khaibao_IDA_clip_image012.gif" /></p>
+			  			<p class="Doanvan">Và nhập vào mã PIN của Chữ ký  số:</p>
+                            <img width="312" height="138" src="Images/6.4.1.TKN_Khaibao_IDA_clip_image014.jpg" />
+			  			<p class="Doanvan">Thành  công hệ thống sẽ trả về số tờ khai và bản copy tờ khai bao gồm các thông tin về  thuế được hệ thống tự động tính, các thông tin còn thuế khác như "Tên, địa chỉ  doanh nghiệp khai báo" </p>
+			  			  <div class="Doanvan">Màn  hình bản copy trả về bao gồm các thông tin đã khai báo của tờ khai, phần tổng  hợp tính thuế trả về thể hiện ngay góc trái màn hình:</div>
+			  			<p><img src="Images/6.4.1.TKN_Khaibao_IDA_clip_image016.png" /></p>
+			  			<div class="Doanvan">Các  thông tin chi tiết thuế suất, mã loại thế suất do hệ thống trả về ở tab "Danh  sách hàng" bạn click đúp chuột hoặc nhấn F4 để xem chi tiết.</div>
+			  			<p><img src="Images/6.4.1.TKN_Khaibao_IDA_clip_image018.png" /></p>
+			  			<div class="Doanvan">Sau  khi kiểm tra các thông tin trả về, người khai có 2 phương án lựa chọn tiếp  theo:</div>
+                            <div class="Doanvan"><strong>Thứ nhất</strong>: nếu các thông tin do hệ thống trả về doanh nghiệp  thấy có thiếu sót cần bổ sung sửa đổi thì sử dụng mã nghiệp vụ IDB để gọi lại  thông tin khai báo của tờ khai và sửa đổi sau đó tiếp IDA lại đến khi thông tin  đã chính xác.</div>
+                            <div class="Doanvan"><strong>Thứ hai</strong>: nếu các thông tin do hệ thống trả về đã chính xác,  doanh nghiệp chọn mã nghiệp vụ "3.Khai chính thức tờ khai IDC" để đăng ký chính  thức tờ khai này với cơ quan hải quan, khi thành công tờ khai này sẽ được đưa  vào thực hiện các thủ tục thông quan hàng hóa.</div>
+			  			<p><img src="Images/6.4.1.TKN_Khaibao_IDA_clip_image020.gif" /></p>
+			  			<strong><div class="Doanvan"><a name="KB_CTDT">Khai báo bổ sung chứng từ đính kèm</a></div></strong>
+                        
+                        <div class="Doanvan">Theo quy định tại Thông  tư 39 (điểm <em>a</em> khoản 7 Điều <strong>1</strong> TT39), chỉ cho phép xác nhận  hàng qua khu vực giám sát khi tờ khai có chứng từ điện tử khai lên hệ thống Hải  quan (áp dụng với tờ khai nhập và tờ khai xuất khẩu).</div>
+                        <div class="Doanvan">Do đó, kể từ sau thời điểm thực hiện nghiệp vụ IDA  doanh nghiệp có thể thực hiện khai bổ sung chứng từ điện tử đính kèm cho tờ  khai bằng cách vào tab &quot;<strong>Quản lý tờ khai</strong>&quot;  chọn vào mục chứng từ cần bổ sung (<em>Vận đơn,  hóa đơn…</em>) hoặc chọn &quot;Chứng từ khác&quot; để bổ sung nhiều loại chứng từ cùng một  lần:</div>
+                        <p><img width="642" height="418" src="Images/6.4.1.T.TKN_Khaibao_IDA_clip_image002.png" /></p>
+                        <p>Màn hình chức năng bổ  sung chứng từ như sau:</p>
+                        <p><img width="642" height="403" src="Images/6.4.1.T.TKN_Khaibao_IDA_clip_image002_0000.png" /></p>
+                        <p class="Doanvan">Doanh nghiệp tiến hành  nhập thông tin chứng từ: <em>Số chứng từ, ngày  chứng từ, tên – nơi chứng từ và chọn loại chứng từ</em> trong danh sách:</p>
+                        <p><img width="613" height="77" src="Images/6.4.1.T.TKN_Khaibao_IDA_clip_image001.png" /></p>
+                        <p class="Doanvan">Đối với file đính kèm,  bạn nhấn vào nút &quot;<strong>File đính kèm</strong>&quot; để  tìm và chọn:</p>
+                        <p><img width="642" height="370" src="Images/6.4.1.T.TKN_Khaibao_IDA_clip_image002_0001.png" /></p>
+                        <p class="Doanvan">Sau khi nhập và ghi thông  tin chứng từ, bạn tiến hành khai báo chứng từ bằng cách nhấn nút &quot;<strong><em>Khai  báo</em></strong>&quot;, nếu file đính kèm chưa được ký số trước đó phần mềm sẽ hiện cửa sổ  thông báo để bạn tiến hành ký số như sau:</p>
+                        <p><img width="512" height="315" src="Images/6.4.1.T.TKN_Khaibao_IDA_clip_image002_0002.png" /></p>
+                        <p class="Doanvan">Nhấn &quot;<strong><em>Ký chứng  từ</em></strong>&quot; và chọn chữ ký số từ danh sách (lưu ý chữ ký số phải được cắm vào máy  tính):</p>
+                        <p><img width="362" height="301" src="Images/6.4.1.T.TKN_Khaibao_IDA_clip_image002_0003.png" /></p>
+                        <p>Nhập mã <strong>PIN</strong> cho thiết bị chữ ký số:</p>
+                        <p><img width="363" height="183" src="Images/6.4.1.T.TKN_Khaibao_IDA_clip_image001_0000.png" /></p>
+                        <p>Sau khi ký số và gửi thành  công lên cơ quan Hải quan bạn sẽ nhận được thông báo như sau:</p>
+                        <p><img width="462" height="324" src="Images/6.4.1.T.TKN_Khaibao_IDA_clip_image001_0001.png" /></p>
+                        <p class="Doanvan">Sau đó nhấn nút &quot;<strong><em>XNKB</em></strong>&quot;  để lấy thông tin phản hồi đến khi nhận được số tiếp nhận trả về từ cơ quan Hải  quan.</p>
+                        <p><img width="462" height="324" src="Images/6.4.1.T.TKN_Khaibao_IDA_clip_image001_0002.png" /></p>
+                        <p class="Doanvan">Lúc này bạn có thể yên  tâm khai báo tiếp các bước còn lại như hướng dẫn phía dưới đây để hoàn tất thủ  tục cho một tờ khai nhập khẩu.</p>
+<ol>
+  <li><div class="Doanvan">Sau khi kiểm tra các thông tin trả về đã chính xác bạn chuyển sang <strong><i><a href="6.4.TKN_QuaTrinhKhaiBao.html#TKN_KBIDC">Khai báo chính thức tờ khai IDC</a></i></strong></div></li>
+  
+  <li><div class="Doanvan">Hoặc nếu có sai sót cần sửa lại bạn thực hiện <strong><i>Lấy thông tin tờ khai từ Hải quan IDB</i></strong> về để sửa.</div></li><br />
+</ol>
+                        <li><div class="Doanvan"><strong><a name="TKN_KBIDC">Khai chính thức thông tin tờ khai IDC</a></strong></div></li>
+                        <div class="Doanvan">Sau  khi đăng ký thành công bản khai trước thông tin tờ khai và kiểm tra đúng thông  tin hệ thống trả về, người khai tiến hành đăng ký chính thức tờ khai với cơ  quan Hải quan, chọn mã nghiệp vụ "<strong>3.  Khai chính thức tờ khai (IDC)</strong>" </div>
+			  			<p><img src="Images/6.4.2.TKN_Khaichinhthuc_IDC_clip_image002.png" /></p>
+			  			<p class="Doanvan">Khai  báo thành công tờ khai này sẽ được đưa vào tiến hành các thủ tục thông quan  hàng hóa.</p>
+			  			<div class="Doanvan">Doanh nghiệp tiếp tục nhấn vào " <strong><a href="6.4.TKN_QuaTrinhKhaiBao.html#TKN_KBPHANHOI">4. Lấy kết quả phân luồng, thông quan</a></strong>"  để  nhận các  kết quả phân luồng, lệ phí hải  quan, thông báo tiền thuế và chấp nhận thông quan của tờ khai được hệ thống  VNACCS trả về.</div><br />
+                        <li><div class="Doanvan"><strong><a name="TKN_KBPHANHOI">Lấy kết quả phân luồng, thông quan</a></strong></div></li>
+                        <div class="Doanvan">Sau k hai  báo thành công tờ khai từ nghiệp vụ IDC
+		  			    Doanh  nghiệp tiếp tục nhấn vào " <strong>4. Lấy kết  quả phân luồng, thông quan</strong>" chức năng này sử dụng để nhận các  kết quả phân luồng, lệ phí hải quan, thông báo  tiền thuế và chấp nhận thông quan của tờ khai được hệ thống VNACCS trả về.</div>
+			  			<p align="center"><img src="Images/6.4.3.TKN_LayphanhoiTK_clip_image002.png" /></p>
+			  			<div align="justify"><u>Đối với tờ khai là luồng Xanh</u>: Trường hợp tờ khai được phân luồng 1 (xanh), Hệ  thống tự động kiểm tra việc hoàn thành nghĩa vụ về thuế và quyết định thông  quan, Đối với hàng nhập khẩu, công chức giám sát thuộc Chi cục Hải quan nơi  đăng ký tờ khai hoặc Chi cục Hải quan nơi hàng hóa vận chuyển đi (trong trường  hợp khai vận chuyển kết hợp)thực hiện việc in, đóng dấu xác nhận, ký, đóng dấu  công chức vào góc trên cùng bên phải của trang đầu tiên Tờ khai hàng hóa nhập  khẩu (trừ thông tin chi tiết từng dòng hàng) đã được phê duyệt thông quan, giao  cho người khai hải quan để làm tiếp các thủ tục (nếu có);<br />
+			  			  <br />
+                          <u>Đối với tờ khai là luồng Vàng</u>: Trường hợp tờ khai được phân luồng 2 (vàng), người  khai xuất trình, nộp chứng từ giấy thuộc hồ sơ hải quan để kiểm tra, nếu kết quả  kiểm tra phù hợp, công chức hải quan cập nhật kết quả kiểm tra vào Hệ thống. Hệ  thống tự động kiểm tra việc hoàn thành nghĩa vụ về thuế và quyết định thông quan,  Công chức được giao nhiệm vụ thuộc Chi cục Hải quan nơi đăng ký tờ khai thực  hiện việc in, đóng dấu xác nhận, ký, đóng dấu công chức vào góc trên cùng bên  phải của trang đầu tiên Tờ khai hàng hóa nhập khẩu (trừ thông tin chi tiết từng  dòng hàng) đã được phê duyệt thông quan. giao cho người khai hải quan để làm  tiếp các thủ tục (nếu có);<br />
+                          <br />
+                          <u>Đối với tờ khai là luồng Đỏ</u>: Trường hợp tờ khai được phân luồng 3 (Đỏ), người  khai  xuất trình, nộp chứng từ giấy thuộc  hồ sơ hải quan và hàng hóa để kiểm tra, nếu kết quả kiểm tra phù hợp, công chức  hải quan cập nhật kết quả kiểm tra vào Hệ thống. Hệ thống tự động kiểm tra việc  hoàn thành nghĩa vụ về thuế và quyết định thông quan, Công chức được giao nhiệm  vụ thuộc Chi cục Hải quan nơi đăng ký tờ khai thực hiện việc in, đóng dấu xác  nhận, ký, đóng dấu công chức vào góc trên cùng bên phải của trang đầu tiên Tờ  khai hàng hóa nhập khẩu (trừ thông tin chi tiết từng dòng hàng) đã được phê  duyệt thông quan. giao cho người khai hải quan để làm tiếp các thủ tục (nếu  có).<br />
+			  			</div>
+			  			<p>Sau khi có phản hồi chấp nhận thông quan tờ khai, bạn có thể <a href="6.4.TKN_QuaTrinhKhaiBao.html#TKN_KBINTK" style="font-weight: bold; font-style: italic">In tờ khai và các chứng từ khác</a> để tham khảo </p><br />
+                        <li><div class="Doanvan"><strong><a name="TKN_KBINTK">In tờ khai và các chứng từ khác</a></strong></div></li>
+                        <div class="Doanvan">Phần  in này chỉ để doanh nghiệp tham khảo, các bản in chính thức sẽ do cán bộ Hải  quan tiếp nhận tờ khai In, đóng dấu xác nhận, ký, đóng dấu công chức và giao  cho người khai.</div>
+			  			<div class="Doanvan">Sau  khi nhận được các kết quả xác nhận tờ khai được chấp nhận thông quan, người  khai có thể xem lại và in các bản in, các thông điệp này bằng cách vào tab "<span style="font-weight: bold; font-style: italic">Kết  quả xử lý tờ khai</span>".</div>
+			  			<p class="Doanvan">Nút  "<span style="font-weight: bold; font-style: italic">In TK</span>" trên tờ khai sẽ in ra thông điệp mới nhất từ Hải quan trả về, trừ các  thông điệp về phí và lệ phí, thông báo thuế.</p>
+			  			  
+                            <center><img src="Images/6.4.4.TKN_InTKChungtu_clip_image002.gif" />
+                            </center></p>
+                        <li><div class="Doanvan"><strong><a name="TKN_KBSUATK">Sửa tờ khai đã khai báo chính thức</a></strong></div></li>
+                         <div class="Doanvan">Đối với tờ khai được phân luồng Vàng, Đỏ mà chưa được  cơ quan Hải quan xử lý (chưa thực hiện nghiệp vụ CEA/CEE), người khai có thể  tiến hành gọi thông tin tờ khai về để khai báo sửa đổi bổ sung nếu cần thiết  bằng cách sử dụng các  nghiệp vụ từ mục  5.1 đến 5.4 trên danh sách mã nghiệp vụ.</div>
+                                  <p><img width="238" height="110" src="Images/6.4.5.TKN_SuaToKhai_clip_image001.png" alt="WorF842" /></p>
+                                  <p class="Doanvan"> Tờ khai là  luồng Xanh hoặc đã được xử lý của cơ quan Hải quan thì không thể dùng  các nghiệp vụ này để sửa mà người khai phải  sử dụng:</p>
+                                  <p class="Doanvan">+ <strong><em>Nghiệp vụ AMA</em></strong>: để khai sửa đổi, bổ  sung về thuế và các thông tin cho dòng hàng, để sử dụng nghiệp vụ này, bạn vào  tab &quot;Kết quả xử lý tờ khai&quot; chọn nghiệp vụ &quot;Đăng ký bổ sung thay đổi thuế AMA&quot;  hoặc vào menu &quot;Tờ khai hải quan&quot; và chọn mục &quot;Khai bổ sung&quot;: </p>
+                                  <p><img width="642" height="266" src="Images/6.4.5.TKN_SuaToKhai_clip_image003.png" alt="Wor1BD" /></p>
+                                  <p class="Doanvan">+ <strong><em>Sử dụng công văn đề nghị</em></strong>: Nếu muốn  sửa đổi bổ sung thông tin chung cho tờ khai thì người khai cần gửi công văn để  cơ quan Hải quan xem xét và tiến hành sửa đổi.</p>
+                        </ol>
+                        
+								<!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

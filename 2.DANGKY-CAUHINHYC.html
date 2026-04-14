@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Các yêu cầu khi sử dụng phần mềm ECUS5VNACCS</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet">
+<link href="css/help-content.css" rel="stylesheet">
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><a name="Cac_Yeu_Cau"><strong></strong></a><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+        <BR />
+        <div class="Doanvan"><strong><u>Các điều kiện cần thiết, cấu hình tối thiểu máy tính sử dụng và hướng dẫn cài đặt phần mềm:</u></strong></div>
+        <ul>
+        	<li class="Doanvan">Các thủ tục đăng ký tham gia Hệ thống VNACCS với cơ quan Hải quan.</li>
+            <li class="Doanvan">Máy tính có kết nối internet khi truyền dữ liệu tới Hải quan.</li>
+            <li class="Doanvan">Có chữ ký số và tài khoản khai báo VNACCS.</li>
+            <li class="Doanvan">Cấu hình máy tính để đảm bảo chạy phần mềm ECUS5VNACCS:<br />
+            <div class="Doanvan"><strong><em><u>A - Cấu hình đối với doanh nghiệp sử dụng mô hình máy đơn</u></em></strong>:</div>
+            <table width="100%" border="1px" bordercolor="#878787" cellpadding="5px" cellspacing="0px">
+            	<tr bgcolor="#D9D9D9">
+                	<td style="font-style:!important" valign="middle" align="center" width="50%"><strong>Cấu hình tối thiểu</strong></td>
+                    <td style="font-style:!important" valign="middle" align="center" width="50%"><strong>Cấu hình đề nghị</strong></td>
+                </tr>
+                <tr>
+            		<td width="50%" valign="top">
+            	<ul style="list-style:circle">
+                	<li class="Doanvan"><strong><em>Hệ điều hành</em></strong>: WindowXP SP1 hoặc cao hơn</li>
+                    <li class="Doanvan"><strong><em>Ổ cứng (HDD)</em></strong>: Ổ cứng còn trống tối thiểu 10GB hoặc nhiều hơn </li>
+                    <li class="Doanvan"><strong><em>Màn hình</em></strong>: Có độ phân giải tối thiểu 1024 x 768</li>
+                    <li class="Doanvan"><strong><em>Bộ nhớ trong (RAM)</em></strong>: Tối thiểu dung lượng bộ nhớ 2GB trở lên.</li>
+                    <li class="Doanvan"><strong><em>Bộ vi xử lý (CPU)</em></strong>: Bộ vi xử lý Intel Dual Core CPU 1.0 GHz hoặc cao hơn.</li>
+                </ul>
+                	</td>
+                    <td width="50%" valign="top">
+                    	<ul style="list-style:circle">
+                	<li class="Doanvan"><strong><em>Hệ điều hành</em></strong>: WindowXP SP1, Windows 7; Windows Vista; Windows Vista SP2; Windows 8/8.1; Windows 10</li>
+                    <li class="Doanvan"><strong><em>Ổ cứng (HDD)</em></strong>: Còn trống tối thiểu <strong>20GB</strong> hoặc nhiều hơn</li>
+                    <li class="Doanvan"><strong><em>Màn hình</em></strong>: Có độ phân giải từ 1024 x 768 trở lên</li>
+                    <li class="Doanvan"><strong><em>Bộ nhớ trong (RAM)</em></strong>: Đề nghị dung lượng bộ nhớ <strong>4GB</strong> trở lên</li>
+                    <li class="Doanvan"><strong><em>Bộ vi xử lý (CPU)</em></strong>: Intel Core i3 trở lên</li>
+                </ul>
+                    </td>
+                 </tr>
+              </table>
+                 
+            <div class="Doanvan"><strong><em><u>B - Cấu hình máy chủ (đối với doanh nghiệp sử dụng mô hình máy chủ - máy trạm)</u></em></strong>:</div>
+            <table width="100%" border="1px" bordercolor="#878787" cellpadding="5px" cellspacing="0px">
+            	<tr bgcolor="#D9D9D9">
+                	
+                    <td style="font-style:!important" valign="middle" align="left"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cấu hình đề nghị</strong></td>
+                </tr>
+                <tr>
+            		<td  valign="top">
+            	<ul style="list-style:circle">
+                	<li class="Doanvan"><strong><em>Hệ điều hành</em></strong>: Windows Server 2008 SP2; Windows Server 2008R2; Windows Server 2012; Windows Server 2012 R2; hoặc cao hơn.</li>
+                    <li class="Doanvan"><strong><em>Ổ cứng</em></strong>: 20GB trống hoặc nhiều hơn.</li>
+                    <li class="Doanvan"><strong><em>Màn hình</em></strong>: Có độ phân giải tối thiểu 1024 x 768</li>
+                    <li class="Doanvan"><strong><em>Bộ nhớ trong (RAM)</em></strong>: Tối thiểu dung lượng bộ nhớ 8GB trở lên.</li>
+                    <li class="Doanvan"><strong><em>Bộ vi xử lý (CPU)</em></strong>: Intel Core i5 trở lên</li>
+                </ul>
+                	</td>
+                    
+                 </tr>
+              </table><br />
+ <table width="860" border="1px" bordercolor="#878787" cellpadding="5px" cellspacing="5px">
+    <tr>  
+    	<td>           
+			<div class="content">
+  				<div class="spoiler">
+   					 <div class="spoiler-btn">&nbsp;<i class="glyphicon glyphicon-plus-sign"></i>
+    <span>
+    <span>Hướng dẫn xem cấu hình máy tính đang dùng</span>
+    </span>
+ 					</div>  
+    			<div class="spoiler-body">
+      		<div class="Doanvan">Để kiểm tra cấu hình máy tính xem có đảm bảo các điều kiện tối thiểu để sử dụng theo cấu hình nên trên, doanh nghiệp thực hiện kiểm tra theo các hướng dẫn sau:</div>
+      <div class="Doanvan">Bạn nhấn phải chuột vào biểu tượng <strong>My Computer</strong> ngoài màn hình Desktop, sau đó chọn <strong>Properties</strong> </div>
+      <div class="Doanvan">Nếu là hệ điều hành Windows 8, 8.1 hoặc Windows 10 bạn nhấn phải chuột vào biểu tượng <strong>This PC</strong> và chọn <strong>Properties</strong> như hình sau:</div>
+      <img src="Images/2-kiemtra-cauhinh-mt.png" /><br />
+      <div class="Doanvan">Lúc này, màn hình xem cấu hình hiện ra như sau:</div>
+      <img src="Images/2-kiemtra-cauhinh-mt-2.png" /><br />
+      <div class="Doanvan">Bạn kiểm tra hệ điều hành đang sử dụng tại mục <strong>Windows Edition</strong></div>
+      <div class="Doanvan">Bạn kiếm tra bộ nhớ RAM, bộ vi xử lý CPU tại mục <strong>System</strong></div>
+      <div class="Doanvan">Để kiểm tra đĩa cứng xem còn trống dung lượng bao nhiêu, bạn nhấn xem hướng dẫn ngay phía dưới</div>
+    </div>
+    
+  </div>
+</div>
+</td></tr></table><br />
+ <table width="860" border="1px" bordercolor="#878787" cellpadding="5px" cellspacing="5px">
+    <tr>  
+    	<td>
+<div class="content">
+  <div class="spoiler">
+    <div class="spoiler-btn">&nbsp;<i class="glyphicon glyphicon-plus-sign"></i> Hướng dẫn kiểm tra dung lượng trống của đĩa cứng</div>
+    <div class="spoiler-body">
+      <div class="Doanvan">Để kiểm tra dung lượng ổ cứng máy tính, bạn nhấp đúp chuột vào biểu tượng <strong>My Computer</strong> trên màn hình máy tính</div>
+      <div class="Doanvan">Sau đó nhấn phải chuột vào ổ đĩa muốn kiểm tra và chọn <strong>Properties</strong>:</div>
+      <img src="Images/2-kiemtra-ocung-0.png" /><br />
+      <div class="Doanvan">Kiểm tra dung lượng còn trống được hiển thị tại mục <strong>Free Space</strong> xem có đảm bảo tối thiểu 10GB để cài đặt chương trình và lưu trữ dữ liệu phần mềm không.</div>
+      <div class="Doanvan">Trường hợp là Windows 7, 10 khi vào <strong>This PC</strong> danh sách các ổ cứng sẽ hiện ra, đồng thời có sẵn số liệu thống kê dung lượng còn trống cho mỗi ổ cứng:</div>
+      <img src="Images/2-kiemtra-ocung-1.png" /><br />
+    </div>
+    </div>
+  </div>
+  </td>
+  </tr>
+  </table>
+            <br />
+        
+        <table width="860" border="1px" bordercolor="#878787" cellpadding="5px" cellspacing="5px">
+    <tr>  
+    	<td>
+<div class="content">
+  <div class="spoiler">
+    <div class="spoiler-btn">&nbsp;<i class="glyphicon glyphicon-plus-sign"></i> Hướng dẫn cài đặt phần mềm ECUS5VNACCS</div>
+    <div class="spoiler-body">
+    
+    <strong><a name="Cau_Hinh_Toi_Thieu"></a></strong>
+								   <div class="Doanvan"><em>Để cài đặt phần mềm, doanh nghiệp thực hiện theo các bước sau đây:</em></div>
+                                   <div  class="Doanvan"><strong><u>Bước 1</u></strong>: <strong>Tải bộ cài tại địa chỉ website <a href="http://thaison.vn/tai-phan-mem/ecus-2018" target="_blank">www.thaison.vn</a></strong></div><br />
+                                     <div  class="Doanvan">Sau khi tải xong bộ cài về máy và giải nén ra sẽ được các file như sau, bạn chạy file <strong>Setup.exe</strong>.</div><br />
+  <img width="167" height="203" src="Images/2.DANGKY-CAUHINHYC_clip_image002_0000.png" border="1px" style="border-color:#B9B9B9"/><br />
+                                     <div class="Doanvan">Chương trình cài đặt sẽ có giao  diện như sau:</div><br />
+  <img src="Images/2.DANGKY-CAUHINHYC_clip_image004_0000.png"/>
+                                   <div  class="Doanvan">Thực hiện lần  lượt các bước cài đặt  theo các mục <strong>1,  2, 3</strong> theo hướng dẫn chi tiết.</div>
+                                   <div  class="Doanvan"><strong><u>Bước 2:</u></strong> <strong>Cài đặt SQL 2008</strong></div>
+                                     <div  class="Doanvan">Nếu hệ thống của bạn đã cài đặt SQL  Server 2008 thì không cần cài đặt bước này nữa.</div>
+                                     <div  class="Doanvan">Để cài SQL 2008 bạn kích chuột vào  mục 1 trên màn hình cài đặt, chương trình sẽ tiến hành tải bộ cài SQL 2008 từ  trên trang chủ màn sẽ hiện ra như sau:</div>
+  <div  class="Doanvan"><img width="600" height="452" src="Images/2.DANGKY-CAUHINHYC_clip_image006_0000.png" /></div>
+                                   <div  class="Doanvan">Và thực hiện cài  đặt tự động chương trình SQL 2008, bạn chờ đến khi SQL 2008 được cài đặt xong  sẽ có một màn hình thông báo cấu hình hiện ra.<br />
+                                     <a name="OLE_LINK2" id="OLE_LINK2"></a><a name="OLE_LINK1" id="OLE_LINK1"><img width="597" height="418" src="Images/2.DANGKY-CAUHINHYC_clip_image008_0000.png" /></a></div>
+                                   <div  class="Doanvan">Bạn  nhấn nút &ldquo;<strong>Xem cấu hình</strong>&rdquo; để xem thư  mục lưu trữ file ECUS5VNACCS.CONFIG. Sau khi cài đặt chương trình thành công  bạn cần coppy file ECUS5VNACCS.CONFIG vào thư mục ECUSDATA. </div>
+                                     
+  <div  class="Doanvan"><strong><u>Bước 3:</u></strong> <strong>Tạo cơ sở dữ liệu </strong></div>
+  <div  class="Doanvan"><em>Chú ý:  Chức năng này chỉ thực hiện trên máy chủ - máy lưu trữ dữ liệu – đã cài SQL  2008 mà bạn vừa tiến hành ở bước trên.</em></div>
+                                     <div  class="Doanvan">Cửa sổ tạo cơ sở dữ liệu hiện ra  như sau:</div>
+  <img width="566" height="396" src="Images/2.DANGKY-CAUHINHYC_clip_image010_0000.png" /><br />
+                                     <div  class="Doanvan">Thư mục lưu dữ  liệu được đặt ngầm định là D:\SQLDatas</div>
+                                     <div  class="Doanvan">Nếu máy của bạn  không có ổ D thì bạn có thể chuyển sang ổ đĩa khác bằng cách sửa tên thư mục  lưu dữ liệu, ví dụ: C:\SQLDatas</div>
+                                   <div  class="Doanvan"><strong>Trường hợp tạo mới CSDL (Cơ sở  dữ liệu):</strong><br />
+                                     Chỉ dùng đối với doanh nghiệp lần  đầu sử dụng chương trình ECUS hoặc khi bạn muốn tạo ra một CSDL trắng ( không  có tờ khai, chứng từ )</div>
+                                   <div  ><img width="566" height="396" src="Images/2.DANGKY-CAUHINHYC_clip_image012_0000.png" /></div>
+                                   <div  class="Doanvan">Nếu chương trình kiểm tra thấy  trong thư mục bạn lưu CSDL đã có file CSDL trước đó, chương trình sẽ hỏi bạn có  muốn tạo CSDL từ những file CSDL trước đó không(khôi phục CSDL)</div>
+                                     <img width="468" height="189" src="Images/2.DANGKY-CAUHINHYC_clip_image014_0000.png" /><br />
+                                     <div  class="Doanvan">Nếu tạo mới CSDL từ những file đã  có chọn &ldquo;<strong>Có</strong>&rdquo;, nếu tạo mới CSDL trắng chọn &ldquo;<strong>Không</strong>&rdquo;, trái lại chọn  &ldquo;<strong>Đóng</strong>&rdquo; để bỏ qua</div>
+                                   <div  class="Doanvan"><strong>Trường hợp khôi phục CSDL  trước đó:</strong></div>
+                                     <div  class="Doanvan">Nếu trước đó bạn đã cài ECUS5VNACCS  vì một lý do nào đó bạn thực hiện cài lại máy tính hoặc hệ quản trị MSDE, khi  đó bạn phải tiến hành khôi phục lại dữ liệu từ những file dữ liệu đã có trước  đó .</div>
+                                   <ol>
+                                     <div class="Doanvan"><li>Khôi  phục từ file cơ sở dữ liệu đang dùng trước khi cài lại, loại file dạng như hình  sau :</li></div>
+                                   </ol>
+                                   <p ><img width="707" height="200" src="Images/2.DANGKY-CAUHINHYC_clip_image016_0000.png" /></p>
+                                   <div  class="Doanvan">Hãy đảm bảo đây là file sử dụng mới  nhất trước khi bạn cài lại máy tính hoặc cài lại MSDE.</div>
+                                   <div  class="Doanvan">Với dạng file này bạn chọn &ldquo; <strong><em>Từ  file CSDL</em></strong>&rdquo; sau đó &ldquo;<strong><em>Chọn file</em></strong>&rdquo; để trỏ đường dẫn vào thư  mục lưu trữ file này, chọn &ldquo;<strong><em>Thực hiện</em></strong>&rdquo; và chờ có thông báo thành  công :<br />
+                                     <img width="565" height="395" src="Images/2.DANGKY-CAUHINHYC_clip_image018_0000.png" /></div>
+                                   <ol>
+                                     <div class="Doanvan"><li>Khôi phục từ file sao lưu, là dạng file mà trong quá  trình làm chương trình bạn thường xuyên sao lưu dự phòng (dạng <strong>tenfile.BAK</strong>), hãy đảm bảo file sao lưu  của bạn là mới nhất, dữ liệu khôi phục sẽ có đến ngày bạn sao lưu :</li></div>
+                                   </ol>
+                                   <p ><img width="694" height="181" src="Images/2.DANGKY-CAUHINHYC_clip_image020_0000.png" /><br />
+                                     <br />
+                                     <div class="Doanvan">Với  dạng file này bạn chọn lựa chọn &ldquo; <strong><em>Từ file sao lưu</em></strong>&rdquo; và trỏ đường dẫn  tới vị trí lưu file, sau đó thực hiện và chờ kết quả thành công :</div><br />
+  <img width="565" height="395" src="Images/2.DANGKY-CAUHINHYC_clip_image022_0000.png" />
+                                   <div  class="Doanvan"><strong><u>Bước 4:</u></strong> <strong>Cài đặt  chương trình </strong></div>
+                                     <div  class="Doanvan">Kích chuột vào mục <strong>3 .Cài đặt  máy trạm ECUS5-VNACCS</strong>  chương trình  cài đặt sẽ hiện ra như sau.</div>
+  <div  class="Doanvan"><img width="509" height="390" src="Images/2.DANGKY-CAUHINHYC_clip_image024_0000.png" /></div>
+                                   <div  class="Doanvan">Chọn nút <strong>Next &gt; </strong>để tiếp  tục, Chọn thư mục cài đặt chương trình ở cửa sổ tiếp theo</div>
+                                   <p ><img width="509" height="390" src="Images/2.DANGKY-CAUHINHYC_clip_image026_0000.png" /></p>
+                                   <div  class="Doanvan">Nhấn &ldquo;<strong><em>Next</em></strong>&rdquo; để tiến trình cài  đặt tự động bắt đầu</div>
+                                   <p><img width="720" height="384" src="Images/2.DANGKY-CAUHINHYC_clip_image028_0000.png" /></p>
+                                   <div  class="Doanvan">Khi chương trình hiện ra thông báo  cài đặt thành công  bạn chọn <strong>Restart</strong> để hoàn thành việc cài đặt.</div>
+                                   <p ><img width="510" height="386" src="Images/2.DANGKY-CAUHINHYC_clip_image030_0000.png" /></p>
+                                   <div  class="Doanvan">(Sau khi khởi động lại máy, trên  màn hình của bạn xuất hiện biểu tượng  <img width="73" height="75" src="Images/2.DANGKY-CAUHINHYC_clip_image032_0000..png" /> thì việc cài đặt đã hoàn thành, bạn có thể bắt  đầu sử dụng chương trình)</div>
+                                   <div  class="Doanvan"><strong><u>Bước 5:</u></strong> <strong>Đăng ký  để sử dụng chương trình</strong></div>
+                                     <div  class="Doanvan">Để sử dụng chương trình bạn kích  đúp chuột vào biểu tượng  <img width="73" height="75" src="Images/2.DANGKY-CAUHINHYC_clip_image032_0000..png" /> trên màn hình.</div>
+                                     
+                                   <div  class="Doanvan">Lần đầu đăng  nhập, bạn hãy sử dụng tài khoản mặc định với tên truy nhập &ldquo;Root&rdquo; và mật khẩu  để trắng rồi ấn vào truy nhập, lưu ý bạn không cần thiết lập gì thêm cho lần  đăng nhập đầu tiên này:</div>
+                                     <img width="719" height="528" src="Images/2.DANGKY-CAUHINHYC_clip_image039_0000.png" /><br />
+                                     <div  class="Doanvan">Đăng nhập thành công, phần mềm sẽ hiện ra màn hình đăng ký thông tin doanh nghiệp sử dụng chương trình:</div>
+                                     <img width="719" height="528" src="Images/2.DANGKY-CAUHINHYC_clip_imageDKTTDN_001.png" /><br />
+                                     <div class="Doanvan">Tại phần thông tin doanh nghiệp, bạn nhập đầy đủ các chỉ tiêu thông tin: <em>Mã số thuế, Tên doanh nghiệp, Địa chỉ...</em>.Nếu doanh nghiệp là đại lý khai báo hải quan hoặc đại điện khai báo cho doanh nghiệp khác, bạn đánh dấu tích chọn vào mục tương ứng:</div>
+                                     <img src="Images/2.DANGKY-CAUHINHYC_clip_imageDKTTDN_002.png" /><br />
+                                     <div class="Doanvan">Nếu bạn cài lại máy tính, cài lại phần mềm và sử dụng cở sở dữ liệu của phần mềm ECUS5VNACCS trước đó, bạn nhấn vào nút "<strong>Chọn doanh nghiệp</strong>" để chọn lại thông tin đã đăng ký:</div>
+                                     <img src="Images/2.DANGKY-CAUHINHYC_clip_imageDKTTDN_002.1.png" /><br />
+                                     <div class="Doanvan">Danh sách thông tin  doanh nghiệp đã đăng ký hiện ra, bạn chọn vào thông tin doanh nghiệp rồi nhấn nút "<strong>Chọn</strong>":</div>
+                                     <img src="Images/2.DANGKY-CAUHINHYC_clip_imageDKTTDN_002.2.png" /><br />
+                                     <div class="Doanvan">Phần thông tin hải quan tiếp nhận và tài khoản khai báo VNACCS, bạn nhập vào sau đó nhấn nút "<strong>Đăng ký</strong>" để hoàn tất:</div>
+                                     <img src="Images/2.DANGKY-CAUHINHYC_clip_imageDKTTDN_003.png" /><br />
+                                     
+                                     
+                           
+    </div>
+  </div>
+  </td>
+  </tr>
+  </table>              
+    </li>
+        </ul>                                
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap-3.4.1.min"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).on('click', '.spoiler-btn', function (e) {
+        e.preventDefault()
+        $(this).parent().children('.spoiler-body').toggle()
+    });
+});
+
+</script>				           
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

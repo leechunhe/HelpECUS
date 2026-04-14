@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Đăng nhập hệ thống</title>
+ <link href="css/bootstrap-3.4.1.min.css" rel="stylesheet">
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><a name="HD_Dang_Nhap"><strong>HƯỚNG DẪN ĐĂNG NHẬP HỆ THỐNG </strong></a><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+								  <div class="Doanvan">Để đăng nhập thành công vào hệ thống sử dụng các chức năng của  phần mềm, bạn cần đảm bảo các điều kiện sau:</div>
+                                  <ul>
+                                    <li class="Doanvan">Cài đặt thành công phần mềm ECUS5VNACCS (<a href="2.DANGKY-CAUHINHYC.html">tham khảo hướng dẫn cài đặt</a>)</li>
+                                    <li class="Doanvan">Tạo thành công cơ sở dữ liệu cho phần mềm</li>
+                                    <li class="Doanvan">Thiết lập đúng các thông số kết nối đến cơ sở dữ liệu đã  tạo</li>
+                                  </ul>
+                                  <div class="Doanvan">Khi mở phần mềm sẽ xuất hiện cửa sổ đăng nhập như  sau:</div>
+                                  <div align="left"><img src="Images/6.DANGNHAP_01.png" /></div>
+                                  <div class="Doanvan">Nếu là lần đầu chạy chương trình, Tên truy nhập được mặc  định là <strong>Root</strong> và mật khẩu để trống (không phải nhập gì cả), bạn nhấn vào nút<strong> Đăng  nhập</strong> để vào phần mềm.</div>
+                                  <div class="Doanvan">Trường hợp đăng nhập không thành công và có thông báo lỗi  xuất hiện, điều đó có thể do nguyên nhân dưới đây:</div>
+                                  <ul>
+                                    <li><div class="Doanvan">Bạn  chưa tạo hoặc tạo chưa thành công cơ sở dữ liệu cho phần mềm</div></li>
+                                    <li><div class="Doanvan">Bạn  đã tạo cơ sở dữ liệu nhưng phần thông số kết nối không đúng với mặc định.</div></li>
+                                  </ul>
+                                  <div class="Doanvan">Để thiết lập thông số kết nối, bạn nhấn vào &quot;<em>Thiết lập thông số kết nối CSDL</em>&quot; màn hình  thiết lập sẽ hiện ra như sau:</div>
+                                  <div align="left"><img src="Images/6.DANGNHAP_02.png"/></div>
+                                  
+                                    <div class="Doanvan">Tại đây bạn thực  hiện thiết lập các thông số kết nối đến cơ sở dữ liệu đã tạo (công việc này áp  dụng cho cả trường hợp thiết lập kết nối máy trạm – máy chủ sử dụng phần mềm).  Vui lòng xem lại hướng dẫn cài đặt phần mềm nếu chưa rõ mục này.</div>
+                                    <ul>
+                                    <li><div class="Doanvan"><u>Tên máy chủ</u>:  Là tên máy hoặc địa chỉ IP của máy tính chứa cơ sở dữ liệu của phần mềm.</div></li>
+                                    <li><div class="Doanvan"><u>Tên truy cập</u>: Đây là tên truy cập vào hệ quản trị CSDL SQL, thông thường là &quot;sa&quot;.</div></li>
+                                    <li><div class="Doanvan"><u>Mật khẩu</u>:  Mật khẩu truy cập vào hệ quản trị CSDL SQL Server, thông thường là để trống.</div></li>
+                                    <li><div class="Doanvan"><u>Tên CSDL</u>:  Đây là tên cơ sở dữ liệu của phần mềm mà bạn đã tạo ở bước cài đặt, mặc định là  ECUS5VNACCS trừ trường hợp doanh nghiệp tự tạo và đặt tên khác.</div></li>
+                                    
+                                    </ul>
+                                   <div class="Doanvan">Thiết lập xong  bạn nhấn <strong>Ghi</strong> để ghi lại, nhấn nút <strong>Kiểm tra kết nối</strong> nếu có thông báo thành công, bạn tiến hành đăng nhập lại vào phần mềm.</div>
+                                   <div align="left"><img src="Images/6.DANGNHAP_06.png"/></div><br />
+                                   <div class="Doanvan"><strong><u>Lưu ý</u></strong>: 
+                                   <ul>
+                                   <li class="Doanvan">Trường hợp đăng nhập trong mô hình máy chủ - trạm, trên các máy trạm (máy chỉ cài phần mềm ECUS5VNACCS - chỉ chạy bước 3 khi cài đặt) bạn cũng nhập vào các thông số kết nối giống với thông số đã thiết lập trên máy chủ cơ sở dữ liệu</li>
+                                   <li class="Doanvan">Trường hợp đăng nhập trong mô hình máy chủ - trạm, mặc định cổng kết nối (port) SQL là 1433, do đó khi nhập tên máy chủ trên các máy trạm, bạn không cần phải nhập kèm cổng kết nối. Trường hợp port được cán bộ IT của công ty thay đổi nhằm đảm bảo bảo mật thì khi nhập tên máy chủ, bạn cần nhập kèm theo cổng kết nối theo cú pháp: <strong>TENMAYCHU</strong>,<strong>Port</strong></li>
+                                   <div class="Doanvan">Ví dụ, tên máy chủ SQL là SERVER, cổng kết nối là 1234 thì bạn nhập: SERVER,1234</div>
+                                   <div align="left"><img src="Images/6.DANGNHAP_04.png"/></div><br />
+                                   </ul>
+                                   <div class="Doanvan" align="left"><a href="3.1-1.Thiet-lap-ban-dau_title.html">
+                                   <button type="button" class="btn btn-default btn-sm">
+          							<span class="glyphicon glyphicon-menu-left"></span> Quay trở lại
+       							   </button></a>
+                                   </div>
+								<!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

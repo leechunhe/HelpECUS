@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Tổng quan tờ khai</title><!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><a name="GT_Tong_Quan_TK"><strong>GIỚI THIỆU TỔNG QUAN TỜ KHAI</strong></a><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+								  <p><strong>Tờ khai  VNACCS:</strong></p>
+                                  <p class="Doanvan">Hình ảnh tờ khai VNACCS được thiết kế như sau:</p>
+                                  <p class="Doanvan"><strong>Phần 1</strong>: Là  danh sách các nút nghiệp vụ (Các nút này sẽ mờ đi hoặc sáng lên theo từng trạng  thái của tờ khai)</p>
+                                  <p class="Doanvan"><strong>Phần 2:</strong> Hướng  dẫn nhập liệu cho từng chỉ tiêu trên tờ khai và thông điệp thông báo trả về từ  hệ thống của Hải quan</p>
+                                  <p class="Doanvan"><strong>Phần 3:</strong> Thông  tin tờ khai bao gồm Thông tin chung, danh sách hàng, chỉ thị của Hải quan và kết  quả xử lý tờ khai.</p>
+                                  <p align="center"><img src="Images/6.TONGQUAN_TK_01.png"/></p>
+                                  <p class="Doanvan"><strong>Tờ khai VNACCS  có đặc điểm là:</strong></p>
+                                  <ol>
+                                    <li><div class="Doanvan">Việc  khai tờ khai sẽ thực hiện theo các bước nghiệp vụ, mỗi nghiệp vụ sẽ có một mã tương  ứng như:</div></li>
+                                    <ul>
+                                     <li><div class="Doanvan">1.Lấy thông tin tờ khai từ Hải quan (IDB)</div></li>
+                                     <li><div class="Doanvan">2.Khai trước thông tin tờ khai (IDA)</div></li>
+                                     <li><div class="Doanvan">3.Khai chính thức tờ khai (IDC) </div></li>
+                                     <li><div class="Doanvan">4.Lấy kết quả phân luồng, thông quan</div></li>
+                                     <li><div class="Doanvan">Các nút nghiệp vụ từ 5.1 đến 5.4 sử dụng để sửa  tờ khai.</div></li>
+                                     <li><div class="Doanvan">6.Xem thông tin tờ khai từ Hải quan (IID) sử dụng  để xem tờ khai đã khai báo từ hệ thống của Hải quan</div></li>
+                                  </ul>
+                                  <p class="Doanvan">Để giải thích rõ quy trình khai theo các nghiệp vụ  này chúng tôi sẽ hướng dẫn ở mục tiếp theo dưới đây. </p>
+                                  
+                                    <li><div class="Doanvan">Danh  sách hàng của tờ khai chỉ khai được tối đa 50 dòng hàng, khi có lớn hơn 50 dòng  hàng thì sẽ phải tách ra thành nhiều tờ khai nhánh (việc tách này sẽ do chương  trình thực hiện tự động, người khai chỉ cần nhập tất cả các dòng hàng trên tờ  khai đầu tiên, khi khai chương trình sẽ tách thành các tờ khai nhánh phù hợp).</div></li>
+                                    <li><div class="Doanvan">Các  danh mục như: Loại hình xuất nhập khẩu, Đơn vị Hải quan, Danh mục cảng cửa khẩu,  đợn vị tính,… được chuẩn hoá lại theo chuẩn mực VNACCS.</div></li>
+                                    <li><div class="Doanvan">Các  chỉ tiêu thông tin bắt buộc phải nhập trên tờ khai rất ít, các chỉ tiêu thông  tin không nhập sẽ được hệ thống của Hải quan trả về, ví dụ như chúng ta chỉ cần  nhập mã đơn vị xuất nhập khẩu thì hệ thống của Hải quan sẽ trả về các thông tin  còn thiếu như Tên đơn vị, địa chỉ,….Hay trên dòng hàng thì không cần nhập trị  giá tính thuế và thuế suất, tiền thuế mà khi khai hệ thống của Hải quan sẽ tự  trả về Trị giá tính thuế, thuế suất và tiền thuế tương ứng với mỗi sắc thuế vì  vậy chúng ta sẽ hiểu tại sao lại có bước   &quot;2.Khai trước thông tin tờ khai (IDA)&quot; (Có thể hiểu là khai trước thông  tin tờ khai để hệ thống của Hải quan trả về các thông tin còn thiếu và kết quả  tính thuế của tờ khai, nếu người khai thấy phù hợp thì mới tiền hành khai chính  thức bằng nghiệp vụ &quot;3.Khai chính thức tờ khai (IDC)&quot;, khi khai chính thức hệ  thống của Hải quan mới đưa tờ khai vào xử lý thông quan)</div></li>
+                                  </ol>
+                                  <br clear="all" />
+                                  <p class="Doanvan"><strong>Quy trình khai  báo trên tờ khai VNACCS:</strong></p>
+                                  <p class="Doanvan">Dựa trên đặc điểm của tờ khai VNACCS là thực hiện  khai báo theo các bước nghiệp vụ, các bước nghiệp vụ này đã được tính hợp sẵn  trên các nút nghiệp vụ theo thứ tự các bước thực hiện như sau:</p>
+                                  <p><img src="Images/6.TONGQUAN_TK_02.png" /></p>
+                                  <ol>
+                                    <li><div class="Doanvan">Nút nghiệp vụ số 1 &quot;1.Lấy thông tin tờ khai từ Hải  quan (IDB)&quot;: Khi tạo tờ khai mới bạn sẽ thấy chỉ có nút này sáng lên nên có thể  hiểu rằng sẽ thực hiện nghiệp vụ này đầu tiên nhưng thực tế thì nghiệp vụ này chỉ  dùng để gọi lại thông tin tờ khai đã khai trước đó lên hệ thống của Hải quan hoặc  gọi một số tiêu chí của tờ khai thông qua các chứng từ đã khai trước đó như là  &quot;Hoá đơn &quot;, hay &quot;eManifest&quot;. Cách thông thường là người khai sẽ tự nhập thông  tin trên tờ khai mới. Sau khi nhập thông tin tờ khai bạn ghi lại thì nút nghiệp  vụ số 2 &quot;2.Khai trước thông tin tờ khai (IDA) &quot; sẽ sáng lên như vậy có thể hiểu  là người khai sẽ thực hiện bước nghiệp vụ này tiếp theo.</div></li>
+                                    <li><div class="Doanvan">Nút  nghiệp vụ số 2 &quot;2.Khai trước thông tin tờ khai (IDA) &quot;: Khi hoàn thành nhập liệu  cho tờ khai và ghi lại thì người khai sẽ thực hiện nghiệp vụ thứ 2 này và hệ thống  của Hải quan sẽ trả về số tờ khai, các thông tin còn thiếu và quan trọng nhất là  thông tin về thuế của tờ khai do hệ thông của Hải quan tính và trả về cho doanh  nghiệp. Người khai sẽ kiểm tra thông tin tờ khai trả về đã phù hợp chưa và quyết  định một trong hai tình huống sau:</div></li>
+                                    <ul>
+                                    <li><div class="Doanvan">Nếu đồng ý với thông tin tờ khai và tính thuế trả  về từ Hệ thống của Hải quan thì tiến hành bước nghiệp vụ tiếp theo là &quot;3.Khai chính  thức tờ khai (IDC)&quot; khi thực hiện bước này thì tờ khai sẽ được khai chính thức  và được Hệ thống của Hải quan đưa vào xử lý thông quan và các nghiệp vụ tiếp  theo.</div></li>
+                                    <li><div class="Doanvan">Nếu thấy nội dụng tờ khai trả về và kết quả tính  thuế chưa phù hợp thì người khai có thể tiếp tục sửa tờ khai và thực hiện lại bước  khai trước thông tin tờ khai lên hệ thông của Hải quan để nhận kết quả mới trả  về (Bước này có thể thực hiện lặp lại nhiều lần mà không giới hạn).Để sửa lại  thông tin thì người khai sẽ quay lại bước 1 &quot;1.Lấy thông tin tờ khai từ Hải  quan (IDB)&quot; khi đó hệ thống sẽ tài về nội dung tờ khai đã khai để người khai có  thể sửa lại thông tin. Sau khi sửa và ghi lại thì lại tiếp tục thực hiện bước 2  &quot;2.Khai trước thông tin tờ khai (IDA) &quot;  và nhận kết quả thông tin tờ khai trả về từ Hải  quan.</div></li>
+                                    </ul>
+                                    <li><div class="Doanvan">Nút  nghiệp vụ 3 &quot;3.Khai chính thức tờ khai (IDC)&quot;: Sử dụng khi người khai chính thực  đồng ý với nối dung tờ khai do hệ thống Hải quan trả về khi khai trước thông  tin tờ khai trong bước 2.</div></li>
+                                    <li><div class="Doanvan">Nút  nghiệp vụ 4 &quot;4.Lấy kết quả phân luồng, thông quan&quot;: Chức năng này dùng để lấy các  thông tin thông quan của tờ khai khi tờ khai đã được khai chính thức bằng nghiệp  vụ IDC.</div></li>
+                                    <ul>
+                                    <li><div class="Doanvan">Sau khi nhận được các kết quả thông quan tờ khai  bạn vào mục &quot;Kết quả xử lý tờ khai&quot; để in tờ khai và các thông báo của tờ khai để  tiến hành các bước tiếp theo.</div></li>
+                                    <li><div class="Doanvan">Các nút nghiệp vụ từ mục 5.1 đến 5.4 sử dụng để  sửa tờ khai khi đã khai chính thức và các bước thực hiện và ý nghĩa giống như  quy trình khai mới tờ khai nêu trên chỉ khác là thực hiện khi muốn sửa tờ khai đã  khai chính thức.</div></li>
+                                    <li><div class="Doanvan">Nút nghiệp vụ 6 &quot;6. Xem thông tin tờ khai từ Hải  quan&quot;: Sử dụng để xem tờ khai lưu trên hệ thông của Hải quan mà người khai đã  khai trước đó.</div></li>
+                                  </ul>
+                                  </ol>
+								<!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

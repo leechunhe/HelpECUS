@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Thông tin cơ bản TK Nhập</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><strong>HƯỚNG DẪN </strong><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+        <p>
+        <div class="Doanvan">Trong chức năng  “Kế toán kho” bao gồm có ba phần tương ứng  với ba loại hình doanh nghiệp đó là: <strong><em>Gia công, Sản xuất xuất khẩu và Chế xuất. </em></strong>Trong  mỗi phần đều có các nghiệp vụ như đã giới thiệu ở trên.<br />
+          Để đi vào chi tiết từng nghiệp vụ tôi  sẽ hướng dẫn chi tiết các nghiệp vụ cho loại hình Gia công, các loại hình khác  đều thực hiện tương tự.<br />
+  <strong><u>Lưu ý :</u></strong></div>
+        <ul>
+          <li class="Doanvan">Nếu  bạn sử dụng quyết toán mức độ <strong>(1)</strong> thì không sử dụng chức năng này, hãy xem hướng dẫn sử dụng cho mức độ của mình  tại phần <a>2. Hướng dẫn sử dụng Sổ quyết toán</a>. </li>
+          <li class="Doanvan">Nếu  bạn là doanh nghiệp sử dụng quyết toán mức độ <strong>(2)</strong> theo sơ đồ trên thì phải thực hiện đầy đủ các bước theo hướng  dẫn dưới đây.</li>
+          <li class="Doanvan">Nếu  bạn là doanh nghiệp đã có phần mềm quản lý kho chuẩn của riêng doanh nghiệp  (tức là sử dụng mức độ <strong>(3)</strong>) thì bạn  tiến hành <a>Bước 1: Lập danh mục</a>, <a>Bước 2: Cập nhật tồn đầu</a> và xem thêm phần <strong><a>4.Hướng dẫn import  dữ liệu chứng từ</a> </strong>để đưa các phiếu chứng từ<strong> </strong>từ file excel được kết xuất ra bằng phần mềm quản lý kho của mình.</li>
+        </ul>
+        <h3>1: Lập danh mục. </h3>
+       
+        <div class="Doanvan">Lập danh mục kho cũng  đồng nghĩa với việc tạo bảng MAP giữa mã hàng theo nghiệp vụ quản lý kho kế  toán với mã hàng theo nghiệp vụ Hải quan.Đây là công việc đầu tiên bạn phải làm  trước khi lập chứng từ, việc lập danh mục nhằm xác định được bảng mã vật tư  quản lý theo mã code ( mã kho chi tiết) và mã hàng ECUS tương ứng với nó, giữa  dữ liệu chứng tử ở Sổ quyết toán và Kế toán kho có mối liên hệ thông qua bảng  map này làm cầu nối.</div>
+        <div class="Doanvan"> Để thực hiện bạn vào menu “<strong><em>Kế  toán kho/ Gia công</em></strong>” :</div>
+          <img src="Images/KE_TOAN_KHO_clip_image002.gif" alt="1" width="694" height="234" border="0" /><br />
+        <div class="Doanvan"> Bạn lần lượt thiết lập cho danh mục  nguyên liệu, sản phẩm, thiết bị, hàng mẫu ví dụ bạn chọn “<strong><em>Danh mục nguyên liệu</em></strong>” :</div>
+  <img src="Images/KE_TOAN_KHO_clip_image004.gif" alt="1" width="693" height="463" border="0" /><br />
+         <div class="Doanvan"> Chọn hợp đồng để tạo danh mục, màn  hình hiện ra như sau :<br />
+  <img src="Images/KE_TOAN_KHO_clip_image006.gif" alt="1" width="693" height="394" border="0" /></div>
+          <div class="Doanvan">Tại đây bạn nhập danh mục  để thiết lập mối liên hệ giữa mã quản lý kho và mã quản lý khai Hải quan,  trường hợp mối quan hệ là một – nhiều thì bạn chọn mã danh mục Hải quan như  trong hình trên rồi nhấn vào nút “<strong>Chi  tiết Map dữ liệu</strong>” để chọn chi tiết :</div>
+  <img src="Images/KE_TOAN_KHO_clip_image008.gif" alt="1" width="694" height="423" border="0" /><br />
+         <div class="Doanvan"> Phần mềm hỗ trợ bạn chức năng nhập dữ  liệu từ file excel có sẵn, bằng cách nhấn vào nút “<strong>Nhập từ excel</strong>”, màn hình hiện ra bạn thiết lập các thông số theo  file excel có sẵn như sau:</div>
+  <img src="Images/KE_TOAN_KHO_clip_image010.jpg" alt="1" width="694" height="573" border="0" /><br />
+         <div class="Doanvan"> Cuối cùng nhấn vào “<strong>Thực hiện</strong>” để phần mềm đưa danh sách  trong file excel vào cho bạn.<br />
+          Bạn thực hiện theo cách tương tự cho  các danh mục sản phẩm, hàng mẫu, thiết bị nếu có.<br />
+          Đối với danh mục định mức thực tế của  sản phẩm, trong trường hợp bạn nhập bảng định mức cho sản phẩm chi tiết trong  Kế toán kho trước, tức là định mức sản phẩm theo mã code thì bạn có thể chuyển  bảng định mức này vào danh mục định mức cho sản phẩm theo mã hàng ECUS bằng  chức năng “Chuyển định mức sang Sổ quyết toán”, phần mềm sẽ dựa vào bảng danh  mục MAP để chuyển đổi tự động mã Sản phẩm, Nguyên liệu CODE sang Sản phẩm,  Nguyên liệu theo mã hàng ECUS.</div>
+  <img src="Images/KE_TOAN_KHO_clip_image012.gif" alt="1" width="693" height="208" border="0" /><br />
+     <div class="Doanvan">     Màn hình nhập định mức sản phẩm kho về giao diện giống như  màn hình định mức của mã hàng ECUS :</div>
+  <img src="Images/KE_TOAN_KHO_clip_image014.png" alt="1"/><br />
+     <div class="Doanvan">     Khi nhấn vào nút “<strong><em>Chuyển định mức sang Sổ quyết toán</em></strong>”  để thực hiện, nếu mã CODE nguyên phụ liệu tham gia bảng định mức của Sản phẩm  mà trong bảng danh mục MAP có mối liên hệ với nhiều mã nguyên phụ liệu ECUS thì  phần mềm sẽ hiện ra bảng thông báo sau:</div>
+  <img src="Images/KE_TOAN_KHO_clip_image016.png" alt="1"/><br />
+         <div class="Doanvan"> Khi đó bạn phải tự nhập tách định mức cho danh sách nguyên  liệu ECUS liên quan, Ghi lại rồi nhấn vào thực hiện và chờ có thông báo thành  công. Bạn vào phần định mức thực tế của sản phẩm ECUS để kiểm tra :</div>
+  <img src="Images/KE_TOAN_KHO_clip_image018.png" alt="1" /><br />
+    <div class="Doanvan">      Nếu sản phẩm theo mã hàng ECUS tương ứng đã có bảng định mức  nhập trước đó, phần mềm sẽ hiện thông báo như sau:</div>
+    <span class="right-content" style="overflow:auto;padding:0px 5px"><img src="Images/KE_TOAN_KHO_clip_image020.png" alt="1" /></span><br />
+    <div class="Doanvan">      Nếu bạn vẫn quyết định chuyển từ định mức kế toán kho sang  thì trước hết phải xóa bảng định mức đã nhập rồi mới thực hiện việc chuyển định  mức.</div>
+        <h3>Bước 2: Cập nhật tồn đầu kỳ. </h3>
+     
+        <div class="Doanvan">Khi bắt đầu thực hiện quản lý kho trên  phần mềm ECUS bạn cần thực hiện việc cập nhật số liệu tồn đầu kỳ nguyên liệu  vật tư của từng kho theo các phương án chốt tồn đã giới thiệu ở trên, để thực  hiện bạn vào menu “<strong><em>Kế toán kho/ Cập nhật tồn Gia công</em></strong>” :</div><br />
+            <img src="Images/KE_TOAN_KHO_clip_image022.png" alt="1" /><br />
+       <div class="Doanvan">   Chọn hợp đồng gia công để cập nhật số liệu tồn:</div>
+  <img src="Images/KE_TOAN_KHO_clip_image024.png" alt="1" /> <br />
+        <div class="Doanvan">  Màn hình cập nhật số liệu hiện ra như sau:</div>
+  <img src="Images/KE_TOAN_KHO_clip_image026.gif" alt="1" width="694" height="424" border="0" /><br />
+       <div class="Doanvan">   Bạn thực hiện cập nhật số liệu tồn Nguyên  liệu, sản phẩm, thiết bị, hàng mẫu cho các kho, bạn cũng có thể đưa số liệu vào  từ file excel bằng cách nhấn phím F6 trên bàn phím, màn hình thiết lập hiện ra  bạn thiết lập các thông số tương ứng như hình sau :</div>
+  <img src="Images/KE_TOAN_KHO_clip_image028.gif" alt="1" width="694" height="472" border="0" /><br />
+        <div class="Doanvan">  Sau khi nhập xong số liệu tồn đầu kỳ Kế toán kho bạn có thể  chuyển toàn bộ số liệu này sang cho Sổ quyết toán nếu chọn phương án chốt tồn  theo số liệu kế toán, bằng cách nhấn vào nút “Chuyển tồn sang sổ quyết toán”:</div>
+  <img src="Images/KE_TOAN_KHO_clip_image030.png" alt="1"/>
+        <h3>Bước    3: Thực hiện các chứng từ nhập xuất. </h3>
+        
+        <div><img src="Images/KE_TOAN_KHO_clip_image032.png" alt="1"/></div>
+        <h4><strong><u>Phiếu  nhập kho</u></strong></h4>
+       
+        <div class="Doanvan">Để tạo phiếu nhập kho, bạn vào menu “<strong><em>Kế  toán kho/ Chứng từ nhập xuất</em></strong>” và chọn mục “Phiếu nhập kho” màn hình  hiện ra như sau :<br />
+            <img src="Images/KE_TOAN_KHO_clip_image034.png" alt="1"/></div>
+        <div class="Doanvan"><strong><u>Nhập thông tin chung cho phiếu nhập kho :</u></strong><br />
+            <img src="Images/KE_TOAN_KHO_clip_image036.png" alt="1"/></div>
+        <ul>
+          <li class="Doanvan"><u>Nhập đối tượng</u> : chọn đối tượng cho phiếu nhập kho từ danh sách, nhấn vào nút dấu (…) để thêm mới  danh sách các đối tượng thường xuyên.</li>
+          <li class="Doanvan"><u>Địa chỉ </u>: Nhập  thông tin địa chỉ đối tượng, nếu khi bạn thêm danh sách đối tượng thường xuyên  mà có nhập cả địa chỉ thì khi chọn đối tượng phần mềm sẽ tự động lấy địa chỉ  vào ô này.</li>
+          <li class="Doanvan"><u>Mã kho</u>: Bạn  chọn mã kho cần đưa hàng vào cho phiếu nhập kho, nếu chưa có danh sách mã kho  bạn cần thêm mới từ menu “<strong><em>Danh mục / 22.Danh mục kho</em></strong>”.</li>
+          <li class="Doanvan"><u>Nhập các thông tin về chứng từ</u>: như ngày chứng từ, số chứng từ gốc nếu có.</li>
+          <li class="Doanvan"><u>Mã nguyên tệ</u>:  Chọn mã nguyên tệ sử dụng cho phiếu nhập kho và thiết lập tỷ giá so với đồng  tiền Việt Nam.</li>
+          <li class="Doanvan"><u>Loại hàng</u>: để  chọn loại hàng hóa cho phiếu nhập kho là Nguyên liệu, sản phẩm, thiết bị hay  hàng mẫu.</li>
+          <li class="Doanvan"><u>Thông tin tờ khai</u>: nếu có sẵn thông tin hàng từ tờ khai nhập khẩu Hải quan bạn nhấn vào  nút có dấu (…) để chọn, khi đó phần mềm tự động lấy danh sách hàng vào phiếu  nhập kho cho bạn.</li>
+        </ul>
+        <div class="Doanvan"><strong><u>Nhập danh sách hàng cho phiếu nhập kho</u></strong><strong>:</strong><br />
+            <img src="Images/KE_TOAN_KHO_clip_image038.gif" alt="1" width="694" height="222" border="0" /></div>
+          <div class="Doanvan">Trong danh sách hàng khi bạn chọn  phần mềm sẽ thể hiện mã hàng quản lý kho tương ứng với mã hàng theo danh mục  Hải quan.</div>
+        <div class="Doanvan">  Phần mềm hỗ trợ chức năng nhập danh  sách hàng từ file excel có sẵn dữ liệu, để nhập bạn nhấn phím F6 trên bàn phím  để hiện ra cửa sổ thiết lập thông số import, khi đó bạn thiết lập hàng, cột  tương ứng với file excel như hình mẫu dưới đây :</div>
+  <img src="Images/KE_TOAN_KHO_clip_image040.gif" alt="1" width="693" height="534" border="0" /><br />
+        <div class="Doanvan">  Bạn có thể lấy thông tin hàng từ tờ  khai nhập khẩu Hải quan bằng cách nhấn vào nút có dấu (…) tại ô “<strong><em>Số tờ  khai</em></strong>” để tìm và chọn tờ khai hoặc nhấn vào (…) tại ô “<strong><em>Số  hóa đơn</em></strong>” để chọn danh sách hàng từ hóa đơn điện tử đã có ( Hóa đơn điện  tử được khai báo bằng nghiệp vụ hóa đơn IVA trên phần mềm ECUS5VNACCS )</div>
+  <img src="Images/KE_TOAN_KHO_clip_image042.png" alt="1"/><br />
+          <div class="Doanvan">Sau khi tờ khai được chọn, phần mềm  tự động lấy danh sách hàng trên tờ khai để đưa vào danh sách hàng của phiếu  nhập kho với mã hàng tương ứng với mã hàng ECUS bạn đã thiết lập trong danh  mục:</div>
+  <img src="Images/KE_TOAN_KHO_clip_image044.png" alt="1"/><br />
+    <div class="Doanvan">      Bạn chỉ cần nhập vào thông tin Tài  khoản Nợ - Có cho dòng hàng rồi ghi lại và nhấn vào “<strong><em>Ghi sổ</em></strong>” (nếu tại phần  thiết lập thông số ngầm định ban đầu bạn chọn “<em>Ghi dữ liệu đồng thời ghi sổ</em>” thì sau khi nhấn Ghi dữ liệu phần mềm  tự động ghi sổ cho bạn).</div> 
+        <div class="Doanvan"><strong><u>Lưu ý:</u></strong> để sửa thông tin phiếu nhập kho, bạn nhấn vào nút “<strong>Bỏ ghi</strong>” để trở về trạng thái sửa dữ  liệu.<br />
+          Nếu ở phần thiết lập thông số ngầm định ở trên bạn có đánh  dấu vào mục lựa chọn :</div>
+  <img src="Images/KE_TOAN_KHO_clip_image046.gif" alt="1" width="538" height="71" border="0" /><br />
+         <div class="Doanvan"> Thì phần mềm sẽ tự động tạo ra cho bạn một phiếu với thông  tin tương tự ở Sổ quyết toán, có điều mã hàng trên phiếu vừa được tự động tạo  ra ở Sổ quyết toán là mã hàng theo danh mục Hải quan, các mã này được lấy tự  động bởi mối liên hệ với mã code quản lý theo nghiệp vụ kho mà bạn đã thiết lập  tại phần danh mục ở trên. Phiếu này sẽ phục vụ số liệu cho việc báo cáo quyết  toán với Hải quan sau này. Bạn có thể xem phiếu này tại menu “<strong><em>Sổ  quyết toán / Chứng từ nhập xuất</em></strong>” và chọn “<strong><em>Danh sách phiếu nhập kho</em></strong>”  :</div>
+  <img src="Images/KE_TOAN_KHO_clip_image048.png" alt="1"/>
+        <h4><strong><u>Phiếu  xuất kho</u></strong></h4>
+        <div class="Doanvan">Để tạo phiếu xuất kho, bạn vào menu “<strong><em>Kế  toán kho/ Chúng từ nhập xuất</em></strong>” và chọn mục “<strong><em>Phiếu xuất kho</em></strong>” màn hình  hiện ra như sau :</div>
+          <img src="Images/KE_TOAN_KHO_clip_image050.png" alt="1"/>
+        <p class="Doanvan"><strong><u>Nhập thông tin chung cho phiếu xuất kho :</u></strong><br />
+            <img src="Images/KE_TOAN_KHO_clip_image052.png" alt="1" /></p>
+        <ul>
+          <li class="Doanvan"><u>Nhập đối tượng</u> : chọn đối tượng cho phiếu xuất kho từ danh sách, nhấn vào nút dấu (…) để thêm  mới danh sách các đối tượng thường xuyên.</li>
+          <li class="Doanvan"><u>Địa chỉ </u>: Nhập  thông tin địa chỉ đối tượng, nếu khi bạn thêm danh sách đối tượng thường xuyên  mà có nhập cả địa chỉ thì chọn đối tượng, phần mềm sẽ tự động lấy địa chỉ vào ô  này.</li>
+          <li class="Doanvan"><u>Mã kho</u>: Bạn  chọn mã kho cần đưa hàng ra cho phiếu xuất   kho, nếu chưa có danh sách mã kho bạn cần thêm mới từ menu “<strong><em>Danh  mục / 22.Danh mục kho</em></strong>”.</li>
+          <li class="Doanvan"><u>Nhập các thông tin về chứng từ</u>: như ngày chứng từ, số chứng từ gốc nếu có.</li>
+          <li class="Doanvan"><u>Mã nguyên tệ</u>:  Chọn mã nguyên tệ sử dụng cho phiếu xuất   kho và thiết lập tỷ giá so với đồng tiền Việt Nam.</li>
+          <li class="Doanvan"><u>Loại hàng</u>: để  chọn loại hàng hóa cho phiếu xuất kho là Nguyên liệu, sản phẩm, thiết bị hay  hàng mẫu.</li>
+          <li class="Doanvan"><u>Thông tin tờ khai</u>: nếu có sẵn thông tin hàng từ tờ khai xuất nhập khẩu Hải quan bạn nhấn  vào nút có dấu (…) để chọn, khi đó phần mềm tự động lấy danh sách hàng vào  phiếu nhập kho cho bạn.</li>
+        </ul>
+        <div class="Doanvan"><strong><u>Nhập danh sách hàng cho phiếu xuất kho</u></strong><strong>:</strong></div>
+            <img src="Images/KE_TOAN_KHO_clip_image038_0000.gif" alt="1" width="694" height="222" border="0" /><br />
+        <div class="Doanvan">  Trong danh sách hàng khi bạn chọn  phần mềm sẽ thể hiện mã hàng quản lý kho tương ứng với mã hàng theo danh mục  Hải quan.<br />
+          Phần mềm hỗ trợ chức năng nhập danh  sách hàng từ file excel có sẵn dữ liệu, để nhập bạn nhấn phím F6 trên bàn phím  để hiện ra cửa sổ thiết lập thông số import, khi đó bạn thiết lập hàng, cột  tương ứng với file excel như hình mẫu dưới đây :</div>
+  <img src="Images/KE_TOAN_KHO_clip_image055.gif" alt="1" width="693" height="518" border="0" /><br />
+    <div class="Doanvan">      Bạn có thể lấy thông tin hàng từ tờ  khai nhập khẩu Hải quan bằng cách nhấn vào nút có dấu (…) tại ô “<strong><em>Số tờ  khai</em></strong>” để tìm và chọn tờ khai hoặc nhấn vào (…) tại ô “<strong><em>Số  hóa đơn</em></strong>” để chọn danh sách hàng từ hóa đơn điện tử đã có ( Hóa đơn điện  tử được khai báo bằng nghiệp vụ hóa đơn IVA trên phần mềm ECUS5VNACCS )</div>
+  <img src="Images/KE_TOAN_KHO_clip_image057.png" alt="1" /><br />
+    <div class="Doanvan">Sau khi tờ khai được chọn, phần mềm  tự động lấy danh sách hàng trên tờ khai để đưa vào danh sách hàng của phiếu  nhập kho với mã hàng tương ứng với mã hàng ECUS bạn đã thiết lập trong danh  mục:</div>
+  <img src="Images/KE_TOAN_KHO_clip_image059.png" alt="1" /><br />
+    <div class="Doanvan">Bạn chỉ cần nhập vào thông tin Tài  khoản Nợ - Có cho dòng hàng rồi ghi lại và nhấn vào “<strong><em>Ghi sổ</em></strong>” (nếu tại phần  thiết lập thông số ngầm định ban đầu bạn chọn “<em>Ghi dữ liệu đồng thời ghi sổ</em>” thì sau khi nhấn Ghi dữ liệu phần mềm  tự động ghi sổ cho bạn).</div> 
+        <p class="Doanvan"><strong><u>Lưu ý:</u></strong> để sửa thông tin phiếu nhập kho, bạn nhấn vào nút “<strong>Bỏ ghi</strong>” để trở về trạng thái sửa dữ  liệu.</p>
+          <div class="Doanvan">Nếu ở phần thiết lập thông số ngầm định ở trên bạn có đánh  dấu vào mục lựa chọn :</div>
+  <img src="Images/KE_TOAN_KHO_clip_image061.gif" alt="1" width="538" height="71" border="0" /><br />
+          <div class="Doanvan">Thì phần mềm sẽ tự động tạo ra cho bạn một phiếu với thông  tin tương tự ở Sổ quyết toán, có điều mã hàng trên phiếu vừa được tự động tạo  ra ở Sổ quyết toán là mã hàng theo danh mục Hải quan, các mã này được lấy tự  động bởi mối liên hệ với mã code quản lý theo nghiệp vụ kho mà bạn đã thiết lập  tại phần danh mục ở trên. Phiếu này sẽ phục vụ số liệu cho việc báo cáo quyết  toán với Hải quan sau này. Bạn có thể xem phiếu này tại menu “<strong><em>Sổ  quyết toán / Chứng từ nhập xuất</em></strong>” và chọn “<strong><em>Danh sách phiếu xuất kho</em></strong>”  :</div>
+  <img src="Images/KE_TOAN_KHO_clip_image063.png" alt="1"/>
+        <h4><strong><u>Phiếu  chuyển kho</u></strong></h4>
+        
+        <p class="Doanvan">Phiêu chuyển kho được sử dụng để điều chuyển hàng giữa các  kho với nhau, để thực hiện phiếu chuyển kho bạn vào menu “<strong><em>Kế toán kho / Chứng từ nhập xuất</em></strong>”  và chọn mục “Phiếu chuyển kho” màn hình phiếu chuyển kho hiện ra như sau :<br />
+            <img src="Images/KE_TOAN_KHO_clip_image065.png" alt="1"/></p>
+        <p class="Doanvan"><strong><u>Nhập thông tin chung cho phiếu chuyển kho :</u></strong><br />
+            <img src="Images/KE_TOAN_KHO_clip_image069_1.png" alt="1" /></p>
+        <ul>
+          <li class="Doanvan"><u>Nhập đối tượng</u> : chọn đối tượng cho phiếu xuất kho từ danh sách, nhấn vào nút dấu + để thêm  mới danh sách các đối tượng thường xuyên.</li>
+          <li class="Doanvan"><u>Địa chỉ </u>: Nhập  thông tin địa chỉ đối tượng, nếu khi bạn thêm danh sách đối tượng thường xuyên  mà có nhập cả địa chỉ thì chọn đối tượng, phần mềm sẽ tự động lấy địa chỉ vào ô  này.</li>
+          <li class="Doanvan"><u>Xuất tại kho</u>:  Bạn chọn mã kho cần đưa hàng ra để chuyển sang kho khác cho phiếu chuyển kho,  nếu chưa có danh sách mã kho bạn cần thêm mới từ menu “<strong><em>Danh mục / Danh mục kho</em></strong>”.</li>
+          <li class="Doanvan"><u>Nhập tại kho</u>:  Bạn chọn mã kho cần đưa hàng vào khi chuyển từ   kho khác sang cho phiếu chuyển kho, nếu chưa có danh sách mã kho bạn cần  thêm mới từ menu “<strong><em>Danh mục / Danh mục kho</em></strong>”.</li>
+          <li class="Doanvan"><u>Nhập các thông tin về chứng từ</u>: như ngày chứng từ, số chứng từ gốc nếu có.</li>
+          <li class="Doanvan"><u>Mã nguyên tệ</u>:  Chọn mã nguyên tệ sử dụng cho phiếu xuất   kho và thiết lập tỷ giá so với đồng tiền Việt Nam.</li>
+          <li class="Doanvan"><u>Loại hàng</u>: để  chọn loại hàng hóa cho phiếu chuyển kho là Nguyên liệu, sản phẩm, thiết bị hay  hàng mẫu.</li>
+        </ul>
+        <p class="Doanvan"><strong><u>Nhập danh sách hàng cho phiếu chuyển kho</u></strong><strong>:</strong><br />
+            <img src="Images/KE_TOAN_KHO_clip_image069.png" alt="1"/><br />
+        <div class="Doanvan">  Trong danh sách hàng khi bạn chọn  phần mềm sẽ thể hiện mã hàng quản lý kho tương ứng với mã hàng theo danh mục  Hải quan.<br />
+          Phần mềm hỗ trợ chức năng nhập danh  sách hàng từ file excel có sẵn dữ liệu, để nhập bạn nhấn phím F6 trên bàn phím  để hiện ra cửa sổ thiết lập thông số import, khi đó bạn thiết lập hàng, cột  tương ứng với file excel như hình mẫu dưới đây :</div>
+  <img src="Images/KE_TOAN_KHO_clip_image071.png" alt="1"/><br />
+     <div class="Doanvan">     Bạn nhấn vào “<strong><em>Ghi sổ</em></strong>” (nếu tại phần  thiết lập thông số ngầm định ban đầu bạn chọn “<em>Ghi dữ liệu đồng thời ghi sổ</em>” thì sau khi nhấn Ghi dữ liệu phần mềm  tự động ghi sổ cho bạn). </div>
+  <div class="Doanvan"><strong><u>Lưu ý:</u></strong> để sửa thông tin phiếu nhập kho, bạn nhấn vào nút “<strong>Bỏ ghi</strong>” để trở về trạng thái sửa dữ  liệu.</div>
+        <h4><strong><u><div class="Doanvan">Phiếu  kiểm kê.</div></u></strong></h4>
+        
+        <p class="Doanvan">Hàng kỳ tháng hoặc quý doanh nghiệp  thường có nhu cầu kiểm kê hàng hóa trong kho, việc kiểm kê có thể có nhiều mục  đích khác nhau ngoài nhu cầu vê quản lý nhằm phát hiện những gian lận hay sai  sót trong quản lý kho bãi, đôi khi nó cũng có tác dụng để tính giá thành hay  xác định lượng hàng tiêu thụ trong kỳ.<br />
+          Để thực hiện kiểm kê bạn vào menu “<strong><em>Kế  toán kho/Chứng từ nhập xuất</em></strong>” và chọn Phiếu kiểm kê, màn hình phiếu kiểm  kê hiện ra như sau :<br />
+  <img src="Images/KE_TOAN_KHO_clip_image073.png" alt="1"/></p>
+        <p class="Doanvan"><strong><u>Các thông tin chung  của phiếu kiểm kê:</u></strong></p>
+        <ul>
+          <li class="Doanvan"><u>Diễn giải :</u> Nhập vào nội dung kiểm kê.</li>
+          <li class="Doanvan"><u>Kho :</u> Chọn mã  kho cần kiểm kê.</li>
+          <li class="Doanvan"><u>Số hợp đồng, ngày hợp đồng :</u> Nhập vào số hợp đồng vào ngày hợp đồng nếu loại hình kiểm kê  là Gia công.</li>
+          <li class="Doanvan"><u>Kiểm kê đến ngày :</u> Bạn chọn khoảng thời gian kiểm kê.</li>
+          <li class="Doanvan"><u>Loại hàng:</u> Chọn loại hàng cần kiểm kê là nguyên liệu, sản phẩm, thiết bị hay hàng mẫu.</li>
+        </ul>
+        <div class="Doanvan">Sau khi nhập xong các chỉ tiêu ở  trên, bạn nhấn vào “Lấy dữ liệu”, nếu chỉ muốn hiện danh sách còn tồn bạn đánh  dấu tích chọn vào mục “Chỉ lấy vật tư tồn” danh sách vật tư sẽ hiển thị trong  tab “Danh sách hàng kiểm kê”:<br />
+            <img src="Images/KE_TOAN_KHO_clip_image075.gif" alt="1" width="693" height="279" border="0" /></div>
+       <div class="Doanvan">   Bạn tiến hành nhập vào số lượng kiểm kê thực tế tại kho vào  cột “Số lượng K.Kê” phần mềm sẽ tự động tính số lượng sai lệch, sau đó nhấn vào  nút “Ghi” để ghi lại.</div>
+      <div class="Doanvan">Nếu việc kiểm kê có sự chênh lệch, để mở các chứng từ nhập  xuất để điều chỉnh số lượng bạn vào tab “Kết quả xử lý” và chọn “Tạo phiếu  nhập” hoặc “Tạo phiếu xuất”:</div>
+  <img src="Images/KE_TOAN_KHO_clip_image077.png" alt="1" /></p>
+       
+        <h3>Bước    4: Tính giá xuất kho. </h3>
+        <div class="Doanvan">Theo nghiệp vụ kế toán, khi tạo phiếu  xuất kho người dùng không phải nhập đơn giá xuất. Chỉ khi đến kỳ báo cáo, quyết  toán  sẽ thực hiện việc tính đơn giá xuất  để cập nhật cho các phiếu xuất đã có trong kỳ quyết toán này.</div>
+       <div class="Doanvan">   Phần mềm hỗ trợ doanh nghiệp cách  tính giá xuất theo phương pháp tính giá xuất bình quân theo kỳ. Bạn vào menu “<strong><em>Kế  toán kho/ Chứng từ nhập xuất</em></strong>” và chọn mục “<em>Tính giá xuất kho</em>”:<br />
+  <img src="Images/KE_TOAN_KHO_clip_image079.png" alt="1"/>  </div>     
+   <p class="Doanvan">Màn  hình tính giá xuất kho hiện ra như sau :</p>
+        <p><img src="Images/KE_TOAN_KHO_clip_image081.png" alt="11"/></p>
+        <div class="Doanvan">Tại đây bạn cần chọn loại vật tư,  hàng hóa tính giá xuất, chọn kỳ tính thuế trong khoảng thời gian từ ngày đến  ngày. Bạn cần lưa ý ngày bắt đầu của kỳ tính thuế phải là ngày lớn hơn ngày  khóa sổ gần nhất nếu có. Ví dụ bạn đã khóa sổ vào ngày 30/05/2015 thì ngày bắt  đầu tính giá xuất của kỳ kế tiếp có thể là 01/05/2015 trở về sau.</div>
+       <div class="Doanvan">   Có hai hình thức tính giá xuất đó là  :</div>
+ <div class="Doanvan"> <u>- Tính giá theo kho</u>: là chỉ tính giá xuất kho cho các mã  hàng, vật tư có phiếu xuất, nhập theo từng kho phân biệt.</div>
+     <div class="Doanvan">     - <u>Tính giá không theo kho</u>: là  tính giá xuất kho chung cho các mã hàng hóa, vật tư có phiếu nhập, xuất kho  không phân biệt theo kho.</div>
+       <div class="Doanvan">   Cuối cùng bạn nhấn vào nút “<strong>Thực hiện</strong>” sau khi tính giá xuất thành  công phần mềm sẽ tự động cập nhật lại đơn giá xuất vừa tính vào các Phiếu xuất  kho đã có trong khoảng thời gian kỳ tính giá mà bạn vừa chọn ở trên.</div>
+        <p><img src="Images/KE_TOAN_KHO_clip_image083.png" alt="1"/></p>
+        <h3>Bước 5: Xem báo cáo kho. </h3>
+        <p class="Doanvan">Khi cần xem báo cáo chi tiết  Thẻ kho, báo cáo nhập xuất tồn, báo cáo quyết toán bạn vào menu “<strong><em>Kế  toán kho/ Báo cáo gia công</em></strong>” :<br />
+            <img src="Images/KE_TOAN_KHO_clip_image085.png" alt="1" /></p>
+        <h4><strong><u>Báo  cáo chi tiết thẻ kho (sổ kho).</u></strong></h4>
+        <div class="Doanvan">Để xem báo cáo thẻ kho chi tiết bạn chọn “<strong>Thẻ kho</strong>” từ menu trên :<br />
+            <img src="Images/KE_TOAN_KHO_clip_image087.png" alt="1"/></div>
+       <div class="Doanvan">Bạn chọn các điều kiện lọc sau đó nhấn vào nút “<strong>Xem báo cáo</strong>” để phần mềm xuất ra báo  cáo thẻ kho chi tiết, ví dụ:<br />
+  <img src="Images/KE_TOAN_KHO_clip_image089.gif" alt="1" /></div>
+        <h4><strong><u>Báo  cáo nhập xuất tồn kho.</u></strong></h4>
+        <div class="Doanvan">Để xem báo cáo thẻ kho  chi tiết bạn chọn “<strong>Báo cáo nhập xuất tồn</strong>”  từ menu trên :<br />
+            <img src="Images/KE_TOAN_KHO_clip_image091.png" alt="1" /></div>
+        <div class="Doanvan"> Bạn chọn các điều kiện lọc sau đó nhấn vào nút “<strong>Xem báo cáo</strong>” để phần mềm xuất ra báo  cáo thẻ kho chi tiết, ví dụ:</div>
+  <img src="Images/KE_TOAN_KHO_clip_image093.gif" alt="1" width="693" height="397" border="0" />
+        <h3>Bước 6: Khóa sổ, bỏ khóa sổ.</h3>
+		<div class="Doanvan"><u>Khóa sổ kế toán</u>: </div>
+       
+        
+        <div class="Doanvan">Sau khi đã báo cáo tài chính, quyết toán cho tháng, quý, năm  tài chính , bạn không còn bổ sung, sửa đổi các phát sinh trong khoảng thời gian  tài chính này, khi đó bạn thực hiện khóa sổ kế toán, tất cả các phát sinh sẽ  được thực hiện cho kỳ kế toán tiếp theo.</div>
+ <div class="Doanvan"> <u>Bỏ khóa sổ kế toán:</u></div>
+      <div class="Doanvan">Khi đã thực hiện việc khóa sổ kế toán mà cần sửa đổi bổ sung  chứng từ trong khoảng thời gian đã khóa sổ, bạn tiến hành bỏ khóa sổ để quay về  trạng thái sửa dữ liệu.</div>
+	    <img src="Images/KE_TOAN_KHO_clip_image095.png" alt="1"/><br />
+         <div class="Doanvan"> Để khóa sổ bạn vào menu “<strong>Kế  toán kho / Gia công</strong>” và chọn mục “<strong><em>Khóa sổ kế toán</em></strong>” màn hình hiện ra như  sau :</div>
+  <img src="Images/KE_TOAN_KHO_clip_image097.png" alt="1"  /><br />
+      <div class="Doanvan">Nếu là lần khóa sổ đầu tiên phần mềm tự động lấy ngày khóa sổ  hiện thời là ngày nhỏ nhất của các chứng đã có.<br />
+          Bạn chọn ngày khóa sổ mới để xác định kỳ khóa sổ nằm trong  khoảng thời gian từ ngày khóa sổ hiện thời đến ngày khóa sổ mới bạn vừa chọn.<br />
+          Nhấn “<strong>Thực hiện</strong>”  thành công sẽ có thông báo trả về như sau :
+  <img src="Images/KE_TOAN_KHO_clip_image099.png" alt="1" /></div>
+        </p>
+        
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,562 @@
+<html
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+	$(function() {
+		$("#Heading").load("Heading.html");
+		let height = $(window).height();
+		$('.heading').css('width',2502);
+		let promiseDefaultLoad = [];
+		let partLoaded = [];
+		let part = 2;
+		<!-- for(i=1;i<2;i++){ -->
+			<!-- let promise = new Promise(function(resolve, reject) { -->
+					<!-- $(`#Phan${i}`).load(`Phan${i}.html`,function(){ -->
+						<!-- resolve("Done"); -->
+					<!-- }); -->
+				<!-- }); -->
+			<!-- promiseDefaultLoad.push(promise) -->
+		<!-- } -->
+		<!-- Promise.all(promiseDefaultLoad).then(()=>{partLoaded.push(1);$('.spinner').addClass('hidden');}) -->
+		
+		//Khi scroll xuống cuối cùng
+		$(window).scroll(function(event) {
+			var Elm = document.scrollingElement;
+			scrollWidth = Elm.scrollWidth;
+			scrollHeight = Elm.scrollHeight;
+			scrollTop = Elm.scrollTop;
+			clientHeight = Elm.clientHeight;
+			
+			let bottom = Math.abs(scrollHeight - clientHeight - scrollTop);
+			if(bottom == 0) {
+				if(partLoaded.includes(part)){part++}
+				$('.spinner').removeClass('hidden');
+				let promise = new Promise(function(resolve, reject) {
+					$(`#Phan${part}`).load(`Phan${part}.html`,function(){
+						resolve("Done");
+					});
+				});
+				promise.then(()=>{partLoaded.push(part);part++;$('.spinner').addClass('hidden');});
+			}
+		});
+		//End
+		
+		//search
+		function search(keyword){
+			let arr_promise = [];
+			let phan = [];
+			keyword = keyword.toLowerCase();
+			for(j=1;j<22;j++){
+				let promise = new Promise(function(resolve, reject) {
+					$.get(`Phan${j}.html`,function(src_str){
+						resolve(src_str);
+					},'html');
+				});
+				arr_promise.push(promise)
+			}
+			Promise.all(arr_promise)
+			.then((result) => {
+				let term = keyword.replace(/(\s+)/,"(<[^>]+>)*$1(<[^>]+>)*");
+				let pattern = new RegExp("("+term+")", "gi");
+				for(j=1;j<22;j++){
+				    let src_str = result[j-1];
+					let index = src_str.toLowerCase().indexOf(keyword);
+					if (index >= 0) {
+						if(j >= part && !partLoaded.includes(j)){
+							$(`#Phan${j}`).html(src_str);
+							partLoaded.push(j)
+						}
+						phan.push(j);
+						
+						//var custfilter = new RegExp(keyword, "ig");
+						//var repstr = "<span class='highlight'>" + keyword + "</span>";
+						
+
+						if (keyword != "") {
+							$(`#Phan${j} td`).filter(function() {
+								let html = $(this).html().replace(pattern, "<mark>$1</mark>");
+								html = html.replace(/(<mark>[^<>]*)((<[^>]+>)+)([^<>]*<\/mark>)/,"$1</mark>$2<mark>$4");
+								$(this).html(html);
+							})
+							//$('body').html($('body').html().replaceAll('<mark></mark>','').replaceAll('<mark><mark>','<mark>').replaceAll('</mark></mark>','</mark>'));
+						}
+					}
+				}
+				let countTotal = $('mark').length;
+				let countDup = $('mark mark').length;
+				let countEmpty = $('mark:empty').length;
+				let count = countTotal - countDup - countEmpty;
+				$('.search-result .index-item').text('0');
+				$('.search-result .total-item').text(count);
+				
+				if(count > 0){
+					TargetSearchAction();
+					$('.search-result .down').trigger('click');
+				}
+				else{
+					$('.search-result').removeClass('hidden');
+				}
+			})
+			.catch((e) => {
+				// handle errors here
+			});
+			return phan;
+		}
+		//end search
+		
+		//Loại bỏ mark đã đánh dấu
+		function removeMark() {
+			$('mark').filter(function(){
+				$(this).contents().unwrap();
+			})
+		}
+		//end
+		
+		//Click button search
+		$('.btn-search').off('click').on('click', function(){
+			$('.search-result').addClass('hidden');
+			$('.search-result .index-item').data('mark',-1);
+			$('.search-result .index-item').text('0');
+			$('.search-result .total-item').text('0');
+			$('.spinner').removeClass('hidden');
+			removeMark();
+			
+			keyword = $('[name=Keyword]').val().trim();
+			if(keyword != ''){
+				let section = $('[name=section]').val() || '';
+				if(section == ''){
+					let arrPhan = search(keyword);
+				}
+				else{
+					searchInDocument(keyword,section);
+				}
+				
+			}
+			else{
+				$('.spinner').addClass('hidden');
+			}
+		})
+		
+		//search trong document khi đã chọn phần
+		function searchInDocument(keyword,section){
+			$(`#Phan${section} td`).filter(function() {
+				// Chuyển đổi chuỗi tìm kiếm và chuỗi trong ô td về dạng chữ thường
+				var tdText = $(this).text().toLowerCase();
+				searchText = keyword.toLowerCase();
+				
+				let term = keyword.replace(/(\s+)/,"(<[^>]+>)*$1(<[^>]+>)*");
+				let pattern = new RegExp("("+term+")", "gi");
+				
+				if(tdText.indexOf(searchText) >= 0){
+					let html = $(this).html().replace(pattern, "<mark>$1</mark>");
+					html = html.replace(/(<mark>[^<>]*)((<[^>]+>)+)([^<>]*<\/mark>)/,"$1</mark>$2<mark>$4");
+					$(this).html(html);
+				}
+				else{
+					return false;
+				}
+			});
+			let countTotal = $('mark').length;
+			let countDup = $('mark mark').length;
+			let countEmpty = $('mark:empty').length;
+			let count = countTotal - countDup - countEmpty;
+			$('.search-result .index-item').text('0');
+			$('.search-result .total-item').text(count);
+			if(count > 0){
+				TargetSearchAction();
+				$('.search-result .down').trigger('click');
+			}
+			else{
+				$('.search-result').removeClass('hidden');
+				$('.spinner').addClass('hidden');
+			}
+				
+		}
+		
+		//Target vào kết quả tìm kiếm
+		function TargetSearchAction(){
+			$('.search-result .up').off('click').on('click',function(){
+				
+				let index = Number($('.search-result .index-item').text());
+				let total = Number($('.search-result .total-item').text());
+				if(index <= 1){ return false;}
+				$('.focus-text').removeClass('focus-text');
+				index = index > 1 ? index - 1 : index;
+				let indexMark = $('.search-result .index-item').data('mark');
+				if(total > 0){
+					indexMark--;
+					while($(`mark:eq(${indexMark})`).is(':empty') || $(`mark:eq(${indexMark})`).html().indexOf("mark") >= 0){
+						indexMark--;
+					}
+					$('.search-result .index-item').data('mark',indexMark);
+					let offsetMk = $(`td mark:eq(${indexMark})`).offset();
+					window.scrollTo({ top: (offsetMk.top - 400), behavior: 'smooth'});
+					$(`td mark:eq(${indexMark})`).addClass('focus-text');
+					$('.spinner').addClass('hidden');
+					$('.search-result .index-item').text(index);
+					$('.search-result').removeClass('hidden');
+				}
+			})
+			$('.search-result .down').off('click').on('click',function(){
+				
+				let index = Number($('.search-result .index-item').text());
+				let total = Number($('.search-result .total-item').text());
+				
+				if(index >= total){ return false;}
+				$('.focus-text').removeClass('focus-text');
+				index = index < total ? index + 1 : total;
+				let indexMark = $('.search-result .index-item').data('mark');
+				if(total > 0){
+					indexMark ++;
+					while($(`mark:eq(${indexMark})`).is(':empty') || $(`mark:eq(${indexMark})`).html().indexOf("mark") >= 0){
+						indexMark++;
+					}
+					$('.search-result .index-item').data('mark',indexMark);
+					let offsetMk = $(`td mark:eq(${indexMark})`).offset();
+					window.scrollTo({ top: (offsetMk.top - 400), behavior: 'smooth'});
+					$(`td mark:eq(${indexMark})`).addClass('focus-text');
+					$('.spinner').addClass('hidden');
+					$('.search-result .index-item').text(index);
+					$('.search-result').removeClass('hidden');
+				}
+			})
+		}
+		//end
+		
+		//Change Phần
+		$('[name=section]').on('change',function(){
+			$('.search-result .index-item').data('mark',-1);
+			$('.search-result .index-item').text('0');
+			$('.search-result .total-item').text('0');
+			$('[name=Keyword]').val('');
+			$('.search-result').addClass('hidden');
+			$(`.section.hidden`).removeClass('hidden');
+			let val = $(this).val() || '';
+			if(val == ''){
+				return false;
+			}
+			else{
+				$('.spinner').removeClass('hidden');
+				if(!partLoaded.includes(Number(val))){
+					let promise = new Promise(function(resolve, reject) {
+						$(`#Phan${val}`).load(`Phan${val}.html`,function(){
+							resolve("Done");
+						});
+					});
+					promise.then(()=>{
+						partLoaded.push(Number(val));
+						
+						$('.spinner').addClass('hidden');
+						$(`.section:not(#Phan${val})`).addClass('hidden');
+					});
+				}
+				else{
+					$('.spinner').addClass('hidden');
+					$(`.section:not(#Phan${val})`).addClass('hidden');
+				}
+				window.scrollTo({ top: 0, behavior: 'smooth'});
+			}
+		})
+		
+		//Change Chương
+		$('[name=Chapter]').on('change',function(){
+			
+			let val = $(this).val() || '';
+			console.log("Change to " + val)
+			if(val == ''){
+				return false;
+			}
+			else{
+				$('.spinner').removeClass('hidden');
+				
+				let section = $('[name=section]').val() || '';
+				if(section != ''){
+					let chapter = $(`Phan${section} td`).filter(function() {
+						return $(this).text() === ("Chương "+val);
+					});
+					if(chapter.length > 0){
+						let offsetChapter = chapter.offset();
+						window.scrollTo({ top: (offsetChapter.top - 400), behavior: 'smooth'});
+						$('.spinner').addClass('hidden');
+					}
+					else{
+						alert(`Chương ${val} không nằm trong Phần ${section}. Vui lòng kiểm tra lại`);
+					}
+					
+				}
+				else{
+					alert("Bạn cần chọn phần trước khi chọn chương");
+				}
+			}
+		})
+		$('[name=section]').trigger('change');
+	});
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body{
+		background-color:#fff;
+		margin:10px;
+	}
+	.heading{
+		height:40px; font-size:20px; font-weight:600;position:sticky;top:0;left:0;right:0;background-color:#fff;padding-bottom:10px;
+	}
+	.heading .fix-left{
+		left:0;
+		position:fixed;
+		padding-left:10px;
+		display: flex;
+		align-items: baseline;
+	}
+	.heading .fix-center{
+		position:fixed;
+		align-items: center;
+		display: flex;
+		font-size: 20px!important;
+		font-weight: 400!important;
+	}
+	.heading .fix-right{
+		right:0;
+		position:fixed;
+		padding-right:10px;
+		justify-content: space-around;
+		align-items: center;
+		display: flex;
+	}
+	.select-chapter{
+		align-items: center;
+		display: flex;
+		font-size: 20px!important;
+		font-weight: 400!important;
+	}
+	input,select,a{
+		height:28px;
+		margin-left:5px;
+		
+	}
+	input{
+		border: 1px solid;
+		border-right: 0;
+	}
+	button{
+		height:28px;
+		width:28px;
+		border: 1px solid;
+		border-left: 0;
+		cursor: pointer;
+	}
+	#Heading{
+		position:sticky!important;top:50px;background-color:#fff;
+	}
+	
+	
+	.highlight{
+		background-color: yellow;
+	}
+	
+	@keyframes spin {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+	.spinner {
+		--spinner-color: black;
+
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+
+		animation-name: spin;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+
+	.spinner--quarter {
+		width: 15px;
+		border: 2px solid var(--spinner-color);
+		border-top-color: transparent;
+
+		animation-duration: 1s;
+	}
+	
+	.hidden{
+		display:none;
+	}
+	
+	.search-result{
+		font-size:20px;
+		font-weight:400;
+		margin-right: 5px;
+	}
+	.search-result .fa{
+		cursor:pointer;
+		color: #1261ff;
+	}
+	
+	.chapter{
+		font-size:20px!important;
+		font-weight:400!important;
+	}
+	
+	td:nth-child(1){
+		width:23pt;
+		position:sticky;
+		left:1.39pt;
+		z-index:10;
+	}
+	td:nth-child(2){
+		width:59pt;
+		position:sticky;
+		left:24.39pt;
+		z-index:10;
+	}
+	td:nth-child(3){
+		width:327pt;
+		position:sticky;
+		left:83.39pt;
+		z-index:10;
+	}
+	td:nth-child(4){
+		width:334pt;
+		position:sticky;
+		left:410.39pt;
+		z-index:10;
+	}
+	.heading, #Heading{
+		z-index:999;
+	}
+	table, th, td {
+		border: 1px solid black!important;
+	}
+	td:nth-child(1)::after {
+	  content: "";
+	  position: absolute;
+	  top: 0;
+	  left: 100%;
+	  height: 100%;
+	  width: 1px;
+	  background-color: black;
+	}
+	td:nth-child(2)::after {
+	  content: "";
+	  position: absolute;
+	  top: 0;
+	  left: 100%;
+	  height: 100%;
+	  width: 1px;
+	  background-color: black;
+	}
+	td:nth-child(3)::after {
+	  content: "";
+	  position: absolute;
+	  top: 0;
+	  left: 100%;
+	  height: 100%;
+	  width: 1px;
+	  background-color: black;
+	}
+	td:nth-child(4)::after {
+	  content: "";
+	  position: absolute;
+	  top: 0;
+	  left: 100%;
+	  height: 100%;
+	  width: 1px;
+	  background-color: black;
+	}
+	.content td{
+		background-color: #fff;
+	}
+	.focus-text{
+		background-color: #ff6f6f!important;
+		color:#000;
+	}
+	
+	@media (max-width:960px) { 
+		
+	}
+</style>
+
+</head>
+
+<body>
+<div class="heading" style="">
+	<div style="background-color:#F5C211; color:red; font-size:15px">(Biểu thuế tham khảo của tác giả VŨ QUÝ HƯNG - HẢI QUAN KV III. Dữ liệu cập nhật mới nhất đến ngày 07/01/2026)</div>
+	<div class="fix-left">
+		<font color="#305496">BIỂU THUẾ XNK NĂM 2026</font>
+		&nbsp;&nbsp;&nbsp;
+		<div class="select-chapter">
+			Chọn chương:
+			<select name="section">
+				<option value="1" selected>Phần 1 (Chương 1-5)</option>
+				<option value="2">Phần 2 (Chương 6-14)</option>
+				<option value="3">Phần 3 (Chương 15)</option>
+				<option value="4">Phần 4 (Chương 16-24)</option>
+				<option value="5">Phần 5 (Chương 25-27)</option>
+				<option value="6">Phần 6 (Chương 28-38)</option>
+				<option value="7">Phần 7 (Chương 39-40)</option>
+				<option value="8">Phần 8 (Chương 41-43)</option>
+				<option value="9">Phần 9 (Chương 44-46)</option>
+				<option value="10">Phần 10 (Chương 47-49)</option>
+				<option value="11">Phần 11 (Chương 50-63)</option>
+				<option value="12">Phần 12 (Chương 64-67)</option>
+				<option value="13">Phần 13 (Chương 68-70)</option>
+				<option value="14">Phần 14 (Chương 71)</option>
+				<option value="15">Phần 15 (Chương 72-83)</option>
+				<option value="16">Phần 16 (Chương 84-85)</option>
+				<option value="17">Phần 17 (Chương 86-89)</option>
+				<option value="18">Phần 18 (Chương 90-92)</option>
+				<option value="19">Phần 19 (Chương 93)</option>
+				<option value="20">Phần 20 (Chương 94-96)</option>
+				<option value="21">Phần 21 (Chương 97-98)</option>
+				<option value="">Hiển thị tất cả</option>
+			</select>
+		</div>
+		
+		<a style="font-size:17px; font-weight:400" href="BIEU THUE XNK 2026.xlsx" download ="BIEU THUE XNK 2026.xlsx">Tải file đầy đủ</a>
+	</div>
+	
+	<div class="fix-center">
+		
+	</div>
+	
+	<div class="fix-right">
+		<span class="search-result hidden"><span class="hidden index-mark">0</span> <span class="index-item" data-mark="-1">0</span>/<span class="total-item">0</span> kết quả <span class="fa fa-chevron-up up"></span>&nbsp;&nbsp;<span class="fa fa-chevron-down down"></span></span>
+		<span class="spinner spinner--quarter"></span>
+		<input name="Keyword" placeholder="Tìm kiếm" style="width:200px" />
+		<button class="btn-search"><i class="fa fa-search"></i></button>
+	</div>
+</div>
+<div id="Heading"></div>
+<div class="content">
+<div class="section" id="Phan1"></div>
+<div class="section" id="Phan2"></div>
+<div class="section" id="Phan3"></div>
+<div class="section" id="Phan4"></div>
+<div class="section" id="Phan5"></div>
+<div class="section" id="Phan6"></div>
+<div class="section" id="Phan7"></div>
+<div class="section" id="Phan8"></div>
+<div class="section" id="Phan9"></div>
+<div class="section" id="Phan10"></div>
+<div class="section" id="Phan11"></div>
+<div class="section" id="Phan12"></div>
+<div class="section" id="Phan13"></div>
+<div class="section" id="Phan14"></div>
+<div class="section" id="Phan15"></div>
+<div class="section" id="Phan16"></div>
+<div class="section" id="Phan17"></div>
+<div class="section" id="Phan18"></div>
+<div class="section" id="Phan19"></div>
+<div class="section" id="Phan20"></div>
+<div class="section" id="Phan21"></div>
+</div>
+
+</body>
+
+</html>

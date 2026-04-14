@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="Caption" --><title>Thông tin cơ bản TK Nhập</title><!-- TemplateEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:0pt;
+				margin-right:0pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:13.0pt;
+				font-family:'Times New Roman',serif;
+			}
+</style>
+</head>
+<body leftmargin="0" topmargin="0">
+<table id="table-content-tmp" style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; BORDER-SPACING: 0px; PADDING-RIGHT: 0px; BORDER-COLLAPSE: collapse; PADDING-TOP: İpx"  cellSpacing="0" cellPadding="0" width="100%" align="center">
+	<tr>		
+		<td style="padding: 0px 5px;">
+			<table width="100%" style="border-width:1px; border-color:#CFCFCF" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+			<tr>
+				<td height="100%" align="left">
+						<img src="../Images/BN_Trai.png" /></td>
+			
+				<td height="100%" align="right">
+						<img src="../Images/BN_Phai.png"  />
+				</td>
+			</tr>
+			<tr>
+					<td colspan="2" width="100%" height="1px"><hr color="#CFCFCF" size="0.5px" /></td>
+			</tr>
+			
+			<tr>
+		 			 <td colspan="2" width="100%">
+                       <div class="right-content">
+                     <center>
+			  <!-- TemplateBeginEditable name="TieuDe" --><strong>HƯỚNG DẪN </strong><!-- TemplateEndEditable -->
+			</center>
+          
+             <!-- TemplateBeginEditable name="NoiDung" -->
+            <!-- TemplateEndEditable -->
+            </div>          
+		  				
+             </td>
+		</tr>
+		<tr>
+			<td colspan="2" width="100%" height="1px"><hr color="#CFCFCF" size="0.5px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" width="100%"  align="left"><img src="../Images/Footer_2019.png" /></td>
+		</tr>
+</table>
+</td>
+
+</table>
+<script type="text/javascript">$('#table-content-tmp').css('height', window.innerHeight -45 );</script>
+</body>
+
+
+</html>

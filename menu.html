@@ -1,0 +1,411 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hướng dẫn sử dụng ECUS5VNACCS</title>
+    <!--<link href="css/bootstrap-3.3.0.min.css" rel="stylesheet">-->
+    <link href="css/bootstrap-3.4.1.min.css" rel="stylesheet">
+
+    <link href="css/help-content.css" rel="stylesheet">
+</head>
+<body id="main-body" style="overflow: hidden;">
+    <table id="table-main" border="0" cellpadding="5" cellspacing="5">
+        <tr class="tr-header">
+            <td height="40" valign="middle"><img src="Images/Help-icon.png", width="40", height="40" /><strong>   Hướng dẫn sử dụng - ECUS5VNACCS 2018</strong></td>
+            <td height="40" style="text-align:right"><div class="toggle-menu hidden" style="cursor:pointer;"><img src="Images/help-list.png" width="25" height="17" style="margin-right:10px" /></div></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #0078d7;">
+                <div class="row">
+                    <div class="col-sm-4 frame-left" style="background-color: #0078d7;margin-bottom:5px">
+                        <div id="slidebar">
+                            <ul class="tree" id="tree1">
+                                <li class="branch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="gioithieuchung" href="1.GIOITHIEUCHUNG.html" target="khunght"><i class="glyphicon glyphicon-file"></i>1.Giới thiệu chung</a></li>
+                                <li class="branch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="hd-caidat" href="2.DANGKY-CAUHINHYC-v2.html" target="khunght"><i class="glyphicon glyphicon-file"></i>2.Hướng dẫn cài đặt phần mềm</a></li>
+                                <li class="branch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="phim-tat" href="3n.Danhsach-Phimtat.html" target="khunght"><i class="glyphicon glyphicon-file"></i>3.Danh sách phím tắt</a></li>
+                                <li class="branch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="bang-kytu" href="DS_BangMa_KyTu_DuocSD.html" target="khunght"><i class="glyphicon glyphicon-file"></i>4.Bảng ký tự được sử dụng</a></li>
+                                <li class="branch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="bieuthue2024" href="BieuThueXNK/index.htm" target="_blank"><i class="glyphicon glyphicon-file"></i>5.Biểu thuế xuất nhập khẩu 2026</a></li>
+                                <li class="branch">
+                                    <a id="3.hdsd" href="3.0-1.HDSD_title.html" target="khunght">5.Hướng dẫn sử dụng</a>
+                                    <ul>
+                                        <li class="branch">
+                                            <a id="3.1.thietlapbandau" href="3.1-1.Thiet-lap-ban-dau_title.html" target="khunght">5.1.Thiết lập lần đầu sử dụng </a>
+                                            <ul>
+
+                                                <li style="display: none;"><a id="tl-csdl" href="3.DANGNHAPPM.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thiết lập kết nối CSDL</a></li>
+                                                <li style="display: none;"><a id="tl-ttdn" href="0.1.Thay-doi-thong-tin-DN.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thiết lập thông tin doanh nghiệp</a></li>
+                                                <li style="display: none;"><a id="tl-tskb" href="4.THIET-LAP-THONG-SO.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thiết lập thông số khai báo</a></li>
+                                                <li style="display: none;"><a id="tl-kh-hang" href="5.DANHSACHK-H.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thiết lập khách hàng (Dành cho đại lý)</a></li>
+                                                <li style="display: none;"><a id="tl-thongsoct" href="3.1.5.Thiet_Lap_Thong_So_CT.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thiết lập thông số chương trình</a></li>
+
+
+                                            </ul>
+                                        </li>
+
+                                        <!-- Hướng dẫn khai báo tờ khai VNACCS-->
+                                        <li class="branch">
+                                            <a id="3.2.hdvnaccs" href="3.2-1.Khai-bao-to-khai_title.html" target="khunght">5.2.Hướng dẫn khai tờ khai VNACCS </a>
+                                            <ul style="list-style:none">
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tokhainhap-ida" href="6.0.1.DANGKYMOI_TNK_Title.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Khai báo tờ khai nhập khẩu - IDA</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tokhaixuat-eda" href="7.0.1.DANGKYMOI_TXK_Title.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Khai báo tờ khai nhập khẩu - EDA</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                        <!-- Khai báo danh mục, hợp đồng... đối với loại hình đặc thù GC, SXXK -->
+                                        <li class="branch">
+                                            <a id="loaihinh-dacthu" name="TKXK" href="9.0.1.LoaiHinhDT_Title.html" target="khunght">5.3.Loại hình đặc thù (SXXK, GC)</a>
+                                            <ul>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="loaihinh-sxxk" name="TKXK" href="9.0.1.01.LoaiHinhDT_SXXK.html" target="khunght">Khai báo loại hình SXXK</a>
+                                                    <ul>
+                                                        <li style="display: none;"><a id="sxxk-npl" href="9.0.LH_SXXK_DanhMuc.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Danh mục Nguyên phụ liệu</a></li>
+                                                        <li style="display: none;"><a id="sxxk-sp" href="9.0.LH_SXXK_DanhMuc.html#SXXK_SP" target="khunght"><i class="glyphicon glyphicon-file"></i>Khai báo danh mục Sản phẩm</a></li>
+                                                        <li style="display: none;"><a id="sxxk-dmsp" href="9.0.LH_SXXK_DanhMuc.html#SXXK_DMSP" target="khunght"><i class="glyphicon glyphicon-file"></i>Khai báo định mức Sản phẩm</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="loaihinh-giacong" href="9.0.1.01.LoaiHinhDT_GC.html" target="khunght">Khai báo loại hình Gia công</a>
+                                                    <ul>
+                                                        <li style="display: none;"><a id="gc-hdgc" href="10.0.LH_GC_HDGC.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Khai báo mới hợp đồng Gia công</a></li>
+                                                        <li style="display: none;"><a id="gc-phukien" href="10.1.LH_GC_PhuKien.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Khai báo phụ kiện hợp đồng</a></li>
+                                                        <li style="display: none;"><a id="gc-dmsp" href="10.2.LH_GC_DinhMuc.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Định mức thực tế sản phẩm</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li style="display: none;"><a id="lh-dmgiaidoan" href="10.3.LH_DT_DinhMucGiaiDoan.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Định mức theo giai đoạn</a></li>
+                                                <li style="display: none;"><a id="lh-KBSuaHuy" href="10.3.LH_KhaiBao_SuaHuy.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Sửa - Hủy danh mục, định mức</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <!-- Hướng dẫn thanh lý thanh khoản SXXK, GC -->
+                                        <li class="branch">
+                                            <a id="thanhly-thanhkhoan" name="TKXK" href="TLTK-TITLE.html" target="khunght">5.4.Thanh lý, thanh khoản</a>
+                                            <ul>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="thanhly-sxxk" name="TKXK" href="TLTK-SXXK-GT.html" target="khunght">Thanh lý SXXK</a>
+                                                    <ul>
+                                                        <li style="display: none;"><a id="thanhly-sxxk-gt" href="TLTK-SXXK-KNNT.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Khái niệm và nguyên tắc</a></li>
+                                                        <li style="display: none;"><a id="thanhly-sxxk-qt" href="TLTK-SXXK-CHITIET.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Quy trình thực hiện</a></li>
+                                                        <li style="display: none;"><a id="thanhly-sxxk-qt-giaidoan" href="TLTK-SXXK-THEO-GIAIDOAN-CHITIET.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thanh lý theo định mức giai đoạn</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="thanhkhoan-gc_gt" name="TKXK" href="TLTK-GC-GT.html" target="khunght">Thanh khoản gia công</a>
+                                                    <ul>
+                                                        <li style="display: none;">
+                                                    <a id="thanhkhoan-giacong" href="TLTK-GC_CHITIET.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thanh khoản hợp đồng GC</a>
+                                                    
+                                                </li>
+                                                        <li style="display: none;"><a id="theodoi-giacong" href="TLTK-GC-THEODOI_HDGC.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Quá trình thực hiện hợp đồng</a></li>
+                                                        <li style="display: none;"><a id="theodoi-giacong-theoyc" href="TLTK-GC-THEODOI_HDGC_THEOYC.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thanh khoản theo yêu cầu</a></li>
+                                                    </ul>
+                                                </li>
+                                                
+                                            </ul>
+                                        </li>
+                                        
+										<!-- Hướng dẫn các nghiệp vụ khai báo khác -->
+                                        <li class="branch">
+                                            <a id="nv-khac" href="3.4.Khai-bao-khac-title.html" target="khunght">5.5.Các nghiệp vụ khai báo khác</a>
+                                            <ul>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="nvkhac-ola" href="8.1.0.TK_OLA_title.html" target="khunght">Tờ khai vận chuyển OLA</a>
+                                                    <ul>
+                                                        <li style="display: none;"><a href="8.0.TKOLA.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Giới thiệu tờ khai OLA</a></li>
+                                                        <li style="display: none;"><a id="ola-hdsd" href="8.1.OLA_Chitiet.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Hướng dẫn khai báo tờ khai OLA</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li style="display: none;"><a id="nvkhac-cssx" href="KB_CSSX.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Hướng dẫn khai báo CSSX </a></li>
+                                                <li style="display: none;"><a id="nvkhac-bcqt" href="KB_BCQT.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Hướng dẫn khai Báo cáo quyết toán</a></li>
+                                                <li style="display: none;"><a id="nvkhac-tea" href="KB_DanhmucMT-TEA.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Khai báo danh mục miễn thuế TEA</a></li>
+                                                <li style="display: none;"><a id="nvkhac-tia" href="KB_TNTX-TIA.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Sửa thông tin hàng TNTX TIA</a></li>
+                                                 <li style="display: none;"><a id="tokhai-tt56" href="TokhaiTGT-tt56.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Tờ khai trị giá thấp sửa đổi TT56</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="branch">
+                                            <a id="cn-kho" href="MODULE-KHO.html" target="khunght">5.6.Hướng dẫn chức năng kế toán kho</a>
+                                            <ul>
+                                            	<li class="branch" style="display: none;"><a id="kho-gt" href="KTK_GIOI_THIEU.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Giới thiệu</a></li>
+                                                <li class="branch" style="display: none;"><a id="kho-thietlap" href="THIET_LAP_BD.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thiết lập thông số ban đầu</a></li>
+                                                <li class="branch" style="display: none;"><a id="kho-ktk" href="KE_TOAN_KHO.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Chức năng Kế toán kho</a></li>
+                                                <li class="branch" style="display: none;"><a id="kho-sqt" href="SO_QUYET_TOAN.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Chức năng Sổ quyết toán</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="branch">
+                                            <a id="cn-tienich" name="TKNK" href="TIENICH.html" target="khunght">5.7.Chức năng tiện ích khác </a>
+                                            <ul>
+                                            	
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tienich-luudldk" href="Luu-dulieu-dinhkem.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Cấu hình lưu chứng từ đính kèm điện tử</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tienich-ctdk" href="KB_CDDT.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Bổ sung chứng từ đính kèm điện tử</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tienich-dscont" href="KB_DSCONT.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Khai Bổ sung danh sách Container</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tienich-tachvandon" href="KB_TACHVANDON.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Khai báo tách vận đơn</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tienich-dvc" href="KB_DVC.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Khai hồ sơ dịch vụ công trực tuyến</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="gt-ecussignpro" href="GT_ECUSSIGN_PRO.html" target="khunght"><i class="glyphicon glyphicon-file"></i>1.Giới thiệu trình ký ECUSSignPRO</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="hdnc-ecussignpro" href="HDnangcapECUSSignPro.html" target="khunght"><i class="glyphicon glyphicon-file"></i>2.HD Nâng cấp trình ký ECUSSignPRO</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tienich-ecussignpro" href="ECUSSIGN_PRO.html" target="khunght"><i class="glyphicon glyphicon-file"></i>3.Hướng dẫn trình ký ECUSSignPRO</a>
+                                                </li>
+                                                
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tienich-saoluudl" href="BACKUP_CSDL.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Chức năng sao lưu CSDL</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tienich-toiuucsdl" href="ToiUU_CSDL.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Chức năng tối ưu CSDL</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="ecus-ein" href="HD_ECUS_EIN.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Chức năng hóa đơn tích hợp</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tienich-tachdb" href="Tienich-tachdb.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Chức năng tách CSDL</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!--HDSD thu phí HCM-->
+                                        <li class="branch">
+                                            <a id="HT-thuphiHCM" href="TPHCM-ThuPhi.html" target="khunght">5.8.Hướng dẫn thu phí HCM</a>
+                                            <ul>
+                                            	<li class="branch" style="display: none;">
+                                                    <a id="tphcm-dktk" href="TPHCM-1-DKtaikhoan.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Đăng ký tài khoản nộp phí</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tphcm-qtnp" href="TPHCM-2-NopPhiChitiet.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Tạo và nộp tờ khai thu phí</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tphcm-ttnp" href="TPHCM-3-ThanhToanBienLai.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thanh toán phí</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tphcm-lbl" href="TPHCM-3-ThanhToanBienLai.html#LayBL" target="khunght"><i class="glyphicon glyphicon-file"></i>Lấy biên lai thu phí</a>
+                                                </li><li class="branch" style="display: none;">
+                                                    <a id="tphcm-hbl" href="TPHCM-4-HuyBienLai.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Hủy tờ khai nộp phí</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <!--Kết thúc HDSD Thu phí HCM-->
+                                        
+                                        <li class="branch">
+                                            <a id="HT-thuphiHP" href="TPHP-ThuPhi.html" target="khunght">5.9.Hướng dẫn thu phí Hải Phòng</a>
+                                            <ul>
+                                            	<li class="branch" style="display: none;">
+                                                    <a id="tphp-dktk" href="TPHP-1-DKtaikhoan.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Đăng ký tài khoản nộp phí</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tphp-qtnp" href="TPHP-2-NopPhiChitiet.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Tạo và nộp tờ khai thu phí</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="tphp-dstknp" href="TPHP-DSTKThuPhi.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Danh sách tờ khai nộp phí</a>
+                                                </li>
+                                                
+                                                
+                                            </ul>
+                                        </li>
+                                        <!--Kết thúc HDSD Thu phí Hải phòng-->
+                                        
+                                        <!--Bắt đầu HDSD tạo tờ khai tự động ECUS.AI-->
+                                        
+                                        <li class="branch">
+                                            <a id="ECUS.AI_tb" href="CN_ECUS.AI_tb.html" target="khunght">5.10.Hướng dẫn chức năng ECUS.AI</a>
+                                            <ul>
+                                            	<li class="branch" style="display: none;">
+                                                    <a id="ecusai-gioithieu" href="Gioi_Thieu_ECUS.AI.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Giới thiệu chức năng ECUS.AI</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="ecusai-dksddv" href="DieuKhoanECUSAI-v1.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Điều khoản sử dụng ECUS.AI</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="ecusai-cstaikhoan" href="Dieu-Kien-Tai-Khoan-DV_ECUS.AI.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Tài khoản sử dụng ECUS.AI</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="ecusai-hdsd" href="HD_Su_dung_ECUS.AI.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Tạo tờ khai Hải quan bằng ECUS.AI</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="ecusai-hdtracuuHS" href="HD_Tra-cuu-HS-ECUS.AI.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Tra cứu mã số HS bằng ECUS.AI</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="hshq-qlhs" name="TKXK" href="CN_ECUS.AI_Quan-ly-ho-so.html" target="khunght">Quản lý hồ sơ xuất nhập khẩu</a>
+                                                    <ul>
+                                                        <li style="display: none;"><a id="hshq-qldshd" href="ECUS.AI-Danh-sach-hs.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Quản lý hồ sơ đã tạo</a></li>
+                                                        <li style="display: none;"><a id="hshq-themNK" href="ECUS.AI-Tao-ho-so-NK.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thêm mới hồ sơ nhập khẩu</a></li>
+                                                        <li style="display: none;"><a id="hshq-themXK" href="ECUS.AI-Tao-ho-so-XK.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thêm mới hồ sơ xuất khẩu</a></li>
+                                                    </ul>
+                                                </li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <!--Kết thúc HDSD tạo tờ khai tự động ECUS.AI-->
+                                        
+                                        <li class="branch" style="display: none;">
+                                            <a id="cn-khac" name="TKNK" href="TIENICH.html" target="khunght">5.11.Các hướng dẫn form khác </a>
+                                            <ul>
+                                            	
+                                                <li class="branch" style="display: none;">
+                                                    <a id="form-help-van-don" href="6.1.3.TKN_ThongTinVanDon.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Hướng dẫn nhập vận đơn</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="form-help-loai-hinh" href="forms_help/form-help-loai-hinh.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Loại hình tờ khai</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="form-help-hai-quan" href="forms_help/form-help-hai-quan.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Cơ quan Hải quan</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="form-help-tk-tntx" href="forms_help/form-help-chon-tk-tntx.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Chọn tờ khai TNTX tương ứng</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="form-help-kh-doi-tac" href="forms_help/form-help-dm-doi-tac.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Chọn khách hàng đối tác</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="form-help-luu-kho-dk" href="forms_help/form-help-dd-cho-tqdk.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Địa điểm lưu kho chờ thông quan</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="form-help-dd-do-hang" href="forms_help/form-help-dd-do-hang.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Địa điểm dỡ hàng (nhập khẩu)</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="form-help-dd-xep-hang" href="forms_help/form-help-dd-xep-hang.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Địa điểm xếp hàng (nhập khẩu)</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="form-help-vbpq" href="forms_help/form-help-vbpq.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Văn bản pháp quy</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="form-help-thiet-lap-cotdl" href="forms_help/form-help-thiet-lap-cot.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thiết lập cột dữ liệu</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="form-help-dd-nhan-cc" href="forms_help/form-help-dd-nhan-hang-cc.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Địa điểm nhận hàng cuối cùng</a>
+                                                </li>
+                                                <li class="branch" style="display: none;">
+                                                    <a id="form-help-dd-xep-xuat" href="forms_help/form-help-dd-xep-hang_hangxuat.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Địa điểm xếp hàng (hàng xuất)</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+                                <li class="branch">
+                                    <a id="6_lichsu_thongbao" href="m6.Lichsu_Thongbao_title.html" target="khunght">6. Lịch sử cập nhật phần mềm và thông báo</a>
+                                    <ul>
+                                    <!--Đây là nơi bổ sung lịch sử các lần nâng cấp phần mềm -->
+                                     <li class="branch"  style="display: none;">
+                                            <a id="m6_1Lichsu_capnhat" href="m6.1Lichsu_Title.html" target="khunght">6.1.Lịch sử cập nhật phần mềm </a>
+                                            <ul>
+                                              <li style="display: none;"><a id="tbtt1212026" href="Thongbaonangcap-31012026.html" target="khunght"><em class="glyphicon glyphicon-file"></em>Lịch sử cập nhật ngày 31/01/2026</a></li>
+                                              <li style="display: none;"><a id="lscn07012026" href="Thongbaonangcap-07012026.html" target="khunght"><em class="glyphicon glyphicon-file"></em>Lịch sử cập nhật ngày 07/01/2026</a></li>
+                                              <li style="display: none;"><a id="lscn05112025" href="Thongbaonangcap-05112025.html" target="khunght"><em class="glyphicon glyphicon-file"></em>Lịch sử cập nhật ngày 05/11/2025</a></li>
+                                              <li style="display: none;"><a id="01072025" href="Thongbaonangcap-01072025.html" target="khunght"><em class="glyphicon glyphicon-file"></em>Lịch sử cập nhật ngày 01/07/2025</a></li>
+                                              <li style="display: none;"><a id="05022025" href="Thongbaonangcap-05022025.html" target="khunght"><em class="glyphicon glyphicon-file"></em>Lịch sử cập nhật ngày 05/02/2025</a></li>
+                                              <li style="display: none;"><a id="20112024" href="Thongbaonangcap-20112024.html" target="khunght"><em class="glyphicon glyphicon-file"></em>Lịch sử cập nhật ngày 20/11/2024</a></li>
+                                              <li style="display: none;"><a id="15092024" href="Thongbaonangcap-15092024.html" target="khunght"><em class="glyphicon glyphicon-file"></em>Lịch sử cập nhật ngày 18/10/2024</a></li>
+                                              <li style="display: none;"><a id="14062024" href="Thongbaonangcap-14062024.html" target="khunght"><em class="glyphicon glyphicon-file"></em>Lịch sử cập nhật ngày 14/06/2024</a></li>
+                                              <li style="display: none;"><a id="10052024" href="Thongbaonangcap-10052024.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 10/05/2024</a></li>
+                                                
+                                                <li style="display: none;"><a id="03042024" href="Thongbaonangcap-03042024.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 03/04/2024</a></li>
+                                                <li style="display: none;"><a id="18012024" href="Thongbaonangcap-18012024.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 01/02/2024</a></li>
+                                                <li style="display: none;"><a id="12122023" href="Thongbaonangcap-12122023.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 14/12/2023</a></li>
+                                                <li style="display: none;"><a id="20102023" href="Thongbaonangcap-20102023.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 20/10/2023</a></li>
+                                                <li style="display: none;"><a id="15072023" href="Thongbaonangcap-15072023.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 16/07/2023</a></li>
+                                                <li style="display: none;"><a id="15062023" href="Thongbaonangcap-15062023.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 20/06/2023</a></li>
+                                                <li style="display: none;"><a id="12042023" href="Thongbaonangcap-26032023.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 12/04/2023</a></li>
+                                                <li style="display: none;"><a id="30122022" href="Thongbaonangcap-30122022.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 30/12/2022</a></li>
+                                                <li style="display: none;"><a id="01082022_hddt" href="Thongbaonangcap-01082022.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 01/08/2022</a></li>
+                                                <li style="display: none;"><a id="31032022_tbnc" href="Thongbaonangcap-31032022.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 31/03/2022</a></li>
+                                                <li style="display: none;"><a id="16022022_hdnopphihcm" href="Thongbao16022022_TPHCM.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 16/02/2022</a></li>
+                                                <li style="display: none;"><a id="29122021_tbnc" href="Thongbaonangcap-29122021.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 29/12/2021</a></li>
+                                                <li style="display: none;"><a id="30112021" href="Thongbaonangcap-28112021.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 02/12/2021</a></li>
+                                                <li style="display: none;"><a id="19082021" href="Thongbao19082021.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 19/08/2021</a></li>
+                                                <li style="display: none;"><a id="31072021" href="Thongbao31072021.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 31/07/2021</a></li>
+                                                <li style="display: none;"><a id="23022021" href="Thongbaonangcap-23022021.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 23/02/2021</a></li>
+                                                <li style="display: none;"><a id="08012021" href="Thongbaonangcap-08012021.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 08/01/2021</a></li>
+                                                <li style="display: none;"><a id="17112020" href="Thongbaonangcap-16112020.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 17/11/2020</a></li>
+												<li style="display: none;"><a id="1082020" href="Thongbaonangcap-10082020.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 24/08/2020</a></li>
+                                                <li style="display: none;"><a id="31072020" href="Thongbaonangcap-15072020.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 31/07/2020</a></li>
+                                    			<li style="display: none;"><a id="06072020" href="Thongbaonangcap-18062020.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 06/07/2020</a></li>
+                                                 <li style="display: none;"><a id="23062020" href="Thongbaonangcap-08052020.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 23/06/2020</a></li>
+                                                <li style="display: none;"><a id="12052020" href="Thongbaonangcap-02052020.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 16/05/2020</a></li>
+                                                <li style="display: none;"><a id="24032020" href="Thongbao10022020.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 24/03/2020</a></li>
+                                                <li style="display: none;"><a id="09022020" href="Thongbao09022020.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử cập nhật ngày 09/02/2020</a></li>
+                                                <li style="display: none;"><a id="05022020" href="Thongbao05022020.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử phiên bản ngày 05/02/2020</a></li>
+                                                <li style="display: none;"><a id="10122019" href="Thongbao10122019.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử phiên bản ngày 10/12/2019</a></li>
+                                                <li style="display: none;"><a id="24102019" href="Thongbao24102019.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Lịch sử phiên bản ngày 24/10/2019</a></li>
+
+                                            </ul>
+                                        </li>
+                                    
+                                     <!--Đây là nơi bổ sung các thông báo -->
+                                     
+                                     <li class="branch"  style="display: none;">
+                                            <a id="m6_2Lichsu_Thongbao" href="m6.2LS_ThongBao_Title.html" target="khunght">6.2.Lịch sử thông báo</a>
+                                            <ul>
+                                                <li style="display: none;"><a id="tbbphi06012026" href="Thongbao06012026.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 06/01/2026</a></li>
+                                                <li style="display: none;"><a id="tb19112025" href="Thongbao19112025.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo của HQ KV IV (Hưng Yên).</a></li>
+                                                <li style="display: none;"><a id="04112025" href="Thongbao04112025.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo của HQ cảng Sài Gòn KVI.</a></li>
+                                                <li style="display: none;"><a id="15092025" href="Thongbao15092025.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo của HQ KCN Việt Hương.</a></li>
+                                                <li style="display: none;"><a id="09072025-tddc" href="Thongbao09072025.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo áp dụng hệ thống ECOM.</a></li>
+                                                <li style="display: none;"><a id="01072025-tddc" href="Thongbao-thay-doi-dia-chi-theo-tcbomay2cap.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo thay đổi địa chỉ hành chính.</a></li>
+                                                <li style="display: none;"><a id="03062025" href="Thongbao03062025.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo của HQ chi cục KV IV</a></li>
+                                                <li style="display: none;"><a id="14032025-2" href="Thongbao14032025-2.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo QĐ số 10/QĐ-CHQ</a></li>
+                                                <li style="display: none;"><a id="14032025-3" href="Thongbao14032025-3.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo CCHQ Khu vực XVI</a></li>
+                                                <li style="display: none;"><a id="14032025" href="Thongbao14032025.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 14/03/2025</a></li>
+                                                <li style="display: none;"><a id="13032025" href="Thongbao13032025.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 13/03/2025</a></li>
+                                                <li style="display: none;"><a id="31122024" href="Thongbao31122024.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 31/12/2024</a></li>
+                                                <li style="display: none;"><a id="18112024" href="Thongbao18112024.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 18/11/2024</a></li>
+                                                <li style="display: none;"><a id="04052024" href="Thongbaonangcap-04052024.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 04/05/2024</a></li>
+                                                <li style="display: none;"><a id="29012024" href="Thongbao29012024.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 29/01/2024</a></li>
+                                                <li style="display: none;"><a id="28122022" href="Thongbao28122022_HP.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 28/12/2022</a></li>
+                                                <li style="display: none;"><a id="16022022" href="Thongbao16022022_VB_TPHCM.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 16/02/2022</a></li>
+                                                <li style="display: none;"><a id="29122021" href="Thongbao29122021_HPMT.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 29/12/2021</a></li>
+                                                <!--<li style="display: none;"><a id="12102021" href="Thongbao12102021_HQDNa.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 12/10/2021</a></li>-->
+                                                <li style="display: none;"><a id="27072021" href="Thongbao27072021_290TB-UBND-HP.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 27/07/2021</a></li>
+                                                <li style="display: none;"><a id="28052021" href="Thongbao28052021_QD1357TCHQ-QD.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 28/05/2021</a></li>
+                                                <li style="display: none;"><a id="30032021" href="Thongbao30032021_cv58TB-HQTPHCM.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 30/03/2021</a></li>
+                                                <li style="display: none;"><a id="03032021" href="Thongbao03032021_cv993TCHQ-TXNK.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 03/03/2021</a></li>
+                                    			<li style="display: none;"><a id="26022021" href="Thongbao26022021_cv1281HQQNg.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 26/02/2021</a></li>
+                                                <li style="display: none;"><a id="01102020" href="Thongbao01102020_cv12339.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 01/10/2020</a></li>
+                                                <li style="display: none;"><a id="20200106" href="Thongbao06012020.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 06/01/2020</a></li>
+                                                <li style="display: none;"><a id="24032020_2" href="Thongbao24032020.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 24/03/2020</a></li>
+                                                <li style="display: none;"><a id="01042020" href="Thongbao01042020.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 01/04/2020</a></li>
+                                                <li style="display: none;"><a id="01042020_cv2061" href="Thongbao01042020_cv2061.html" target="khunght"><i class="glyphicon glyphicon-file"></i>Thông báo ngày 01/04/2020 lần 2</a></li>
+                                            </ul>
+                                      </li>
+									</ul>
+								</li>
+                                <li class="branch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="video-hd" href="DS_VideoThamkhao.html" target="khunght"><img src="Images/video-icon.gif">7.Video hướng dẫn sử dụng</a></li>
+                                <li class="branch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="faq" href="1.FAQ-Gioi-Thieu.html" target="khunght"><img src="Images/Question-icon.gif">8.Câu hỏi thường gặp</a></li>
+								<!--<li class="branch">
+                                    <a id="lich_su" href="Thongbao24102019.html" target="khunght">6.Lịch sử cập nhật phần mềm và thông báo</a>-->
+                           </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-8  frame-right" style="vertical-align: top;background-color: #0078d7;">
+                        <!-- <IFRAME ID="KhungHT" Name="khunght" FRAMEBORDER=0 SCROLLING=AUTO width=100% height=100% SRC="1.GIOITHIEUCHUNG.html"></IFRAME> -->
+						 <iframe ID="KhungHT" Name="khunght" FRAMEBORDER="0" align="left" SCROLLING="auto" width="100%" height="100%" SRC="0.PAGE-BLANK.html"></iframe>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+
+    </table>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap-3.4.1.min"></script>
+    <script src="js/help-ecus-2019.js"></script>
+</body>
+</html>

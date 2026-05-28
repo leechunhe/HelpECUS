@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Hướng dẫn sử dụng ECUS.AI</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet">
+<link href="css/help-content.css" rel="stylesheet">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:0mm;
+	text-align:justify;
+	line-height:15.0pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0mm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0mm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	font-family:"Times New Roman",serif;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;
+	font-family:"Times New Roman",serif;}
+p.01-Daumuc01, li.01-Daumuc01, div.01-Daumuc01
+	{mso-style-name:01-Daumuc01;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-indent:-22.7pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.02-Daumuc02, li.02-Daumuc02, div.02-Daumuc02
+	{mso-style-name:02-Daumuc02;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-indent:-22.7pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.03-Daumuc03, li.03-Daumuc03, div.03-Daumuc03
+	{mso-style-name:03-Daumuc03;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-indent:-22.7pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;
+	font-style:italic;}
+p.04-Daumuc04, li.04-Daumuc04, div.04-Daumuc04
+	{mso-style-name:04-Daumuc04;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-indent:-22.7pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.05-DoanVanThuong, li.05-DoanVanThuong, div.05-DoanVanThuong
+	{mso-style-name:05-DoanVanThuong;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:0mm;
+	text-align:justify;
+	line-height:15.0pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;}
+p.06-Bullet01, li.06-Bullet01, div.06-Bullet01
+	{mso-style-name:06-Bullet01;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-align:justify;
+	text-indent:-22.7pt;
+	line-height:15.0pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;}
+p.06-Bullet02, li.06-Bullet02, div.06-Bullet02
+	{mso-style-name:06-Bullet02;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:34.0pt;
+	text-align:justify;
+	text-indent:-11.3pt;
+	line-height:15.0pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;}
+p.051-Daumuc05, li.051-Daumuc05, div.051-Daumuc05
+	{mso-style-name:"05\.1-Daumuc05";
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-align:justify;
+	text-indent:-22.7pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;
+	font-style:italic;}
+p.08-Muccon08, li.08-Muccon08, div.08-Muccon08
+	{mso-style-name:08-Muccon08;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-indent:-22.7pt;
+	line-height:15.0pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:20.0mm 42.55pt 20.0mm 70.9pt;
+	border:double windowtext 4.5pt;
+	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0mm;}
+ul
+	{margin-bottom:0mm;}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><br /><strong style="font-size:24px">HƯỚNG DẪN</strong><br /><span style="font-size:22px">Tạo chứng từ số hoá sử dụng ECUS.AI</span><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+       
+        <!--<div class="Doanvan">Khi sử dụng phần mềm ECUS5VNACCS, doanh nghiệp có nhiều cách  để tạo và khai báo chứng từ số hóa:</div>
+        <img src="Images/KB-ctsh-bang-ECUS.AI-000.png" />
+        <p class="Doanvan">Đây là 4 cách, 4 mục để truy  cập vào chức năng tạo và khai báo chứng từ số hóa, nhưng hiểu đơn giản thì  chúng ta có 2 cách chính để tạo chứng từ.</p>-->
+        
+           <!-- <div class="Doanvan"><strong>1. Tạo và khai báo chứng từ số hóa có sử dụng công  nghệ AI.</strong></div>-->
+            
+          
+        <br />
+         <div class="Doanvan"><a name="AI-c3"><strong>Cách 3 – Tạo  chứng từ số hóa sử dụng ECUS.AI – từ tờ khai hải quan đã có</strong></a></div>
+          <ul style="list-style:none"> 
+        <p class="Doanvan">Ở cách này, người khai đã khai báo tờ khai và chỉ muốn  sử dụng ECUS.AI để phân tích và tạo chứng từ số hóa (không cần tạo tờ khai Hải quan).</p>
+        <p class="Doanvan">Để thực hiện, bạn mở tờ khai đã khai báo, phân luồng  và truy cập vào tab <strong>Quản lý tờ khai</strong> / <strong>Danh sách chứng từ số hóa</strong>.</p>
+        
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-023.png" /></p>
+        <p class="Doanvan">Nhấn vào nút <strong>Tạo chứng từ bằng ECUS.AI</strong>, màn  hình chức năng hiện ra như sau:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-024.png" /></p>
+        <p class="Doanvan">Người khai thực hiện chọn các file chứng từ cần phân  tích để tạo chứng từ số hóa, sau đó nhấn vào nút <strong>Phân tích chứng từ bằng AI</strong>.</p>
+        <p class="Doanvan" style="background-color:#A1DAFF"><strong>Lưu ý</strong>: Khi thực hiện phân tích  chứng từ, người khai đã phải có tài khoản sử dụng dịch vụ ECUS.AI để đăng nhập  hệ thống. Trường hợp chưa có tài khoản, người khai có thể dùng thử 7 ngày bằng  cách tích chọn vào <strong>Sử dụng tài khoản dùng thử (7 ngày) </strong>phần mềm sẽ tự  động điền thông tin tài khoản, mật khẩu dùng thử, bạn nhấn nút <strong>Đăng nhập</strong> để đăng nhập hệ thống:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-004.png" /></p>
+        <p class="Doanvan">Sau khi đăng nhập tài khoản thành công, ECUS.AI tiến hành phân tích chứng từ tự động.</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-025.png" /></p>
+        <p class="Doanvan">Bạn chỉ việc chờ đến khi quá trình phân tích hoàn tất  (thường sẽ hoàn thành trong vòng 1-2 phút).</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-026.png" /></p>
+        <p class="Doanvan">Tại màn hình kết quả phẩn tích, bạn kiểm tra đối chiếu  thông tin kết với chứng từ gốc, thông tin hàng hóa tại tab <strong>Thông tin hàng  hóa</strong>.</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-027.png" /></p>
+        <p class="Doanvan">Kiểm tra chi tiết từng chứng từ bằng cách nhấn vào  biểu tượng con mắt tại cột xem:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-028.png" /></p>
+        <p class="Doanvan">Màn hình kiểm tra chi tiết hóa đơn:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-029.png" /></p>
+        <p class="Doanvan">Sau khi kiểm tra chính xác các thông tin, bạn nhấn nút <strong>Tạo chứng từ số</strong> hóa để phần mềm tự động tạo các chứng từ số hóa từ kết  quả phân tích:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-030.png" /></p>
+        <p class="Doanvan">Tạo thành công bạn quay về tờ khai tại tab <strong>Quản lý  tờ khai</strong> / <strong>Danh sách chứng từ số hóa</strong> để xem lại các chứng từ vừa tạo.</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-031.png" /></p>
+        <p class="Doanvan">Bạn nhấn đúp chuột vào các chứng từ trong danh sách để  xem chi tiết.</p>
+        </ul>
+        <br />
+         <div class="Doanvan">
+     <a href="KB-ctsh-bang-ECUS.AIKB.html"><img src="Images/Hands-One-Finger.png" width="45px" height="auto" /> &nbsp;<strong>Xem hướng dẫn khai báo chứng từ số hoá</strong></a>
+     </div>
+     <br />
+        
+<img src="Images/Anh-Lien-He-Footer.png" />
+
+<!-- <div class="Doanvan"><strong>Hotline:</strong></div>  
+ <div class="Doanvan"><strong>Miền Bắc</strong>: 19004767</div>
+ <div class="Doanvan"><strong>Miền Trung - Nam</strong>: 19004768</div>   -->                      
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap-3.4.1.min"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).on('click', '.spoiler-btn', function (e) {
+        e.preventDefault()
+        $(this).parent().children('.spoiler-body').toggle()
+    });
+});
+
+</script>				           
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Temps.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="Caption" --><title>Hướng dẫn sử dụng ECUS.AI</title>
+<link href="css/bootstrap-3.4.1.min.css" rel="stylesheet">
+<link href="css/help-content.css" rel="stylesheet">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:0mm;
+	text-align:justify;
+	line-height:15.0pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0mm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0mm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	font-family:"Times New Roman",serif;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;
+	font-family:"Times New Roman",serif;}
+p.01-Daumuc01, li.01-Daumuc01, div.01-Daumuc01
+	{mso-style-name:01-Daumuc01;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-indent:-22.7pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.02-Daumuc02, li.02-Daumuc02, div.02-Daumuc02
+	{mso-style-name:02-Daumuc02;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-indent:-22.7pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.03-Daumuc03, li.03-Daumuc03, div.03-Daumuc03
+	{mso-style-name:03-Daumuc03;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-indent:-22.7pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;
+	font-style:italic;}
+p.04-Daumuc04, li.04-Daumuc04, div.04-Daumuc04
+	{mso-style-name:04-Daumuc04;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-indent:-22.7pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+p.05-DoanVanThuong, li.05-DoanVanThuong, div.05-DoanVanThuong
+	{mso-style-name:05-DoanVanThuong;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:0mm;
+	text-align:justify;
+	line-height:15.0pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;}
+p.06-Bullet01, li.06-Bullet01, div.06-Bullet01
+	{mso-style-name:06-Bullet01;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-align:justify;
+	text-indent:-22.7pt;
+	line-height:15.0pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;}
+p.06-Bullet02, li.06-Bullet02, div.06-Bullet02
+	{mso-style-name:06-Bullet02;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:34.0pt;
+	text-align:justify;
+	text-indent:-11.3pt;
+	line-height:15.0pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;}
+p.051-Daumuc05, li.051-Daumuc05, div.051-Daumuc05
+	{mso-style-name:"05\.1-Daumuc05";
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-align:justify;
+	text-indent:-22.7pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;
+	font-style:italic;}
+p.08-Muccon08, li.08-Muccon08, div.08-Muccon08
+	{mso-style-name:08-Muccon08;
+	margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:22.7pt;
+	text-indent:-22.7pt;
+	line-height:15.0pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:20.0mm 42.55pt 20.0mm 70.9pt;
+	border:double windowtext 4.5pt;
+	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0mm;}
+ul
+	{margin-bottom:0mm;}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+	.Doanvan {
+				margin-top:6pt;
+				margin-left:5pt;
+				margin-right:5pt;
+				margin-bottom:6pt;
+				text-align:justify;
+				line-height:16.0pt;
+				font-size:15px;
+				font-family:'tahoma',serif;
+			}
+			.right-content img{max-width:100%;}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" style="overflow:auto;padding:0px 5px">
+  <!--<div class="right-header"  style="border-bottom: 1px solid #CFCFCF; margin-bottom:2px;padding:5px; padding-top: 0px;">
+        <img src="../Images/BN_Trai.png"  style="height:30px;"/>
+        <div style="float:right"><img src="../Images/BN_Phai.png" style="height:30px;" /></div>
+    </div>-->
+       <div class="right-content" style="overflow:auto;padding:0px 15px">
+        <p style="text-align:center;"> 
+         <!-- InstanceBeginEditable name="TieuDe" --><br /><strong style="font-size:24px">HƯỚNG DẪN SỬ DỤNG</strong><br /><span style="font-size:22px">(Chức năng tạo và khai báo chứng từ số hóa bằng ECUS.AI)</span><!-- InstanceEndEditable -->
+         </p>
+         
+        <!-- InstanceBeginEditable name="NoiDung" -->
+       
+        <!--<div class="Doanvan">Khi sử dụng phần mềm ECUS5VNACCS, doanh nghiệp có nhiều cách  để tạo và khai báo chứng từ số hóa:</div>
+        <img src="Images/KB-ctsh-bang-ECUS.AI-000.png" />
+        <p class="Doanvan">Đây là 4 cách, 4 mục để truy  cập vào chức năng tạo và khai báo chứng từ số hóa, nhưng hiểu đơn giản thì  chúng ta có 2 cách chính để tạo chứng từ.</p>-->
+        
+           <!-- <div class="Doanvan"><strong>1. Tạo và khai báo chứng từ số hóa có sử dụng công  nghệ AI.</strong></div>-->
+            
+          
+        <p class="Doanvan">Theo cách này, người dùng chỉ việc đính kèm các file chứng từ,  sau đó ECUS.AI tiến hành phân tích tự động. Khi có kết quả phân tích, doanh  nghiệp kiểm tra đối chiếu kết quả với chứng từ gốc, sau đó tạo tờ khai kèm  chứng từ số hóa. </p>
+        <p class="Doanvan">Người dùng có thể truy cập và sử dụng cách tạo chứng từ bằng  AI theo 3 cách sau:</p>
+        <ul>
+          <li>Cách 1: Tạo chứng từ sử dụng ECUS.AI – từ quy trình 3  bước</li>
+          <li>Cách 2: Tạo chứng từ sử dụng ECUS.AI – từ hồ sơ hải  quan</li>
+          <li>Cách 3: Tạo chứng từ sử dụng ECUS.AI – từ tờ khai hải  quan đã có.</li>
+        </ul>
+        <p class="Doanvan">Mỗi cách có một số điểm khác cụ thể như phần hướng dẫn sau  đây:</p>
+        
+              <div class="Doanvan"><a name="AI-c1"><strong>Cách 1: Tạo chứng từ sử dụng ECUS.AI – theo quy trình 3  bước</strong></a></div>
+              <ul style="list-style:none">
+          
+        <p class="Doanvan">Ở cách này, người dùng có thể phân  tích chứng từ để tạo tờ khai Hải quan cùng chứng từ số hóa cho tờ khai.</p>
+        <p class="Doanvan"><strong><u>Bước 1</u></strong>:   Đính kèm file chứng từ</p>
+        <p class="Doanvan">Bạn truy cập vào menu <strong>Tờ khai Hải quan</strong> / <strong>Tạo tờ khai  Hải quan bằng ECUS.AI</strong>:</p>
+        <p class="Doanvan"><span style="border:solid #D9E2F3 1.0pt; padding:0mm; "><img src="Images/KB-ctsh-bang-ECUS.AI-001.png" /></span></p>
+        <p class="Doanvan">Tại giao diện chức năng, người khai chọn loại hình hồ sơ (<em>Kinh  doanh, Sản xuất xuất khẩu, Gia công, Chế xuất</em>) để phần mềm đưa ra danh sách  các chứng từ mặc định cần có:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-002.png" /></p>
+        <p class="Doanvan" style="background:#D9D9D9;">&nbsp; <br />
+        Bạn  có thể bổ sung thêm chứng từ khác bằng cách nhấn vào (2) <strong>Thêm loại chứng từ</strong>.<br />
+        &nbsp; </p>
+        <p class="Doanvan">Người khai lần lượt đính kèm các file chứng từ đang có của bộ  hồ sơ như: <em>Hóa đơn, vận đơn, hợp đồng, C/O…</em> bằng cách nhấn vào biểu  tượng đính kèm tại cột <strong>Thêm</strong>. Lưu ý: Định dạng file đính kèm phải là PDF,  PNG hoặc JPG.</p>
+        <p class="Doanvan"><strong><u>Bước 2</u></strong>: ECUS.AI tiến  hành phân tích chứng từ tự động.</p>
+        <p class="Doanvan">Khi đã đính kèm các file chứng từ của bộ hồ sơ, người khai  nhấn vào nút <strong>Phân tích chứng từ bằng AI</strong>:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-003.png" /></p>
+        <p class="Doanvan">ECUS.AI sẽ thực hiện phân tích  chứng từ hoàn toàn tự động, bạn chờ đến khi quá trình phân tích kết thúc.</p>
+        <p class="Doanvan" style="background-color:#A1DAFF"><strong>Lưu ý</strong>: Khi thực hiện phân tích  chứng từ, người khai đã phải có tài khoản sử dụng dịch vụ ECUS.AI để đăng nhập  hệ thống. Trường hợp chưa có tài khoản, người khai có thể dùng thử 7 ngày bằng  cách tích chọn vào <strong>Sử dụng tài khoản dùng thử (7 ngày) </strong>phần mềm sẽ tự  động điền thông tin tài khoản, mật khẩu dùng thử, bạn nhấn nút <strong>Đăng nhập</strong> để đăng nhập hệ thống:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-004.png" /></p>
+        <p class="Doanvan">Khi quá trình phân tích thành  công cho tất cả chứng từ, hệ thống sẽ hiển thị màn hình kết quả phân tích để  người dùng kiểm tra và tạo tờ khai Hải quan.</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-005.png" /></p>
+        <p class="Doanvan"><strong><u>Bước  3</u></strong>: Kiểm tra kết quả phân tích và  tạo tờ khai, chứng từ số hóa.</p>
+        <p class="Doanvan">Sau khi phân tích thành công, bạn kiểm tra kết quả phân tích với  chứng từ gốc, có thể đối chiếu các chỉ tiêu đã được số hóa với chứng từ gốc một  cách trực quan bằng cách nhấn vào biểu tượng con mắt tại danh sách chứng từ:</p>
+        <p class="Doanvan">Màn hình kiểm tra đối chiếu hóa đơn:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-006.png" /></p>
+        <p class="Doanvan">Màn hình kiểm tra đối chiếu  thông tin vận tải đơn:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-007.png" /></p>
+        <p class="Doanvan">Thông tin hàng hóa được ECUS.AI  tự động xác định mã số hàng hóa (HS code) dựa vào thông tin mô tả hàng hóa trên  chứng từ, dịch tự động tên hàng sang Tiếng Việt và các thông tin về xuất xứ, số  lượng, đơn vị tính, đơn giá, trị giá của hàng hóa.</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-008.png" /></p>
+        <p class="Doanvan">Sau khi kiểm tra kết quả phân  tích, nếu các thông tin đã chính xác, người khai nhấn  nút: <strong>Tạo tờ khai Hải quan </strong>đồng thời tích chọn vào: <em>Tạo chứng từ số  hóa khi tạo tờ khai hải quan</em>, phần mềm sẽ hiện bảng thông báo lựa chọn hàng  hóa cho tờ khai:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-009.png" /></p>
+        <p class="Doanvan"><u>Lựa chọn 1</u>:  Lấy thông tin hàng hóa trên chứng từ vào tờ khai.<u></u></p>
+        <p class="Doanvan">Với lựa chọn này, phần mềm sẽ đưa toàn bộ thông tin  hàng hóa hiện có trong tab Thông tin hàng hóa để đưa vào tờ khai.</p>
+        <p class="Doanvan"><u>Lựa chọn 2</u>:  Không lấy thông tin hàng hóa trên chứng từ vào tờ khai.<u></u></p>
+        <p class="Doanvan">Với lựa chọn này, khi tạo tờ khai sẽ không bao gồm  thông tin hàng hóa, người khai sẽ tự nhập thủ công danh sách hàng vào tờ khai  (nhập thủ công, import từ excel, chọn từ danh mục…).</p>
+        <p class="Doanvan"><u>Lựa chọn 3</u>:  Nếu có mã hàng, lấy các thông tin trong danh mục tương ứng vào tờ khai (Gia  công, SXXK)</p>
+        <p class="Doanvan">Với lựa chọn này,  phần mềm sẽ dựa vào mã hàng để MAP thông tin Tên hàng, đơn vị tính, mã số HS  theo danh mục đã đăng ký trước đó. Lựa chọn này chỉ áp dụng đối với loại hình  Gia công hoặc SXXK.</p>
+        <p class="Doanvan">Cuối cùng, người khai  đánh dấu tích chọn vào mục <em><u>Tôi đã hiểu và đồng ý</u></em>, sau đó nhấn nút <strong>Xác nhận</strong> để phần mềm tạo tờ khai Hải quan.</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-010.png" /></p>
+        <p class="Doanvan">Sau khi phần mềm tạo tờ khai Hải quan thành công, phần  mềm sẽ đưa các kết quả phân tích vào chỉ tiêu thông tin tương ứng trên tờ khai,  người khai kiểm tra, xác nhận các tiêu chí thông tin và tiến hành khai báo lên  cơ quan Hải quan.</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-011.png" /></p>
+        <p class="Doanvan">Các chứng từ số hóa cũng được  tạo kèm khi tạo tờ khai, người khai kiểm tra tại tab <strong>Quản lý tờ khai / Danh  sách chứng từ số hóa</strong>:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-012.png" /></p>
+        <p class="Doanvan">Sau khi tờ khai được khai báo,  người khai có thể khai các chứng từ đính kèm này ngay mà không cần phải nhập dữ  liệu.</p>
+        <p class="Doanvan">&nbsp;</p>
+        </ul>
+       
+              <div class="Doanvan"><a name="AI-c2"><strong>Cách 2 – Tạo  chứng từ số hóa sử dụng ECUS.AI – từ hồ sơ hải quan.</strong></a></div>
+             <ul style="list-style:none"> 
+            
+        <p class="Doanvan">Cách này cũng gần giống với  cách 1 đã hướng dẫn ở trên, có sử dụng chức năng phân tích và tạo chứng từ số  hóa tự động bằng ECUS.AI. </p>
+        <p class="Doanvan"><strong><u>Bước  1</u></strong>: Chọn hồ sơ nhập khẩu hoặc xuất  khẩu.</p>
+        <p class="Doanvan">Ở cách 1, hệ thống dựa vào  thông tin trên chứng từ để tự động xác định loại hình hồ sơ là nhập khẩu hoặc  xuất khẩu thì ở cách này, người khai tự xác định và lựa chọn bằng cách vào menu <strong>Hồ sơ hải quan</strong> / chọn <strong>Thêm mới hồ sơ nhập khẩu</strong> (hoặc xuất khẩu):</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-013.png" /></p>
+        <p class="Doanvan"><strong><u>Bước  2</u></strong>: Chọn và đính kèm file chứng từ  cho hồ sơ</p>
+        <p class="Doanvan">Tại màn hình chức năng của hồ  sơ, người khai tiến hành chọn để đính kèm các file chứng từ tương ứng:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-014.png" /></p>
+        <p class="Doanvan">Các chứng từ trên form đang  được phần mềm thiết lập mặc định theo các chứng từ thường có cho mỗi loại hình  đã chọn, người khai có thể chọn thêm các chứng từ khác bằng cách nhấn vào nút <strong>Thêm  loại chứng từ</strong> để chọn:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-015.png" /></p>
+        <p class="Doanvan"><strong><u>Bước  3</u></strong>: ECUS.AI thực hiện phân tích  chứng từ</p>
+        <p class="Doanvan">Sau khi đính kèm file chứng từ  cho hồ sơ, người khai nhấn nút Phân tích chứng từ bằng AI, để ECUS.AI tiến hành  phân tích chứng từ:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-016.png" /></p>
+        <p class="Doanvan" style="background-color:#A1DAFF"><strong>Lưu ý</strong>: Khi thực hiện phân tích  chứng từ, người khai đã phải có tài khoản sử dụng dịch vụ ECUS.AI để đăng nhập  hệ thống. Trường hợp chưa có tài khoản, người khai có thể dùng thử 7 ngày bằng  cách tích chọn vào <strong>Sử dụng tài khoản dùng thử (7 ngày) </strong>phần mềm sẽ tự  động điền thông tin tài khoản, mật khẩu dùng thử, bạn nhấn nút <strong>Đăng nhập</strong> để đăng nhập hệ thống:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-004.png" /></p>
+        <p class="Doanvan">Quá trình phân tích hoàn toàn  tự động và nhanh chóng, bạn chỉ việc chờ cho đến khi quá trình phân tích kết  thúc:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-017.png" /></p>
+        <p class="Doanvan"><strong><u>Bước  4</u></strong>: Kiểm tra kết quả và tạo tờ  khai kèm chứng từ số hóa</p>
+        <p class="Doanvan">Sau khi phân tích thành công, các  tiêu chí trên chứng từ được phần mềm số hóa và đưa vào các chỉ tiêu tương ứng  của tờ khai, danh sách hàng hóa.</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-018.png" /></p>
+        <p class="Doanvan">Người khai tiến hành kiểm tra,  đối chiếu kết quả với chứng từ gốc một cách trực quan bằng cách nhấn vào biểu  tượng con mắt tại cột <strong>Xem</strong> trong danh sách chứng từ ở tab <strong>Kết quả phân  tích</strong>:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-019.png" /></p>
+        <p class="Doanvan">Tại tab <strong>Kết quả xử lý</strong>,  người khai có thể tạo các chứng từ số hóa bằng cách đánh dấu tích chọn và nhấn  nút <strong>Tạo chứng từ số hóa</strong>:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-020.png" /></p>
+        <p class="Doanvan">Hoặc tạo tờ khai Hải quan kèm  chứng từ số hóa từ các thông tin kết quả phân tích bằng cách chuyển sang tab <strong>Thông  tin tờ khai</strong>:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-021.png" /></p>
+        <p class="Doanvan">Chứng từ số hóa được tạo, tạo  kèm tờ khai sẽ hiển thị tại tab <strong>Quản lý tờ khai</strong> / <strong>Danh sách chứng từ  số hóa</strong>:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-022.png" /></p>
+        <p class="Doanvan">&nbsp;</p>
+        </ul>
+         <div class="Doanvan"><a name="AI-c3"><strong>Cách 3 – Tạo  chứng từ số hóa sử dụng ECUS.AI – từ tờ khai hải quan đã có</strong></a></div>
+          <ul style="list-style:none"> 
+        <p class="Doanvan">Ở cách này, người khai đã khai báo tờ khai và chỉ muốn  sử dụng ECUS.AI để phân tích và tạo chứng từ số hóa (không cần tạo tờ khai Hải quan).</p>
+        <p class="Doanvan">Để thực hiện, bạn mở tờ khai đã khai báo, phân luồng  và truy cập vào tab <strong>Quản lý tờ khai</strong> / <strong>Danh sách chứng từ số hóa</strong>.</p>
+        
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-023.png" /></p>
+        <p class="Doanvan">Nhấn vào nút <strong>Tạo chứng từ bằng ECUS.AI</strong>, màn  hình chức năng hiện ra như sau:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-024.png" /></p>
+        <p class="Doanvan">Người khai thực hiện chọn các file chứng từ cần phân  tích để tạo chứng từ số hóa, sau đó nhấn vào nút <strong>Phân tích chứng từ bằng AI</strong>.</p>
+        <p class="Doanvan" style="background-color:#A1DAFF"><strong>Lưu ý</strong>: Khi thực hiện phân tích  chứng từ, người khai đã phải có tài khoản sử dụng dịch vụ ECUS.AI để đăng nhập  hệ thống. Trường hợp chưa có tài khoản, người khai có thể dùng thử 7 ngày bằng  cách tích chọn vào <strong>Sử dụng tài khoản dùng thử (7 ngày) </strong>phần mềm sẽ tự  động điền thông tin tài khoản, mật khẩu dùng thử, bạn nhấn nút <strong>Đăng nhập</strong> để đăng nhập hệ thống:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-004.png" /></p>
+        <p class="Doanvan">Sau khi đăng nhập tài khoản thành công, ECUS.AI tiến hành phân tích chứng từ tự động.</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-025.png" /></p>
+        <p class="Doanvan">Bạn chỉ việc chờ đến khi quá trình phân tích hoàn tất  (thường sẽ hoàn thành trong vòng 1-2 phút).</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-026.png" /></p>
+        <p class="Doanvan">Tại màn hình kết quả phẩn tích, bạn kiểm tra đối chiếu  thông tin kết với chứng từ gốc, thông tin hàng hóa tại tab <strong>Thông tin hàng  hóa</strong>.</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-027.png" /></p>
+        <p class="Doanvan">Kiểm tra chi tiết từng chứng từ bằng cách nhấn vào  biểu tượng con mắt tại cột xem:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-028.png" /></p>
+        <p class="Doanvan">Màn hình kiểm tra chi tiết hóa đơn:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-029.png" /></p>
+        <p class="Doanvan">Sau khi kiểm tra chính xác các thông tin, bạn nhấn nút <strong>Tạo chứng từ số</strong> hóa để phần mềm tự động tạo các chứng từ số hóa từ kết  quả phân tích:</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-030.png" /></p>
+        <p class="Doanvan">Tạo thành công bạn quay về tờ khai tại tab <strong>Quản lý  tờ khai</strong> / <strong>Danh sách chứng từ số hóa</strong> để xem lại các chứng từ vừa tạo.</p>
+        <p class="Doanvan"><img src="Images/KB-ctsh-bang-ECUS.AI-031.png" /></p>
+        <p class="Doanvan">Bạn nhấn đúp chuột vào các chứng từ trong danh sách để  xem chi tiết.</p>
+        </ul>
+        
+        
+<img src="Images/Anh-Lien-He-Footer.png" />
+</ul>
+<!-- <div class="Doanvan"><strong>Hotline:</strong></div>  
+ <div class="Doanvan"><strong>Miền Bắc</strong>: 19004767</div>
+ <div class="Doanvan"><strong>Miền Trung - Nam</strong>: 19004768</div>   -->                      
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap-3.4.1.min"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).on('click', '.spoiler-btn', function (e) {
+        e.preventDefault()
+        $(this).parent().children('.spoiler-body').toggle()
+    });
+});
+
+</script>				           
+        <!-- InstanceEndEditable --><br />
+        
+   <div  class="right-fotter" style="border-top: 1px solid #CFCFCF; margin-top:5px;padding: 7px 5px">
+        <div>Bản quyền &copy; <span class="year-current"></span> thuộc về Công ty TNHH Phát triển công  nghệ Thái 				Sơn</div>      
+    	</div>
+        
+       </div>
+
+   <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('.year-current').html((new Date).getFullYear());
+    $('body').css('height', window.innerHeight - 2 );	
+	$('.right-content').css('width', '80%' );		
+	function ResizeWindows() {
+		// $('body').css('height', window.innerHeight - 2 );	
+//		$('.right-content').css('height', window.innerHeight - 2 );
+		var rightWidth = $(window).outerWidth();		
+		if(rightWidth<=1024){
+			$('.right-content').css('width', '95%' );	
+		}else{
+			$('.right-content').css('width', '80%' );	
+		}
+	}
+	$(window).resize(function () {
+            ResizeWindows();
+    }); 
+	ResizeWindows();
+	$('html,body').scrollTop(0);
+    </script> 
+
+</body>
+<!-- InstanceEnd --></html>

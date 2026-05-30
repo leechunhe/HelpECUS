@@ -6,6 +6,67 @@
 <link href="css/bootstrap-3.4.1.min.css" rel="stylesheet">
 <link href="css/help-content.css" rel="stylesheet">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style>
+    body{
+        font-family: Arial;
+        background:#f5f7fb;
+        padding:40px;
+    }
+
+    .card{
+        max-width:700px;
+        background:#fff;
+        padding:25px;
+        border-radius:14px;
+        box-shadow:0 4px 15px rgba(0,0,0,0.08);
+        margin:auto;
+    }
+
+    .content{
+        max-height:120px;
+        overflow:hidden;
+        position:relative;
+        transition:0.4s;
+    }
+
+    .content.expand{
+        max-height:1000px;
+    }
+
+    .content::after{
+        content:"";
+        position:absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        height:60px;
+        background:linear-gradient(transparent, white);
+    }
+
+    .content.expand::after{
+        display:none;
+    }
+
+    .btn-more{
+        margin-top:18px;
+        border:none;
+        background:#2563eb;
+        color:white;
+        padding:10px 18px;
+        border-radius:8px;
+        cursor:pointer;
+        font-size:15px;
+        transition:0.3s;
+    }
+	
+	.icon-x{
+		color: white;
+	}
+
+    .btn-more:hover{
+        background:#1d4ed8;
+    }
+</style>
 <!-- InstanceEndEditable -->
 <style type="text/css">
 	.Doanvan {
@@ -50,6 +111,10 @@
         
         <div class="Doanvan">Phần mềm cho phép doanh nghiệp tạo chứng từ số hóa theo nhiều cách khác nhau, từ tự động dựa vào chức năng <strong>ECUS.AI</strong> đến nhập liệu thủ công.</div>
         <div class="Doanvan">ECUS.AI là chức năng có sử dụng trí tuệ nhân tạo để phân tích tự động các tiêu chí trên chứng từ. Đáp ứng chỉ tiêu thông tin để tạo tờ khai Hải quan và chứng từ số hóa.</div>
+        <div>
+                                   <a href="docs/ThongbaoTSD-0001.pdf" target="_blank"><button class="btn-more" id="btn">
+        <img src="Images/item-left2.png"  /> Nội dung thông báo về việc phát hành dịch vụ ECUS.AI <img src="Images/item-right2.png" style="color:#FFFFFF" />
+    </button></a></div><br />
         <img src="Images/Gioi_Thieu_ECUS.AI-001.png" /><br />
         <div class="Doanvan">Khi sử dụng phần mềm ECUS5VNACCS, doanh nghiệp có nhiều cách  để tạo và khai báo chứng từ số hóa:</div>
         <img src="Images/KB-ctsh-bang-ECUS.AI-000.png" width="900px" />
